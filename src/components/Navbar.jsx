@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const tabs = [
@@ -59,6 +59,7 @@ const Navbar = () => {
         >
           {isSidebarOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
+        <div className=""><button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">Get a Quote <ArrowRight className=" mt-1" /></button></div>
       </div>
 
       <div

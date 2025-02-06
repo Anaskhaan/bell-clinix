@@ -1,3 +1,5 @@
+
+
 export default function WeAre() {
   return (
     <div>
@@ -6,7 +8,7 @@ export default function WeAre() {
           We Proudly Stand as BellClinix
         </h1>
         <p
-          className="mt-4 mb-20 md:mt-6 text-base md:text-lg w-full md:w-[70%] text-justify"
+          className="mt-4 md:mt-6 text-base md:text-lg w-full md:w-[70%] text-justify"
           style={{ textAlignLast: "center" }}
         >
           BellClinix stands out from other consulting firms because of our
