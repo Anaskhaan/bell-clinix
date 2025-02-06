@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tabs = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Pricing", path: "/pricing" },
+  { name: "About", path: "/about" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -40,7 +40,7 @@ const Navbar = () => {
       >
         <div className="text-2xl font-bold text-center flex-1 sm:flex-none">
           <Link to="/">
-          <img src="logo.webp" alt="Logo" className="h-10 w-auto" />
+            <img src="logo.webp" alt="Logo" className="h-10 w-auto" />
           </Link>
         </div>
 
@@ -60,7 +60,11 @@ const Navbar = () => {
         >
           {isSidebarOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
-        <div className="hidden lg:block"><button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">Get a Quote <ArrowRight className=" mt-1" /></button></div>
+        <div className="hidden lg:block">
+          <button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">
+            Get a Quote <ArrowRight className=" mt-1" />
+          </button>
+        </div>
       </div>
 
       <div
