@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
 import About from "./pages/About";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // useEffect(() => {
