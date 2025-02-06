@@ -8,14 +8,15 @@ import ContactForm from "./pages/ContactForm";
 import About from "./pages/About";
 
 function App() {
-  useEffect(() => {
-    if (window.matchMedia("(hover: hover)").matches) {
-      document.body.classList.add("cursor-none");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia("(hover: hover)").matches) {
+  //     document.body.classList.add("cursor-none");
+  //   }
+  // }, []);
   return (
     <>
       <CustomCursor />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

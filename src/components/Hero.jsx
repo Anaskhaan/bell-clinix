@@ -1,11 +1,10 @@
+import React from 'react'
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-export default function Hero() {
+const Hero = () => {
   return (
     <div>
-      {" "}
       <div
         className="relative bg-[url('https://images.pexels.com/photos/4088352/pexels-photo-4088352.jpeg')] bg-cover w-full bg-center h-screen"
         style={{ backgroundSize: "cover", backgroundPosition: "center" }}
@@ -47,5 +46,7 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+export default Hero
