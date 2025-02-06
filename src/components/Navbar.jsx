@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const tabs = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
+  { name: "about", path: "/about" },
   { name: "Pricing", path: "/pricing" },
   { name: "Contact Us", path: "/contact" },
 ];

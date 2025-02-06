@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { useEffect } from "react";
 import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
+import About from "./pages/About";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/about" element={<About />} />
           {/* You can add more routes here */}
         </Route>
       </Routes>
