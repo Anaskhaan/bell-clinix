@@ -1,21 +1,28 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import { useEffect } from "react";
+import CustomCursor from "./components/CustomCursor";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
+  useEffect(() => {
+    if (window.matchMedia("(hover: hover)").matches) {
+      document.body.classList.add("cursor-none");
+    }
+  }, []);
   return (
-    <Router>
+    <>
+      <CustomCursor />
       <Routes>
-        {/* Define a route that uses the Layout as the wrapper */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactForm />} />
           {/* You can add more routes here */}
         </Route>
       </Routes>
-    </Router>
+    </>
   );
 }
 
