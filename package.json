@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.1.1",
+    "@fontsource/montserrat": "^5.1.1",
     "@tailwindcss/vite": "^4.0.3",
     "dotenv": "^16.4.7",
     "emailjs-com": "^3.2.0",
