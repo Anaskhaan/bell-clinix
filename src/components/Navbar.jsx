@@ -39,7 +39,9 @@ const Navbar = () => {
         className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center p-4 z-50  `}
       >
         <div className="text-2xl font-bold text-center flex-1 sm:flex-none">
-          <img src="logo.webp" alt="Logo" className="h-10 w-auto" />
+          <Link to="/">
+            <img src="logo.webp" alt="Logo" className="h-10 w-auto" />
+          </Link>
         </div>
 
         <div className="hidden sm:flex space-x-6">
@@ -58,7 +60,7 @@ const Navbar = () => {
         >
           {isSidebarOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
-        <div className="">
+        <div className="hidden lg:block">
           <button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">
             Get a Quote <ArrowRight className=" mt-1" />
           </button>

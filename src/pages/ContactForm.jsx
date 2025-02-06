@@ -1,6 +1,11 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+
 import emailjs from "emailjs-com";
+import {
+   MapPin,
+   Mail,
+   Phone,
+} from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -27,167 +32,97 @@ const ContactForm = () => {
         import.meta.env.VITE_EMAILJS_USER_ID
       )
       .then(
-        (result) => {
+        () => {
           setStatus("Message sent successfully!");
           setFormData({ name: "", email: "", message: "" });
         },
-        (error) => {
+        () => {
           setStatus("Oops, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div className="bg-[#f0f4f8] py-10">
-      <motion.div
-        className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-12 bg-white shadow-xl rounded-lg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        {/* Contact Form */}
-        <div>
-          <h2 className="text-3xl font-bold text-center mb-6 text-[#0303a7]">
-            Contact Us - Medical Billing Solutions
-          </h2>
-
-          <form onSubmit={handleSubmit}>
-            {/* Name Field */}
-            <motion.div
-              className="mb-6"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <label
-                htmlFor="name"
-                className="block text-lg font-medium text-[#0303a7] mb-2"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full p-4 text-lg border-2 border-[#0303a7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0303a7]"
-              />
-            </motion.div>
-
-            {/* Email Field */}
-            <motion.div
-              className="mb-6"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <label
-                htmlFor="email"
-                className="block text-lg font-medium text-[#0303a7] mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full p-4 text-lg border-2 border-[#0303a7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0303a7]"
-              />
-            </motion.div>
-
-            {/* Message Field */}
-            <motion.div
-              className="mb-6"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <label
-                htmlFor="message"
-                className="block text-lg font-medium text-[#0303a7] mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full p-4 text-lg border-2 border-[#0303a7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0303a7]"
-                rows="6"
-              ></textarea>
-            </motion.div>
-
-            {/* Submit Button */}
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <button
-                type="submit"
-                className="bg-[#0303a7] text-white py-4 px-8 rounded-lg text-lg hover:bg-[#56bafc] transition-all"
-              >
-                Send Message
-              </button>
-            </motion.div>
-          </form>
-
-          {/* Status Message */}
-          {status && (
-            <motion.p
-              className="mt-4 text-center text-lg font-medium text-[#0303a7]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              {status}
-            </motion.p>
-          )}
-        </div>
-
-        {/* Contact Information */}
-        <div>
-          <h3 className="text-2xl font-bold mb-4 text-[#0303a7]">
-            Contact Info
-          </h3>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-4">
-              <p className="text-lg text-[#0303a7]">+1 234 567 890</p>
+    <div className="min-h-screen bg-white text-gray-900">
+      <div className="container mx-auto px-4 py-12 lg:py-24">
+        <div className="grid gap-8 lg:grid-cols-2 mb-12">
+          
+          <div className="flex-1 flex flex-col gap-6">
+            {/* Map */}
+            
+            <div className="w-full h-96 ">
+             
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3079517080656!2d37.61844661574943!3d55.75476998055727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2sRed%20Square!5e0!3m2!1sen!2sus!4v1644342256872!5m2!1sen!2us"
+                style={{ border: 0, borderRadius: "8px" }}
+                allowFullScreen=""
+                loading="lazy"
+                title="Google Maps"
+                className="w-full h-full rounded-lg "
+              ></iframe>
             </div>
-            <div className="flex items-center space-x-4">
-              <p className="text-lg text-[#0303a7]">
-                123 Medical St., City, Country
-              </p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <p className="text-lg text-[#0303a7]">
-                contact@medicalbilling.com
-              </p>
+              
+
+
+            {/* Contact Details */}
+            
+            <div className="p-6 relative">
+              <ul className="space-y-4 text-[#333] ">
+                <li className="flex items-center gap-4">
+                  <i className="fas fa-map-marker-alt text-[#0056D2]"></i>
+                  <  MapPin />
+                  2301 EMANCIPATION HWY STE 101, FREDERICKSBURG, VA 22401 US
+                </li>
+                <li className="flex items-center gap-4">
+                  <i className="fas fa-phone text-[#0056D2]"></i>
+                  <Phone />
+                  
+                    +4475653087497
+                </li>
+                <li className="flex items-center gap-4">
+                  <i className="fas fa-envelope text-[#0056D2]"></i>
+                  <Mail />
+                 
+                    info@BellClinix.com
+                </li>
+                </ul>
+             
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="mt-6">
-            <h4 className="text-lg font-bold mb-2 text-[#0303a7]">Follow Us</h4>
-            <div className="flex space-x-6">
-              <a href="#" target="_blank" className="text-[#0303a7]">
-                {/* Placeholder for GitHub */}
-              </a>
-              <a href="#" target="_blank" className="text-[#0303a7]">
-                {/* Placeholder for LinkedIn */}
-              </a>
-              <a href="#" target="_blank" className="text-[#0303a7]">
-                {/* Placeholder for Twitter */}
-              </a>
-            </div>
+          {/*  Form */}
+          <div className="rounded-xl bg-white p-6 shadow-xl lg:p-8 border border-gray-200">
+            <h2 className="text-xl font-semibold text-[#303a73] mb-6">Feedback Form</h2>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {Object.keys(formData).map((field) => (
+                <div key={field} className="space-y-2">
+                  <label htmlFor={field} className="block text-sm font-medium text-gray-700 capitalize">
+                    {field}
+                  </label>
+                  <input
+                    id={field}
+                    name={field}
+                    type={field === "email" ? "email" : "text"}
+                    value={formData[field]}
+                    onChange={handleChange}
+                    placeholder={`Enter your ${field}`}
+                    className="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-[#56bafc] focus:outline-none focus:ring-1 focus:ring-[#56bafc]"
+                  />
+                </div>
+              ))}
+              <div className="flex items-center">
+                <button
+                  type="submit"
+                  className="ml-auto rounded-md bg-[#303a73] px-6 py-2 text-white transition-colors hover:bg-[#56bafc]"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+            {status && <p className="mt-4 text-[#303a73] text-center">{status}</p>}
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
