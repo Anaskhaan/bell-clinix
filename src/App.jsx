@@ -5,16 +5,18 @@ import Home from "./pages/Home";
 import { useEffect } from "react";
 import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  useEffect(() => {
-    if (window.matchMedia("(hover: hover)").matches) {
-      document.body.classList.add("cursor-none");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia("(hover: hover)").matches) {
+  //     document.body.classList.add("cursor-none");
+  //   }
+  // }, []);
   return (
     <>
       <CustomCursor />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
