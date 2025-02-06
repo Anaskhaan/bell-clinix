@@ -36,10 +36,10 @@ const Stats = () => {
 
   return (
     <div className="py-16 px-3 bg-white bg-opacity-10">
-      <h1 className="text-center text-black text-4xl font-bold mb-10">
+      <h1 className="text-center text-black text-5xl font-bold mb-10">
         Our Key Metrics
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2  gap-x-8 gap-y-8 sm:px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl items-center mx-auto sm:px-4">
         {statData.map(
           ({ icon: Icon, title, targetValue, description }, index) => {
             const [value, setValue] = useState(0);
