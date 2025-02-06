@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 const tabs = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "about", path: "/about" },
-  { name: "Pricing", path: "/pricing" },
+  { name: "About", path: "/about" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -59,7 +58,11 @@ const Navbar = () => {
         >
           {isSidebarOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
-        <div className=""><button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">Get a Quote <ArrowRight className=" mt-1" /></button></div>
+        <div className="">
+          <button className=" text-white  flex items-center justify-center  border rounded-3xl py-1 gap-2 px-4">
+            Get a Quote <ArrowRight className=" mt-1" />
+          </button>
+        </div>
       </div>
 
       <div
