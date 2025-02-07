@@ -35,40 +35,46 @@ const Stats = () => {
   ];
 
   return (
-    <div className="py-16 bg-white bg-opacity-10">
-      <h1 className="text-center text-black text-4xl font-bold mb-10">Our Key Metrics</h1>
-      <div className={`grid grid-cols-2  gap-y-8`}> {/* Reduced gap-x value here */}
-        {statData.map(({ icon: Icon, title, targetValue, description }, index) => {
-          const [value, setValue] = useState(0);
+    <div className="py-16 px-3 bg-white bg-opacity-10">
+      <h1 className="text-center text-black text-5xl font-bold mb-10">
+        Our Key Metrics
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl items-center mx-auto sm:px-4">
+        {statData.map(
+          ({ icon: Icon, title, targetValue, description }, index) => {
+            const [value, setValue] = useState(0);
 
-          useEffect(() => {
-            let startValue = 0;
-            const increment = targetValue / 100;
-            const timer = setInterval(() => {
-              startValue += increment;
-              if (startValue >= targetValue) {
-                setValue(targetValue);
-                clearInterval(timer);
-              } else {
-                setValue(Math.round(startValue));
-              }
-            }, 30);
-            return () => clearInterval(timer);
-          }, [targetValue]);
+            useEffect(() => {
+              let startValue = 0;
+              const increment = targetValue / 100;
+              const timer = setInterval(() => {
+                startValue += increment;
+                if (startValue >= targetValue) {
+                  setValue(targetValue);
+                  clearInterval(timer);
+                } else {
+                  setValue(Math.round(startValue));
+                }
+              }, 30);
+              return () => clearInterval(timer);
+            }, [targetValue]);
 
-          return (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.1 }}
-              className={`flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-xl mx-auto border border-gray-200 max-w-3xl w-full`}
-            >
-              <Icon size={40} className="text-[#56bafc] mb-4" />
-              <h2 className="text-[#303a73] text-5xl font-bold mb-2">{value}%</h2>
-              <h3 className="text-xl font-semibold mb-3">{title}</h3>
-              <p className="text-sm text-gray-600">{description}</p>
-            </motion.div>
-          );
-        })}
+            return (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.1 }}
+                className="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-xl mx-auto border border-gray-200 max-w-md sm:w-full w-full"
+              >
+                <Icon size={40} className="text-[#56bafc] mb-4" />
+                <h2 className="text-[#303a73] text-5xl font-bold mb-2">
+                  {value}%
+                </h2>
+                <h3 className="text-xl font-semibold mb-3">{title}</h3>
+                <p className="text-sm text-gray-600">{description}</p>
+              </motion.div>
+            );
+          }
+        )}
       </div>
     </div>
   );

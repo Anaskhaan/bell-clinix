@@ -1,6 +1,5 @@
-"use client"; 
-import React, { useEffect, useState } from 'react';
-import { ChevronUp } from 'lucide-react'; // Import the Lucide ChevronUp icon
+import { useEffect, useState } from "react";
+import { ChevronUp } from "lucide-react";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -22,7 +21,7 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -33,7 +32,7 @@ const ScrollToTop = () => {
           onClick={scrollToTop}
           className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none animate-pulse"
         >
-          <ChevronUp size={24} /> {/* Lucide ChevronUp icon */}
+          <ChevronUp size={24} />
         </button>
       )}
     </div>

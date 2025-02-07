@@ -1,52 +1,77 @@
-import React from 'react'
-import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-const Hero = () => {
+import React, { useEffect, useState } from 'react';
+import { ArrowRight, BellPlus, ClipboardPlus, Heart, Plus, PlusIcon, PlusSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <div>
-      <div
-        className="relative bg-[url('https://images.pexels.com/photos/4088352/pexels-photo-4088352.jpeg')] bg-cover w-full bg-center h-screen"
-        style={{ backgroundSize: "cover", backgroundPosition: "center" }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className="relative min-h-screen">
+      {/* Background Image with Gradient Overlay */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80"
+          alt="Healthcare professionals"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-70" />
+      </div>
 
-        <div className="relative flex flex-col justify-center items-start p-8 sm:p-16 text-white h-full">
-          <motion.p
-            className="text-4xl sm:text-5xl font-semibold max-w-lg sm:max-w-md mx-auto sm:mx-0 text-left"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            Efficient <span className="text-gray-900">&</span> Secure Medical
-            Billing Solutions
-          </motion.p>
+      {/* Hero Content */}
+      <div className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="max-w-3xl">
+            {/* Animated Elements */}
+            <div className={`transform transition-all duration-1000 ${
+              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+            }`}>
+              {/* Floating Icon */}
+              <div className="mb-8 animate-bounce">
+                <ClipboardPlus className="h-12 w-12 text-pink-500" />
+              </div>
 
-          <motion.p
-            className="text-xl text-white mt-4 lg:w-1/2 w-full mb-4"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            Streamline your revenue cycle with our comprehensive medical billing
-            services, ensuring maximum reimbursement and minimal denials.
-          </motion.p>
-          <Link to="/contact">
-            <motion.button
-              className="mt-4 flex items-center justify-center bg-white text-black p-3 rounded-3xl w-44 sm:w-auto mx-auto sm:mx-0"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
-              whileHover={{ scale: 1.1 }}
-            >
-              Contact us{" "}
-              <ArrowRight className="bg-gray-900 rounded-full text-white ml-4" />
-            </motion.button>
-          </Link>
+              {/* Main Headline */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 ">
+              Prime Medical Billing
+
+                <span className="block text-blue-300">Solutions for US Providers
+                </span>
+              </h1>
+
+              {/* Subheadline */}
+              <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl">
+                Experience world-class medical care with our team of dedicated professionals.
+                Your health and well-being are our top priorities.
+              </p>
+
+              {/* CTA Button */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
+                <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-blue-700 hover:scale-105 focus:outline-none  focus:ring-blue-500 ">
+                  Book an Appointment
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </button>
+                </Link>
+                <Link to="/services">
+                <button className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
+                  Learn More
+                </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Floating Design Elements */}
+            <div className="absolute top-20 right-0 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl animate-pulse" />
+            <div className="absolute bottom-20 right-40 w-32 h-32 bg-pink-500/10 rounded-full filter blur-2xl animate-pulse delay-700" />
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
