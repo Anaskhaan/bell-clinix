@@ -4,6 +4,7 @@ import ImageCarousel from "../components/ImageCarousel ";
 import Stats from "../components/Stats";
 import Vision from "../components/Vision";
 import WeAre from "../components/WeAre";
+import ContactForm from "./ContactForm";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
     <Vision />
     <Stats />
     <ImageCarousel />
+    <ContactForm />
     </div>
   );
 };
