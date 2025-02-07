@@ -5,20 +5,20 @@ import Stats from "../components/Stats";
 import Vision from "../components/Vision";
 import WeAre from "../components/WeAre";
 import ContactForm from "../components/ContactForm";
-
-
+import Services from "../components/Service";
 const Home = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  } , [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Hero />
-    <WeAre />
-    <Vision />
-    <Stats />
-    <ImageCarousel />
-    <ContactForm />
+      <WeAre />
+      <Vision />
+      <Services />
+      <Stats />
+      <ImageCarousel />
+      <ContactForm />
     </div>
   );
 };

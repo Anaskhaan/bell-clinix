@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Service from "../components/Service";
 
 export default function Services() {
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function Services() {
           </p>
         </div>
       </section>
+      <Service />
     </div>
   );
 }
