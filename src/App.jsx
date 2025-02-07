@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import CustomCursor from "./components/CustomCursor";
 import ContactForm from "./pages/ContactForm";
 import About from "./pages/About";
+import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -17,12 +18,13 @@ function App() {
   return (
     <>
       <CustomCursor />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
           {/* You can add more routes here */}
         </Route>
       </Routes>
