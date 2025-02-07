@@ -33,7 +33,7 @@ const Vision = () => {
             className="text-4xl font-bold mb-6 flex items-center justify-center"
           >
             <Eye
-              className="inline-block mr-2  animate-bounce text-4xl"
+              className="inline-block mr-2  animate-bounce lg:text-4xl text-xs"
               size={32}
             />
             Our Vision
@@ -42,7 +42,7 @@ const Vision = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1.2 }}
-            className="text-lg text-justify text-gray-700 mb-8 "
+            className="lg:text-lg text-md text-left text-gray-700 mb-8 "
           >
             BellClinix&apos;s think tanks foresee being the leading force in
             transforming healthcare revenue management. We envision a future where

@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 const tabs = [
   { name: "Home", path: "/", icon: <Home size={40} /> },
   { name: "Services", path: "/services", icon: <Briefcase size={40} /> },
-  { name: "About", path: "/about", icon: <Info size={40} /> },
+  { name: "About Us", path: "/about", icon: <Info size={40} /> },
   { name: "Contact Us", path: "/contact", icon: <Mail size={40} /> },
 ];
 
@@ -86,13 +86,13 @@ const Navbar = () => {
   animate={isSidebarOpen ? { opacity: 1, y: 0, transition: { delay: 0.2 + index * 0.1, duration: 0.4 } } : { opacity: 0, y: 100 }}
 >
   {tab.icon}
-  <span className="relative font-bold duration-300 group">
+  <h1 className="relative font-custom duration-300 group">
     {tab.name}
-    {/* Underline shown only below tab name */}
+
     <span
       className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"
     ></span>
-  </span>
+  </h1>
 </motion.div>
 
             </Link>

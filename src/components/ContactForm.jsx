@@ -110,7 +110,7 @@ const ContactForm = () => {
                     />
                   </div>
                 ))}
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                   <button
                     type="submit"
                     className="ml-auto rounded-md bg-[#303a73] px-6 py-2 text-white transition-colors hover:bg-[#56bafc]"
