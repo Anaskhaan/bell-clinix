@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   useEffect(() => {
@@ -9,12 +10,15 @@ export default function Services() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-[#111827] mt-4 p-10">
+          <div className="w-full h-auto bg-[#111827] p-24">
             <h1 className="text-white text-5xl text-center p-6">
               Our Services
             </h1>
             <p className="flex justify-center items-center text-white text-xl gap-2">
-              Home <ArrowRight /> Services
+             <Link to="/" className="text-white hover:text-blue-500 ease-in-out duration-300"> 
+              Home 
+             </Link>
+              <ArrowRight /> Services
             </p>
           </div>
         </div>

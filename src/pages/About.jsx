@@ -72,10 +72,13 @@ export default function About() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-[#111827] mt-4 p-10">
+          <div className="w-full h-auto bg-[#303a73] p-24">
             <h1 className="text-white text-5xl text-center p-6">About Us</h1>
             <p className="flex justify-center items-center text-white text-xl gap-2">
-              Home <ArrowRight /> About us
+             <Link to="/" className="text-white hover:text-blue-500 ease-in-out duration-300"> 
+              Home 
+             </Link>
+              <ArrowRight /> About Us
             </p>
           </div>
         </div>
