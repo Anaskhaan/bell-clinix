@@ -12,7 +12,7 @@ export default function Services() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-[#303a73] p-24">
-            <h1 className="text-white text-5xl text-center p-6">
+            <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
               Our Services
             </h1>
             <p className="flex justify-center items-center text-white text-xl gap-2">
@@ -65,7 +65,7 @@ export default function Services() {
               insurance verification, claims processing, denial management,
             </span>{" "}
             or <span className="font-semibold">revenue optimization</span>,
-            we’ve got you covered.
+            we&apos;ve got you covered.
             <span className="text-blue-500 font-medium">
               {" "}
               Partner with us

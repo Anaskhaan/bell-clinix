@@ -53,7 +53,6 @@ export default function About() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Carousal
   const [startIndex, setStartIndex] = useState(0);
 
   useEffect(() => {
@@ -73,11 +72,16 @@ export default function About() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-[#303a73] p-24">
-            <h1 className="text-white text-5xl text-center p-6">About Us</h1>
+            <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
+              About Us
+            </h1>
             <p className="flex justify-center items-center text-white text-xl gap-2">
-             <Link to="/" className="text-white hover:text-blue-500 ease-in-out duration-300"> 
-              Home 
-             </Link>
+              <Link
+                to="/"
+                className="text-white hover:text-blue-500 ease-in-out duration-300"
+              >
+                Home
+              </Link>
               <ArrowRight /> About Us
             </p>
           </div>
@@ -102,17 +106,17 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-900 text-white">
+      <section className="py-16 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-white">Meet Our Team</h2>
           <p className="mb-12 text-gray-400">
             A group of skilled professionals dedicated to excellence.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleMembers.map((member, index) => (
+          <div className="flex justify-center">
+            {visibleMembers.slice(0, 1).map((member, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800 rounded-2xl px-2 py-4 shadow-lg hover:shadow-xl transition duration-300 relative group w-84 h-72"
+                className="bg-gray-800 rounded-2xl px-4 py-6 shadow-lg hover:shadow-xl transition duration-300 relative group w-80"
                 whileHover={{ scale: 1.05 }}
               >
                 <img
@@ -133,7 +137,7 @@ export default function About() {
 
       <section className="py-20 bg-[#56bafc] text-white text-center">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="lg:text-5xl text-4xl  font-bold mb-4">
             Ready to Optimize Your Revenue Cycle?
           </h2>
           <p className="text-lg mb-6">

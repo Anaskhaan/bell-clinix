@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Home, Briefcase, Info, Mail, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 const tabs = [
   { name: "Home", path: "/", icon: <Home size={40} /> },
   { name: "Services", path: "/services", icon: <Briefcase size={40} /> },
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div></div>
         <div className={`text-2xl  text-center ${logoPosition}`}>
           <Link onClick={moveUp} to="/">
-            <img src="logo.webp" alt="Logo" className="h-16 w-auto" />
+            <img src="/logo.webp" alt="Logo" className="h-16 w-auto" />
           </Link>
         </div>
 
@@ -66,7 +66,9 @@ const Navbar = () => {
 
       <div
         className={`fixed top-0 left-0 w-full h-full bg-[#303a73] text-white z-40 transform transition-transform duration-500 ${
-          isSidebarOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+          isSidebarOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0"
         }`}
         style={{ transition: "all 0.5s ease-in-out" }}
       >
@@ -78,23 +80,28 @@ const Navbar = () => {
               className="lg:text-6xl text-3xl hover:text-[#56bafc] "
               onClick={handleTabClick}
             >
-           <motion.div
-  className="flex items-center group space-x-4"
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.9 }}
-  initial={{ opacity: 0, y: 100 }}
-  animate={isSidebarOpen ? { opacity: 1, y: 0, transition: { delay: 0.2 + index * 0.1, duration: 0.4 } } : { opacity: 0, y: 100 }}
->
-  {tab.icon}
-  <h1 className="relative font-custom duration-300 group">
-    {tab.name}
+              <motion.div
+                className="flex items-center group space-x-4"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                initial={{ opacity: 0, y: 100 }}
+                animate={
+                  isSidebarOpen
+                    ? {
+                        opacity: 1,
+                        y: 0,
+                        transition: { delay: 0.2 + index * 0.1, duration: 0.4 },
+                      }
+                    : { opacity: 0, y: 100 }
+                }
+              >
+                {tab.icon}
+                <h1 className="relative font-custom duration-300 group">
+                  {tab.name}
 
-    <span
-      className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"
-    ></span>
-  </h1>
-</motion.div>
-
+                  <span className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"></span>
+                </h1>
+              </motion.div>
             </Link>
           ))}
         </div>
