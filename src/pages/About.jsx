@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
@@ -52,6 +52,22 @@ export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Carousal
+  const [startIndex, setStartIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const visibleMembers = [
+    teamMembers[startIndex],
+    teamMembers[(startIndex + 1) % teamMembers.length],
+    teamMembers[(startIndex + 2) % teamMembers.length],
+  ];
   return (
     <div>
       <section>
@@ -90,10 +106,10 @@ export default function About() {
             A group of skilled professionals dedicated to excellence.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
+            {visibleMembers.map((member, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300 relative group w-84 "
+                className="bg-gray-800 rounded-2xl px-2 py-4 shadow-lg hover:shadow-xl transition duration-300 relative group w-84 h-72"
                 whileHover={{ scale: 1.05 }}
               >
                 <img
