@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -62,12 +63,12 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="bg-[#ecf5ff] flex justify-center items-center py-12 px-6">
+        <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
           <div className="max-w-4xl text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Why Choose BellClinix?
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 text-left">
               BellClinix is a leading company committed to optimizing your
               medical practice’s revenue cycle management. Our strengths are
               best practice implementation utilizing skilled workforce extension
@@ -84,9 +85,7 @@ export default function About() {
 
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-indigo-400">
-            Meet Our Team
-          </h2>
+          <h2 className="text-4xl font-bold mb-6 text-white">Meet Our Team</h2>
           <p className="mb-12 text-gray-400">
             A group of skilled professionals dedicated to excellence.
           </p>
@@ -122,8 +121,8 @@ export default function About() {
             Let our expert team help you streamline your medical billing and
             coding process.
           </p>
-          <button className="bg-white text-indigo-600 px-6 py-3 text-lg font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
-            Get Started Today
+          <button className="bg-white text-black px-6 py-3 text-lg font-semibold rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
+            <Link to="/contact">Get Started Today</Link>
           </button>
         </div>
       </section>
