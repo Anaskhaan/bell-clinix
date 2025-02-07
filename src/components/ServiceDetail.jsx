@@ -6,7 +6,8 @@ import { useEffect } from "react";
 const ServiceDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
   const { serviceTitle } = useParams();
   const service = serviceDetails.find(
     (service) => service.title === decodeURIComponent(serviceTitle)
@@ -20,12 +21,18 @@ const ServiceDetail = () => {
     );
 
   return (
-    <div className="min-h-screen p-44 bg-black text-white">
+    <div className="min-h-screen lg:py-28 py-36 px-6 md:px-44 bg-black text-white">
       <div className="max-w-4xl mx-auto text-left">
-        {/* Header with Background */}
-        <h1 className="text-5xl font-bold text-white mb-6">{service.title}</h1>
-        <p className="text-lg text-gray-300 mb-8">{service.details}</p>
-        <div className="text-center mb-4">
+        {/* Header */}
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          {service.title}
+        </h1>
+        <p className="text-base md:text-lg text-gray-300 mb-8">
+          {service.details}
+        </p>
+
+        {/* Learn More Button */}
+        <div className="text-center mb-8">
           <a href="/contact">
             <button className="bg-[#56bafc] text-black font-semibold py-3 px-8 rounded-xl text-lg flex items-center justify-center space-x-3 transform transition-all duration-300 hover:scale-105 hover:bg-[#303a73]">
               <span>Learn More</span>
@@ -33,8 +40,9 @@ const ServiceDetail = () => {
             </button>
           </a>
         </div>
+
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {service.cards.map((card, index) => (
             <div
               key={index}
@@ -43,15 +51,15 @@ const ServiceDetail = () => {
               <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
                 {card.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-white">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">
                 {card.title}
               </h3>
-              <p className="text-sm text-gray-200">{card.description}</p>
+              <p className="text-sm md:text-base text-gray-200">
+                {card.description}
+              </p>
             </div>
           ))}
         </div>
-
-        {/* Learn More Button */}
       </div>
     </div>
   );
