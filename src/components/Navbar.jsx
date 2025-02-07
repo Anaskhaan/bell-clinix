@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { Home, Briefcase, Info, Mail, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import {motion} from "framer-motion";
 const tabs = [
-  { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "About", path: "/about" },
-  { name: "Contact Us", path: "/contact" },
+  { name: "Home", path: "/", icon: <Home size={40} /> },
+  { name: "Services", path: "/services", icon: <Briefcase size={40} /> },
+  { name: "About", path: "/about", icon: <Info size={40} /> },
+  { name: "Contact Us", path: "/contact", icon: <Mail size={40} /> },
 ];
 
 const Navbar = () => {
@@ -23,10 +23,11 @@ const Navbar = () => {
       setLogoPosition("sm:flex-none");
     }
   };
+
   const moveUp = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  
+
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +40,6 @@ const Navbar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
-  // Close sidebar when a tab is clicked
   const handleTabClick = () => {
     setSidebarOpen(false);
   };
@@ -50,7 +50,7 @@ const Navbar = () => {
         className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-50`}
       >
         <div></div>
-        <div className={`text-2xl font-bold text-center ${logoPosition}`}>
+        <div className={`text-2xl  text-center ${logoPosition}`}>
           <Link onClick={moveUp} to="/">
             <img src="logo.webp" alt="Logo" className="h-16 w-auto" />
           </Link>
@@ -75,10 +75,26 @@ const Navbar = () => {
             <Link
               key={index}
               to={tab.path}
-              className="text-5xl"
-              onClick={handleTabClick} // Close sidebar on tab click
+              className="lg:text-6xl text-3xl hover:text-[#56bafc] "
+              onClick={handleTabClick}
             >
-              {tab.name}
+           <motion.div
+  className="flex items-center group space-x-4"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  initial={{ opacity: 0, y: 100 }}
+  animate={isSidebarOpen ? { opacity: 1, y: 0, transition: { delay: 0.2 + index * 0.1, duration: 0.4 } } : { opacity: 0, y: 100 }}
+>
+  {tab.icon}
+  <span className="relative font-bold duration-300 group">
+    {tab.name}
+    {/* Underline shown only below tab name */}
+    <span
+      className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"
+    ></span>
+  </span>
+</motion.div>
+
             </Link>
           ))}
         </div>
