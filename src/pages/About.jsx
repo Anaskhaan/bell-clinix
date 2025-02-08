@@ -67,6 +67,7 @@ export default function About() {
     teamMembers[(startIndex + 1) % teamMembers.length],
     teamMembers[(startIndex + 2) % teamMembers.length],
   ];
+
   return (
     <div>
       <section>
@@ -93,11 +94,11 @@ export default function About() {
             </h2>
             <p className="text-lg text-gray-700 text-left">
               BellClinix is a leading company committed to optimizing your
-              medical practice’s revenue cycle management. Our strengths are
-              best practice implementation utilizing skilled workforce extension
-              in Revenue Cycle Management. Certified medical coders and billers
-              deploy the best medical billing and coding practices for
-              clinicians wishing to outsource medical billing and coding.
+              medical practice&apos;s revenue cycle management. Our strengths
+              are best practice implementation utilizing skilled workforce
+              extension in Revenue Cycle Management. Certified medical coders
+              and billers deploy the best medical billing and coding practices
+              for clinicians wishing to outsource medical billing and coding.
               Specialized expert teams at BellClinix are trained to ensure swift
               recovery of Aged Receivables and quickly troubleshoot insurance
               claim denials for your healthcare organization.
@@ -112,25 +113,34 @@ export default function About() {
           <p className="mb-12 text-gray-400">
             A group of skilled professionals dedicated to excellence.
           </p>
-          <div className="flex justify-center">
-            {visibleMembers.slice(0, 1).map((member, index) => (
-              <motion.div
-                key={index}
-                className="bg-gray-800 rounded-2xl px-4 py-6 shadow-lg hover:shadow-xl transition duration-300 relative group w-80"
-                whileHover={{ scale: 1.05 }}
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-24 h-24 mx-auto rounded-full border-4 border-indigo-400 mb-4"
-                />
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-sm text-gray-400">{member.position}</p>
-                <p className="mt-2 text-gray-300 text-sm">
-                  {member.description}
-                </p>
-              </motion.div>
-            ))}
+          {/* Added grid for responsive display */}
+          <div className="flex justify-center space-x-4 overflow-hidden">
+            <motion.div
+              className="flex space-x-4 transition-transform ease-in-out"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ duration: 1 }}
+            >
+              {visibleMembers.map((member, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-gray-800 rounded-2xl px-4 py-6 shadow-lg hover:shadow-xl transition duration-300 relative group w-80"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-24 h-24 mx-auto rounded-full border-4 border-indigo-400 mb-4"
+                  />
+                  <h3 className="text-xl font-semibold">{member.name}</h3>
+                  <p className="text-sm text-gray-400">{member.position}</p>
+                  <p className="mt-2 text-gray-300 text-sm">
+                    {member.description}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
