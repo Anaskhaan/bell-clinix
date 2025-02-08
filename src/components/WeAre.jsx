@@ -9,13 +9,14 @@ export default function WeAre() {
           className="mt-4 md:mt-6 text-base md:text-lg w-full md:w-[70%] text-justify"
           style={{ textAlignLast: "center" }}
         >
-          BellClinix stands out from other consulting firms because of our
-          tailored approach to business development. We are focused on
-          delivering results and understand that every business has its own
-          unique path to success. Using a specialized evaluation process, we
-          assist business owners in uncovering or reconnecting with their core
-          purpose. To help your business thrive, we prioritize setting goals
-          that align with its distinct identity and values.
+          BellClinix stands out from other billing service providers due to our
+          tailored approach to revenue cycle management. We focus on delivering
+          accurate and efficient billing solutions, understanding that every
+          healthcare practice has unique financial needs. Using a specialized
+          evaluation process, we help healthcare providers optimize their
+          billing operations and maximize revenue. Our priority is to streamline
+          your billing processes while ensuring compliance and financial
+          stability.
         </p>
       </div>
     </div>
