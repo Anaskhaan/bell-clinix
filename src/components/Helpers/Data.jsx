@@ -13,8 +13,15 @@ import {
   Smile,
   Clock,
   CrossIcon,
+  BarChart,
+  Lock,
+  FileText,
+  UserCheck,
+  Layers,
+  Users,
+  Activity,
+  Video,
 } from "lucide-react";
-import { Warning } from "postcss";
 
 export const services = [
   {
@@ -83,7 +90,8 @@ export const serviceDetails = [
       {
         icon: <Settings />,
         title: "Reduced Administrative Burden",
-        description: "It streamlines the documentation and payment processes, reducing the time and effort healthcare staff need to spend on billing tasks, allowing them to focus on patient care.",
+        description:
+          "It streamlines the documentation and payment processes, reducing the time and effort healthcare staff need to spend on billing tasks, allowing them to focus on patient care.",
       },
       {
         icon: <ShieldCheck />,
@@ -94,17 +102,20 @@ export const serviceDetails = [
       {
         icon: <DollarSign />,
         title: "Improved Cash Flow",
-        description: "Proper billing ensures faster payment processing, reducing the likelihood of denied claims, and improving the financial health of healthcare practices.",
+        description:
+          "Proper billing ensures faster payment processing, reducing the likelihood of denied claims, and improving the financial health of healthcare practices.",
       },
       {
         icon: <AlertCircle />,
         title: "Error Prevention",
-        description: "A well-executed medical billing process helps minimize errors such as incorrect codes or missing information, which could otherwise lead to claim rejections or delays in payment.",
+        description:
+          "A well-executed medical billing process helps minimize errors such as incorrect codes or missing information, which could otherwise lead to claim rejections or delays in payment.",
       },
       {
         icon: <Smile />,
         title: "Enhanced Patient Satisfaction",
-        description: "Clear and accurate billing ensures that patients receive understandable bills, reducing confusion or frustration and enhancing their overall experience with healthcare services.",
+        description:
+          "Clear and accurate billing ensures that patients receive understandable bills, reducing confusion or frustration and enhancing their overall experience with healthcare services.",
       },
     ],
   },
@@ -138,7 +149,8 @@ export const serviceDetails = [
       {
         icon: <Clock />,
         title: "Time Efficiency",
-        description: "Free up your administrative staff to focus on patient care and services.",
+        description:
+          "Free up your administrative staff to focus on patient care and services.",
       },
       {
         icon: <ShieldCheck />,
@@ -147,19 +159,22 @@ export const serviceDetails = [
           "Stay compliant with healthcare regulations and avoid penalties.",
       },
       {
-        icon: <CrossIcon/>,
+        icon: <CrossIcon />,
         title: "Error Reduction",
-        description: "Minimize claim denials with precise and error-free coding.",
+        description:
+          "Minimize claim denials with precise and error-free coding.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <BarChart />,
         title: "Improved Analytics",
-        description: "Gain valuable insights through accurate coding and data tracking.",
+        description:
+          "Gain valuable insights through accurate coding and data tracking.",
       },
       {
-        icon: <Smile />,
+        icon: <Lock />,
         title: "Data Security",
-        description: "Protect sensitive patient information with secure coding practices.",
+        description:
+          "Protect sensitive patient information with secure coding practices.",
       },
     ],
   },
@@ -182,30 +197,34 @@ export const serviceDetails = [
           "Accelerate claim reimbursements and improve cash flow efficiency.",
       },
       {
-        icon: <Settings />,
+        icon: <CrossIcon />,
         title: "Reduced Denial Rates",
-        description: "Proactively address claim issues to minimize denials and rejections.",
+        description:
+          "Proactively address claim issues to minimize denials and rejections.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <FileText />,
         title: "Comprehensive Reporting",
         description:
           "Gain actionable insights through detailed AR and denial reports.",
       },
       {
-        icon: <DollarSign />,
+        icon: <UserCheck />,
         title: "Expert Resolution Team",
-        description: "Highly skilled specialists to resolve complex claim disputes.",
+        description:
+          "Highly skilled specialists to resolve complex claim disputes.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <Clock />,
         title: "Timely Follow-Up",
-        description: "Ensure consistent and timely follow-ups to reduce aging accounts.",
+        description:
+          "Ensure consistent and timely follow-ups to reduce aging accounts.",
       },
       {
-        icon: <Smile />,
+        icon: <ShieldCheck />,
         title: "Compliance Assurance",
-        description: "Maintain regulatory compliance while improving billing accuracy.",
+        description:
+          "Maintain regulatory compliance while improving billing accuracy.",
       },
     ],
   },
@@ -221,15 +240,16 @@ export const serviceDetails = [
       "BellClinix’s Medical billing and coding Audit team is focused on ensuring compliance, accuracy, and revenue optimization. Our audit expert team offers chart reviews, Risk Adjustment (RA) chart reviews, Documentation improvement Services, Post-audit education and training, and consultation services. We are instrumental in utilizing hierarchical condition categories, prospective and retrospective chart reviews, and providing tailored solutions based on unique needs, scope of work, and organizational goals.",
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <DollarSign />,
         title: "Revenue Optimization",
         description:
           "Identify and recover missed revenue opportunities through accurate audits.",
       },
       {
-        icon: <Settings />,
+        icon: <AlertCircle />,
         title: "Error Detection",
-        description: "Uncover and correct coding and billing errors to avoid claim rejections.",
+        description:
+          "Uncover and correct coding and billing errors to avoid claim rejections.",
       },
       {
         icon: <ShieldCheck />,
@@ -238,19 +258,21 @@ export const serviceDetails = [
           "Ensure adherence to regulations and guidelines to avoid legal penalties.",
       },
       {
-        icon: <DollarSign />,
+        icon: <Settings />,
         title: "Improved Provider Efficiency",
         description: "Ensure faster payment processing and financial health.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <BarChart />,
         title: "Data-Driven Insights",
-        description: "Gain actionable insights to improve billing accuracy and performance.",
+        description:
+          "Gain actionable insights to improve billing accuracy and performance.",
       },
       {
         icon: <Smile />,
         title: "Enhanced Patient Satisfaction",
-        description: "Accurate billing audits reduce patient complaints and increase trust.",
+        description:
+          "Accurate billing audits reduce patient complaints and increase trust.",
       },
     ],
   },
@@ -267,15 +289,16 @@ export const serviceDetails = [
       "BellClinix’s Physician Credentialing Service (PCS) automates the intricate process of medical credentialing to save you time, minimize errors, and provide you the opportunity to remain focused on clinical decision making and better patient care. We are adding a member to your practice whether you are a new physician or expanding to a new location, our PCS shall streamline the credentialing process for you. Our seasoned team backed by over a decade of collective experience, identifies intricacies, alleviates burdens, and ensures compliance, letting you concentrate on your patient care. Additionally, BellClinix provides tailored provider credentialing services, including automated verification, real-time updates, and personalized support, ensuring smoother operations and compliance.",
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <FileText />,
         title: "Streamlined Documentation",
         description:
           "Ensure accurate and complete credentialing documents for faster approvals.",
       },
       {
-        icon: <Settings />,
+        icon: <Clock />,
         title: "Reduced Turnaround Time",
-        description: "Accelerate the credentialing process to minimize delays in provider enrollment.",
+        description:
+          "Accelerate the credentialing process to minimize delays in provider enrollment.",
       },
       {
         icon: <ShieldCheck />,
@@ -284,19 +307,22 @@ export const serviceDetails = [
           "Maintain adherence to regulatory and payer requirements for credentialing.",
       },
       {
-        icon: <DollarSign />,
+        icon: <Layers />,
         title: "Credential Tracking",
-        description: "Monitor and manage credentialing status for continuous compliance.",
+        description:
+          "Monitor and manage credentialing status for continuous compliance.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <Users />,
         title: "Dedicated Support Team",
-        description: "Expert guidance to resolve credentialing challenges efficiently.",
+        description:
+          "Expert guidance to resolve credentialing challenges efficiently.",
       },
       {
-        icon: <Smile />,
+        icon: <Lock />,
         title: "Data Security",
-        description: "Ensure the secure handling of sensitive provider information.",
+        description:
+          "Ensure the secure handling of sensitive provider information.",
       },
     ],
   },
@@ -313,36 +339,40 @@ export const serviceDetails = [
       "BellClinix’s Healthcare IT professionals are focused at modernizing and optimizing healthcare delivery We offer healthcare IT services ranging from infrastructure, mobility, security and data management to managed services. Our IT team equipped with cutting edge technology, AI and more than a decade experience, is instrumental at developing and deploying IT ecosystem for your specific needs to meet data, performance, compliance and security. We ensure enhanced patient engagement through seamless integration of electronic health record (EHR), website and web applications, cloud services and telehealth supporting smartphones, tablets and mobile apps while reducing the IT burden.",
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <Settings />,
         title: "Streamlined Operations",
         description:
           "Optimize your healthcare workflow with integrated solutions, reducing overhead and improving efficiency.",
       },
       {
-        icon: <Settings />,
+        icon: <ShieldCheck />,
         title: "Enhanced Security",
-        description: "Protect sensitive data with top-tier security measures, ensuring patient information remains safe and secure.",
+        description:
+          "Protect sensitive data with top-tier security measures, ensuring patient information remains safe and secure.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <Smile />,
         title: "Improved Patient Experience",
         description:
           "Provide patients with a seamless digital experience, including easier access to their healthcare records and appointment scheduling.",
       },
       {
-        icon: <DollarSign />,
+        icon: <BarChart />,
         title: "Data-Driven Insights",
-        description: "Leverage analytics to make informed decisions that improve care quality and operational performance.",
+        description:
+          "Leverage analytics to make informed decisions that improve care quality and operational performance.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <Activity />,
         title: "Instant Access to Emergency Care",
-        description: "Provide quick access to emergency medical records, ensuring faster, more efficient responses in critical situations.",
+        description:
+          "Provide quick access to emergency medical records, ensuring faster, more efficient responses in critical situations.",
       },
       {
-        icon: <Smile />,
+        icon: <Video />,
         title: "Telemedicine Integration",
-        description: "Expand your healthcare reach with telemedicine solutions, offering virtual consultations and remote patient monitoring.",
+        description:
+          "Expand your healthcare reach with telemedicine solutions, offering virtual consultations and remote patient monitoring.",
       },
     ],
   },
