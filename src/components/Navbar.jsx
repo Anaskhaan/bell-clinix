@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Home, Briefcase, Info, Mail, Menu, X } from "lucide-react";
+import { Home, Briefcase, Info, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
 const tabs = [
   { name: "Home", path: "/", icon: <Home size={40} /> },
-  { name: "Services", path: "/services", icon: <Briefcase size={40} /> },
-  { name: "About Us", path: "/about", icon: <Info size={40} /> },
+  { name: "What We Do", path: "/services", icon: <Briefcase size={40} /> },
+  { name: "Who We Sre", path: "/about", icon: <Info size={40} /> },
   { name: "Contact Us", path: "/contact", icon: <Mail size={40} /> },
 ];
 
@@ -58,9 +59,52 @@ const Navbar = () => {
 
         <button
           onClick={toggleSidebar}
-          className="text-white bg-transparent focus:outline-none"
+          className="text-white bg-transparent focus:outline-none relative z-50"
         >
-          {isSidebarOpen ? <X size={32} /> : <Menu size={32} />}
+          <div
+            className={`hamburger ${isSidebarOpen ? "open" : ""}`}
+            style={{
+              width: "32px",
+              height: "20px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              transition: "all 0.3s ease-in-out",
+            }}
+          >
+            <div
+              style={{
+                width: "100%",
+                height: "2px",
+                backgroundColor: "#fff",
+                transition: "all 0.3s ease-in-out",
+                transform: isSidebarOpen
+                  ? "rotate(45deg) translateY(12px)"
+                  : "",
+              }}
+            ></div>
+            <div
+              style={{
+                width: "100%",
+                height: "2px",
+                backgroundColor: "#fff",
+                opacity: isSidebarOpen ? 0 : 1,
+                transition: "all 0.3s ease-in-out",
+              }}
+            ></div>
+            <div
+              style={{
+                width: isSidebarOpen ? "100%" : "60%",
+                height: "2px",
+                backgroundColor: "#fff",
+                transition: "all 0.3s ease-in-out",
+                transform: isSidebarOpen
+                  ? "rotate(-45deg) translateY(-15px)"
+                  : "",
+              }}
+            ></div>
+          </div>
         </button>
       </div>
 
@@ -72,7 +116,7 @@ const Navbar = () => {
         }`}
         style={{ transition: "all 0.5s ease-in-out" }}
       >
-        <div className="flex flex-col justify-center items-center h-full space-y-10">
+        <div className="flex flex-col justify-center items-center  h-full space-y-5">
           {tabs.map((tab, index) => (
             <Link
               key={index}
