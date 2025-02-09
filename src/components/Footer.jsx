@@ -85,8 +85,8 @@ export default function Footer() {
                 Jackson, WY 83002
               </p>
 
-              <p>307-543-5084</p>
-              <p className="flex items-center">info@frederickmtngroup.com</p>
+              <p>+447563087497</p>
+              <p className="flex items-center">info@bellclinix.com</p>
             </motion.div>
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function Footer() {
       >
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm">
-            &copy; 2025 Frederick Mountain Group. All rights reserved.
+            &copy; 2025 BellClinix. All rights reserved.
           </p>
         </div>
       </motion.div>
