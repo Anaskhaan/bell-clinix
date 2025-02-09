@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const tabs = [
   { name: "Home", path: "/", icon: <Home size={40} /> },
   { name: "What We Do", path: "/services", icon: <Briefcase size={40} /> },
-  { name: "Who We Sre", path: "/about", icon: <Info size={40} /> },
+  { name: "Who We Are", path: "/about", icon: <Info size={40} /> },
   { name: "Contact Us", path: "/contact", icon: <Mail size={40} /> },
 ];
 
