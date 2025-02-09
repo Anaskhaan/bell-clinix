@@ -11,7 +11,10 @@ import {
   DollarSign,
   AlertCircle,
   Smile,
+  Clock,
+  CrossIcon,
 } from "lucide-react";
+import { Warning } from "postcss";
 
 export const services = [
   {
@@ -75,33 +78,33 @@ export const serviceDetails = [
         icon: <CreditCard />,
         title: "Accurate and Timely Reimbursement",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Medical billing ensures healthcare providers receive timely and accurate payments from insurance companies and patients by submitting properly coded claims.",
       },
       {
         icon: <Settings />,
         title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        description: "It streamlines the documentation and payment processes, reducing the time and effort healthcare staff need to spend on billing tasks, allowing them to focus on patient care.",
       },
       {
         icon: <ShieldCheck />,
         title: "Compliance with Regulations",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Medical billing helps healthcare providers stay compliant with federal and state regulations, including the Health Insurance Portability and Accountability Act (HIPAA), which safeguards patient information.",
       },
       {
         icon: <DollarSign />,
         title: "Improved Cash Flow",
-        description: "Ensure faster payment processing and financial health.",
+        description: "Proper billing ensures faster payment processing, reducing the likelihood of denied claims, and improving the financial health of healthcare practices.",
       },
       {
         icon: <AlertCircle />,
         title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        description: "A well-executed medical billing process helps minimize errors such as incorrect codes or missing information, which could otherwise lead to claim rejections or delays in payment.",
       },
       {
         icon: <Smile />,
         title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        description: "Clear and accurate billing ensures that patients receive understandable bills, reducing confusion or frustration and enhancing their overall experience with healthcare services.",
       },
     ],
   },
@@ -128,35 +131,35 @@ export const serviceDetails = [
     cards: [
       {
         icon: <CreditCard />,
-        title: "Accurate and Timely Reimbursement",
+        title: "Maximized Reimbursements",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Accurate coding ensures you receive maximum reimbursements from payers.",
       },
       {
-        icon: <Settings />,
-        title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        icon: <Clock />,
+        title: "Time Efficiency",
+        description: "Free up your administrative staff to focus on patient care and services.",
       },
       {
         icon: <ShieldCheck />,
-        title: "Compliance with Regulations",
+        title: "Regulatory Compliance",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Stay compliant with healthcare regulations and avoid penalties.",
       },
       {
-        icon: <DollarSign />,
-        title: "Improved Cash Flow",
-        description: "Ensure faster payment processing and financial health.",
+        icon: <CrossIcon/>,
+        title: "Error Reduction",
+        description: "Minimize claim denials with precise and error-free coding.",
       },
       {
         icon: <AlertCircle />,
-        title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        title: "Improved Analytics",
+        description: "Gain valuable insights through accurate coding and data tracking.",
       },
       {
         icon: <Smile />,
-        title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        title: "Data Security",
+        description: "Protect sensitive patient information with secure coding practices.",
       },
     ],
   },
@@ -174,35 +177,35 @@ export const serviceDetails = [
     cards: [
       {
         icon: <CreditCard />,
-        title: "Accurate and Timely Reimbursement",
+        title: "Faster Cash Flow",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Accelerate claim reimbursements and improve cash flow efficiency.",
       },
       {
         icon: <Settings />,
-        title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        title: "Reduced Denial Rates",
+        description: "Proactively address claim issues to minimize denials and rejections.",
       },
       {
         icon: <ShieldCheck />,
-        title: "Compliance with Regulations",
+        title: "Comprehensive Reporting",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Gain actionable insights through detailed AR and denial reports.",
       },
       {
         icon: <DollarSign />,
-        title: "Improved Cash Flow",
-        description: "Ensure faster payment processing and financial health.",
+        title: "Expert Resolution Team",
+        description: "Highly skilled specialists to resolve complex claim disputes.",
       },
       {
         icon: <AlertCircle />,
-        title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        title: "Timely Follow-Up",
+        description: "Ensure consistent and timely follow-ups to reduce aging accounts.",
       },
       {
         icon: <Smile />,
-        title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        title: "Compliance Assurance",
+        description: "Maintain regulatory compliance while improving billing accuracy.",
       },
     ],
   },
@@ -219,35 +222,35 @@ export const serviceDetails = [
     cards: [
       {
         icon: <CreditCard />,
-        title: "Accurate and Timely Reimbursement",
+        title: "Revenue Optimization",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Identify and recover missed revenue opportunities through accurate audits.",
       },
       {
         icon: <Settings />,
-        title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        title: "Error Detection",
+        description: "Uncover and correct coding and billing errors to avoid claim rejections.",
       },
       {
         icon: <ShieldCheck />,
-        title: "Compliance with Regulations",
+        title: "Compliance Assurance",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Ensure adherence to regulations and guidelines to avoid legal penalties.",
       },
       {
         icon: <DollarSign />,
-        title: "Improved Cash Flow",
+        title: "Improved Provider Efficiency",
         description: "Ensure faster payment processing and financial health.",
       },
       {
         icon: <AlertCircle />,
-        title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        title: "Data-Driven Insights",
+        description: "Gain actionable insights to improve billing accuracy and performance.",
       },
       {
         icon: <Smile />,
         title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        description: "Accurate billing audits reduce patient complaints and increase trust.",
       },
     ],
   },
@@ -265,35 +268,35 @@ export const serviceDetails = [
     cards: [
       {
         icon: <CreditCard />,
-        title: "Accurate and Timely Reimbursement",
+        title: "Streamlined Documentation",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Ensure accurate and complete credentialing documents for faster approvals.",
       },
       {
         icon: <Settings />,
-        title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        title: "Reduced Turnaround Time",
+        description: "Accelerate the credentialing process to minimize delays in provider enrollment.",
       },
       {
         icon: <ShieldCheck />,
-        title: "Compliance with Regulations",
+        title: "Compliance Assurance",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Maintain adherence to regulatory and payer requirements for credentialing.",
       },
       {
         icon: <DollarSign />,
-        title: "Improved Cash Flow",
-        description: "Ensure faster payment processing and financial health.",
+        title: "Credential Tracking",
+        description: "Monitor and manage credentialing status for continuous compliance.",
       },
       {
         icon: <AlertCircle />,
-        title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        title: "Dedicated Support Team",
+        description: "Expert guidance to resolve credentialing challenges efficiently.",
       },
       {
         icon: <Smile />,
-        title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        title: "Data Security",
+        description: "Ensure the secure handling of sensitive provider information.",
       },
     ],
   },
@@ -311,35 +314,35 @@ export const serviceDetails = [
     cards: [
       {
         icon: <CreditCard />,
-        title: "Accurate and Timely Reimbursement",
+        title: "Streamlined Operations",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "Optimize your healthcare workflow with integrated solutions, reducing overhead and improving efficiency.",
       },
       {
         icon: <Settings />,
-        title: "Reduced Administrative Burden",
-        description: "Streamline documentation and payment processes.",
+        title: "Enhanced Security",
+        description: "Protect sensitive data with top-tier security measures, ensuring patient information remains safe and secure.",
       },
       {
         icon: <ShieldCheck />,
-        title: "Compliance with Regulations",
+        title: "Improved Patient Experience",
         description:
-          "Stay compliant with federal and state healthcare regulations.",
+          "Provide patients with a seamless digital experience, including easier access to their healthcare records and appointment scheduling.",
       },
       {
         icon: <DollarSign />,
-        title: "Improved Cash Flow",
-        description: "Ensure faster payment processing and financial health.",
+        title: "Data-Driven Insights",
+        description: "Leverage analytics to make informed decisions that improve care quality and operational performance.",
       },
       {
         icon: <AlertCircle />,
-        title: "Error Prevention",
-        description: "Minimize errors in claim submissions and avoid delays.",
+        title: "Instant Access to Emergency Care",
+        description: "Provide quick access to emergency medical records, ensuring faster, more efficient responses in critical situations.",
       },
       {
         icon: <Smile />,
-        title: "Enhanced Patient Satisfaction",
-        description: "Provide clear and understandable billing to patients.",
+        title: "Telemedicine Integration",
+        description: "Expand your healthcare reach with telemedicine solutions, offering virtual consultations and remote patient monitoring.",
       },
     ],
   },
