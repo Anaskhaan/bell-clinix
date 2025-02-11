@@ -89,7 +89,7 @@ const Navbar = () => {
             <div
               className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
                 isSidebarOpen
-                  ? "rotate-[45deg] translate-y-[6px] scale-x-100"
+                  ? "rotate-[45deg] translate-y-[8.2px]  scale-x-100"
                   : "scale-x-0"
               } origin-right`}
             ></div>
@@ -98,7 +98,7 @@ const Navbar = () => {
             <div
               className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
                 isSidebarOpen
-                  ? "rotate-[-45deg] translate-y-[6px] translate-x-2 scale-x-100"
+                  ? "rotate-[-45deg] translate-y-[6px] translate-x-2  scale-x-100"
                   : "scale-x-0"
               } origin-left`}
             ></div>
