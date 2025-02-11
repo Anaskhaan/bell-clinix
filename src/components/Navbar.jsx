@@ -53,7 +53,7 @@ const Navbar = () => {
         <div></div>
         <div className={`text-2xl  text-center ${logoPosition}`}>
           <Link onClick={moveUp} to="/">
-            <img src="/logov5.webp" alt="Logo" className="h-24 w-auto" />
+            <img src="/headerlogo.gif" alt="Logo" className="h-24 w-auto" />
           </Link>
         </div>
 
