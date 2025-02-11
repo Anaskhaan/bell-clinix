@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#303a73]");
+      setBgColor("bg-black");
       setLogoPosition("flex-1");
     } else {
       setBgColor("bg-transparent");
