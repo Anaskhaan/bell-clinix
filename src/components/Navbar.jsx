@@ -62,47 +62,45 @@ const Navbar = () => {
           className="text-white bg-transparent focus:outline-none relative z-50"
         >
           <div
-            className={`hamburger ${isSidebarOpen ? "open" : ""}`}
-            style={{
-              width: "32px",
-              height: "20px",
-              position: "relative",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              transition: "all 0.3s ease-in-out",
-            }}
+            className={`hamburger flex flex-col  justify-between w-8 h-5 transition-all duration-300 ease-in-out ${
+              isSidebarOpen ? "open" : ""
+            }`}
           >
+            {/* Top Line */}
             <div
-              style={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#fff",
-                transition: "all 0.3s ease-in-out",
-                transform: isSidebarOpen
-                  ? "rotate(45deg) translateY(12px)"
-                  : "",
-              }}
+              className={`h-[2px] mb-1 bg-white transition-all duration-300 ease-in-out ${
+                isSidebarOpen ? "scale-x-0" : "scale-x-100"
+              } origin-right`}
+            ></div>
+
+            {/* Middle Line */}
+            <div
+              className={`h-[2px] mb-1 bg-white transition-all duration-500 ease-in-out ${
+                isSidebarOpen ? "scale-x-0" : "scale-x-100"
+              } origin-right`}
             ></div>
             <div
-              style={{
-                width: "100%",
-                height: "2px",
-                backgroundColor: "#fff",
-                opacity: isSidebarOpen ? 0 : 1,
-                transition: "all 0.3s ease-in-out",
-              }}
+              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+                isSidebarOpen ? "scale-x-0" : "scale-x-90"
+              } origin-right`}
             ></div>
+
+            {/* Bottom Line 1 (forming the top part of the cross) */}
             <div
-              style={{
-                width: isSidebarOpen ? "100%" : "60%",
-                height: "2px",
-                backgroundColor: "#fff",
-                transition: "all 0.3s ease-in-out",
-                transform: isSidebarOpen
-                  ? "rotate(-45deg) translateY(-15px)"
-                  : "",
-              }}
+              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+                isSidebarOpen
+                  ? "rotate-[45deg] translate-y-[6px] scale-x-100"
+                  : "scale-x-0"
+              } origin-right`}
+            ></div>
+
+            {/* Bottom Line 2 (forming the bottom part of the cross) */}
+            <div
+              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+                isSidebarOpen
+                  ? "rotate-[-45deg] translate-y-[6px] translate-x-2 scale-x-100"
+                  : "scale-x-0"
+              } origin-left`}
             ></div>
           </div>
         </button>
