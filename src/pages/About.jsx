@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -72,19 +71,11 @@ export default function About() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-[#303a73] p-24">
+          <div className="w-full h-auto bg-black p-24">
             <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
               About Us
             </h1>
-            <p className="flex justify-center items-center text-white text-xl gap-2">
-              <Link
-                to="/"
-                className="text-white hover:text-blue-500 ease-in-out duration-300"
-              >
-                Home
-              </Link>
-              <ArrowRight /> About Us
-            </p>
+            <p className="flex justify-center items-center text-white text-xl gap-2"></p>
           </div>
         </div>
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">

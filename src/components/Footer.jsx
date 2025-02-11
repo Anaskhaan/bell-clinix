@@ -46,22 +46,35 @@ export default function Footer() {
           </motion.div>
 
           {/* Quick Links */}
-          <motion.div variants={fadeInVariants} className="space-y-4">
+          {/* <motion.div variants={fadeInVariants} className="space-y-4">
             <h3 className="text-lg font-bold text-gray-700">Quick Links</h3>
             <ul className="space-y-2">
-              {[
-                "Who We Are",
-                "What We Do",
-                "Portfolio",
-                "Articles",
-                "Contact",
-              ].map((link, index) => (
+              {["Who We Are", "What We Do", "Contact Us"].map((link, index) => (
                 <li key={index}>
                   <Link
                     to="#"
                     className="text-white hover:underline hover:text-gray-300"
                   >
                     {link}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div> */}
+          <motion.div variants={fadeInVariants} className="space-y-4">
+            <h3 className="text-lg font-bold text-gray-700">Quick Links</h3>
+            <ul className="space-y-2">
+              {[
+                { name: "Who We Are", path: "/about" },
+                { name: "What We Do", path: "/services" },
+                { name: "Contact Us", path: "/contact" },
+              ].map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.path}
+                    className="text-white hover:underline hover:text-gray-300"
+                  >
+                    {link.name}
                   </Link>
                 </li>
               ))}

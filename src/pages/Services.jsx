@@ -1,6 +1,4 @@
-import { ArrowRight } from "lucide-react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Service from "../components/Service";
 
 export default function Services() {
@@ -11,19 +9,11 @@ export default function Services() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-[#303a73] p-24">
+          <div className="w-full h-auto bg-black p-24">
             <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
               Our Services
             </h1>
-            <p className="flex justify-center items-center text-white text-xl gap-2">
-              <Link
-                to="/"
-                className="text-white hover:text-blue-500 ease-in-out duration-300"
-              >
-                Home
-              </Link>
-              <ArrowRight /> Services
-            </p>
+            <p className="flex justify-center items-center text-white text-xl gap-2"></p>
           </div>
         </div>
       </section>
