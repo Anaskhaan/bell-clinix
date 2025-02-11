@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white">
       <motion.div
-        className="container mx-auto px-8 py-12"
+        className="container   py-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -29,10 +29,10 @@ export default function Footer() {
             <img
               src="BellClinix-unscreen.gif"
               alt="bellclinix Logo"
-              className="h-auto w-44"
+              className="h-auto -ml-3 w-44"
             />
-            <p className="text-sm">Located in Jackson Hole, WY</p>
-            <div className="flex space-x-4">
+            <p className="text-sm  ml-4">Located in Jackson Hole, WY</p>
+            <div className="flex space-x-4 ml-4">
               {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
                 <a
                   key={idx}
