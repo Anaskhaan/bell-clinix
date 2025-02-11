@@ -26,7 +26,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-start">
           {/* Logo Section */}
           <motion.div variants={fadeInVariants} className="space-y-4">
-            <img src="logo.webp" alt="FMG Logo" className="h-auto w-44" />
+            <img
+              src="BellClinix-unscreen.gif"
+              alt="bellclinix Logo"
+              className="h-auto w-44"
+            />
             <p className="text-sm">Located in Jackson Hole, WY</p>
             <div className="flex space-x-4">
               {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
