@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-50`}
+        className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-2 z-50`}
       >
         <div></div>
         <div className={`text-2xl  text-center ${logoPosition}`}>

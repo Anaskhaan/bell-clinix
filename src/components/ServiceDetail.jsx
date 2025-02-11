@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { serviceDetails } from "./Helpers/Data";
-import { ArrowRight, ArrowRightCircle } from "lucide-react";
+import { ArrowLeft, ArrowRightCircle } from "lucide-react";
 import { useEffect } from "react";
 
 const ServiceDetail = () => {
@@ -26,7 +26,7 @@ const ServiceDetail = () => {
         {/* Header */}
         <Link className=" group" to="/">
           <button className=" relative flex items-center justify-center hover:text-[#56bafc] duration-300 ease-in-out my-4 text-white">
-            Back to Home Page <ArrowRight />
+            <ArrowLeft /> Back to Home Page
             <span className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"></span>
           </button>
         </Link>
