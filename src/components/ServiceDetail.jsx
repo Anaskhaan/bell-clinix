@@ -52,17 +52,31 @@ const ServiceDetail = () => {
           {service.cards.map((card, index) => (
             <div
               key={index}
-              className="bg-[#303a73] p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105"
+              className="bg-[#303a73] p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col justify-between"
             >
-              <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
-                {card.icon}
+              <div>
+                <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
+                  {card.icon}
+                </div>
+                <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">
+                  {card.title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-200 mb-4">
+                  {card.description}
+                </p>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">
-                {card.title}
-              </h3>
-              <p className="text-sm md:text-base text-gray-200">
-                {card.description}
-              </p>
+              {card.list && (
+                <div className="mt-auto">
+                  <p className="text-lg font-semibold text-white text-left mb-1">
+                    Key Features:
+                  </p>
+                  <ul className="text-sm md:text-base text-gray-300 text-left list-disc pl-5">
+                    {card.list.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           ))}
         </div>

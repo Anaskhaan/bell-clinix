@@ -115,37 +115,32 @@ export const serviceDetails = [
         icon: <CreditCard className="text-gray-400" />,
         title: "Accurate and Timely Reimbursement",
         description:
-          "Medical billing ensures healthcare providers receive timely and accurate payments from insurance companies and patients by submitting properly coded claims.",
+          "Ensure timely and accurate payments from insurance companies.",
+        list: [
+          "Properly coded claims",
+          "Faster claim submission",
+          "Reduced payment delays",
+        ],
       },
       {
         icon: <Settings className="text-gray-400" />,
         title: "Reduced Administrative Burden",
-        description:
-          "It streamlines the documentation and payment processes, reducing the time and effort healthcare staff need to spend on billing tasks, allowing them to focus on patient care.",
+        description: "Streamline documentation and payment processes.",
+        list: [
+          "Less paperwork for staff",
+          "Automated claim processing",
+          "More time for patient care",
+        ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance with Regulations",
-        description:
-          "Medical billing helps healthcare providers stay compliant with federal and state regulations, including the Health Insurance Portability and Accountability Act (HIPAA), which safeguards patient information.",
-      },
-      {
-        icon: <DollarSign className="text-gray-400" />,
-        title: "Improved Cash Flow",
-        description:
-          "Proper billing ensures faster payment processing, reducing the likelihood of denied claims, and improving the financial health of healthcare practices.",
-      },
-      {
-        icon: <AlertCircle className="text-gray-400" />,
-        title: "Error Prevention",
-        description:
-          "A well-executed medical billing process helps minimize errors such as incorrect codes or missing information, which could otherwise lead to claim rejections or delays in payment.",
-      },
-      {
-        icon: <Smile className="text-gray-400" />,
-        title: "Enhanced Patient Satisfaction",
-        description:
-          "Clear and accurate billing ensures that patients receive understandable bills, reducing confusion or frustration and enhancing their overall experience with healthcare services.",
+        description: "Stay compliant with federal and state healthcare laws.",
+        list: [
+          "HIPAA-compliant billing",
+          "Updated coding standards",
+          "Minimized legal risks",
+        ],
       },
     ],
   },
@@ -174,37 +169,32 @@ export const serviceDetails = [
         icon: <CreditCard className="text-gray-400" />,
         title: "Maximized Reimbursements",
         description:
-          "Accurate coding ensures you receive maximum reimbursements from payers.",
+          "Accurate coding ensures maximum reimbursements from payers.",
+        list: [
+          "ICD-10, CPT, HCPCS expertise",
+          "Error-free submissions",
+          "Higher claim approval rates",
+        ],
       },
       {
         icon: <Clock className="text-gray-400" />,
         title: "Time Efficiency",
-        description:
-          "Free up your administrative staff to focus on patient care and services.",
+        description: "Reduce time spent on claim processing and corrections.",
+        list: [
+          "Faster coding turnaround",
+          "Automated validation",
+          "Optimized workflows",
+        ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Regulatory Compliance",
-        description:
-          "Stay compliant with healthcare regulations and avoid penalties.",
-      },
-      {
-        icon: <CrossIcon className="text-gray-400" />,
-        title: "Error Reduction",
-        description:
-          "Minimize claim denials with precise and error-free coding.",
-      },
-      {
-        icon: <BarChart className="text-gray-400" />,
-        title: "Improved Analytics",
-        description:
-          "Gain valuable insights through accurate coding and data tracking.",
-      },
-      {
-        icon: <Lock className="text-gray-400" />,
-        title: "Data Security",
-        description:
-          "Protect sensitive patient information with secure coding practices.",
+        description: "Ensure adherence to medical coding regulations.",
+        list: [
+          "Stay up-to-date with code changes",
+          "Reduce compliance risks",
+          "Improve audit readiness",
+        ],
       },
     ],
   },
@@ -224,37 +214,32 @@ export const serviceDetails = [
         icon: <CreditCard className="text-gray-400" />,
         title: "Faster Cash Flow",
         description:
-          "Accelerate claim reimbursements and improve cash flow efficiency.",
+          "Improve revenue cycles with efficient claim reimbursements.",
+        list: [
+          "Quick follow-up on unpaid claims",
+          "Automated tracking systems",
+          "Improved financial stability",
+        ],
       },
       {
         icon: <CrossIcon className="text-gray-400" />,
         title: "Reduced Denial Rates",
-        description:
-          "Proactively address claim issues to minimize denials and rejections.",
+        description: "Address claim issues proactively to minimize rejections.",
+        list: [
+          "Advanced denial analysis",
+          "Real-time claim tracking",
+          "Expert appeal handling",
+        ],
       },
       {
         icon: <FileText className="text-gray-400" />,
         title: "Comprehensive Reporting",
-        description:
-          "Gain actionable insights through detailed AR and denial reports.",
-      },
-      {
-        icon: <UserCheck className="text-gray-400" />,
-        title: "Expert Resolution Team",
-        description:
-          "Highly skilled specialists to resolve complex claim disputes.",
-      },
-      {
-        icon: <Clock className="text-gray-400" />,
-        title: "Timely Follow-Up",
-        description:
-          "Ensure consistent and timely follow-ups to reduce aging accounts.",
-      },
-      {
-        icon: <ShieldCheck className="text-gray-400" />,
-        title: "Compliance Assurance",
-        description:
-          "Maintain regulatory compliance while improving billing accuracy.",
+        description: "Detailed AR and denial insights for better decisions.",
+        list: [
+          "Custom financial reports",
+          "Trend analysis on denials",
+          "Claim status monitoring",
+        ],
       },
     ],
   },
@@ -272,37 +257,32 @@ export const serviceDetails = [
       {
         icon: <DollarSign className="text-gray-400" />,
         title: "Revenue Optimization",
-        description:
-          "Identify and recover missed revenue opportunities through accurate audits.",
+        description: "Identify and recover lost revenue opportunities.",
+        list: [
+          "Comprehensive billing reviews",
+          "Detection of underpaid claims",
+          "Improved financial reporting",
+        ],
       },
       {
         icon: <AlertCircle className="text-gray-400" />,
         title: "Error Detection",
-        description:
-          "Uncover and correct coding and billing errors to avoid claim rejections.",
+        description: "Minimize errors in billing and coding.",
+        list: [
+          "Prevent claim denials",
+          "Ensure accurate documentation",
+          "Reduce compliance risks",
+        ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
-        description:
-          "Ensure adherence to regulations and guidelines to avoid legal penalties.",
-      },
-      {
-        icon: <Settings className="text-gray-400" />,
-        title: "Improved Provider Efficiency",
-        description: "Ensure faster payment processing and financial health.",
-      },
-      {
-        icon: <BarChart className="text-gray-400" />,
-        title: "Data-Driven Insights",
-        description:
-          "Gain actionable insights to improve billing accuracy and performance.",
-      },
-      {
-        icon: <Smile className="text-gray-400" />,
-        title: "Enhanced Patient Satisfaction",
-        description:
-          "Accurate billing audits reduce patient complaints and increase trust.",
+        description: "Ensure adherence to medical regulations and standards.",
+        list: [
+          "HIPAA and ICD-10 compliance",
+          "Regular policy updates",
+          "Risk assessment audits",
+        ],
       },
     ],
   },
@@ -321,38 +301,32 @@ export const serviceDetails = [
       {
         icon: <FileText className="text-gray-400" />,
         title: "Streamlined Documentation",
-        description:
-          "Ensure accurate and complete credentialing documents for faster approvals.",
+        description: "Ensure faster approvals with accurate credentialing.",
+        list: [
+          "Automated document tracking",
+          "Real-time application updates",
+          "Minimized credentialing errors",
+        ],
       },
       {
         icon: <Clock className="text-gray-400" />,
         title: "Reduced Turnaround Time",
-        description:
-          "Accelerate the credentialing process to minimize delays in provider enrollment.",
+        description: "Accelerate the provider enrollment process.",
+        list: [
+          "Quick payer approvals",
+          "Optimized verification processes",
+          "Faster contract execution",
+        ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
-        description:
-          "Maintain adherence to regulatory and payer requirements for credentialing.",
-      },
-      {
-        icon: <Layers className="text-gray-400" />,
-        title: "Credential Tracking",
-        description:
-          "Monitor and manage credentialing status for continuous compliance.",
-      },
-      {
-        icon: <Users className="text-gray-400" />,
-        title: "Dedicated Support Team",
-        description:
-          "Expert guidance to resolve credentialing challenges efficiently.",
-      },
-      {
-        icon: <Lock className="text-gray-400" />,
-        title: "Data Security",
-        description:
-          "Ensure the secure handling of sensitive provider information.",
+        description: "Meet regulatory and payer credentialing requirements.",
+        list: [
+          "Ongoing compliance monitoring",
+          "Credential expiry alerts",
+          "Industry-standard verification",
+        ],
       },
     ],
   },
@@ -372,37 +346,33 @@ export const serviceDetails = [
         icon: <Settings className="text-gray-400" />,
         title: "Streamlined Operations",
         description:
-          "Optimize your healthcare workflow with integrated solutions, reducing overhead and improving efficiency.",
+          "Optimize healthcare workflows with integrated IT solutions.",
+        list: [
+          "Custom EHR integrations",
+          "Automated task management",
+          "Improved staff efficiency",
+        ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Enhanced Security",
-        description:
-          "Protect sensitive data with top-tier security measures, ensuring patient information remains safe and secure.",
+        description: "Ensure the safety of sensitive patient data.",
+        list: [
+          "Advanced encryption standards",
+          "Multi-factor authentication",
+          "Regular security audits",
+        ],
       },
       {
         icon: <Smile className="text-gray-400" />,
         title: "Improved Patient Experience",
         description:
-          "Provide patients with a seamless digital experience, including easier access to their healthcare records and appointment scheduling.",
-      },
-      {
-        icon: <BarChart className="text-gray-400" />,
-        title: "Data-Driven Insights",
-        description:
-          "Leverage analytics to make informed decisions that improve care quality and operational performance.",
-      },
-      {
-        icon: <Activity className="text-gray-400" />,
-        title: "Instant Access to Emergency Care",
-        description:
-          "Provide quick access to emergency medical records, ensuring faster, more efficient responses in critical situations.",
-      },
-      {
-        icon: <Video className="text-gray-400" />,
-        title: "Telemedicine Integration",
-        description:
-          "Expand your healthcare reach with telemedicine solutions, offering virtual consultations and remote patient monitoring.",
+          "Enhance digital interactions between patients and providers.",
+        list: [
+          "Seamless online appointment booking",
+          "Patient portals for medical records",
+          "24/7 support access",
+        ],
       },
     ],
   },
