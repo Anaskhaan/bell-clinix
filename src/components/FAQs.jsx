@@ -108,7 +108,7 @@ export default function FAQs() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-[#56bafc] text-lg">
+          <p className="text-gray-300 text-lg">
             Find answers to common questions about our services
           </p>
         </div>

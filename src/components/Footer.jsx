@@ -27,9 +27,9 @@ export default function Footer() {
           {/* Logo Section */}
           <motion.div variants={fadeInVariants} className="space-y-4">
             <img
-              src="footerlogo.gif"
+              src="logo.svg"
               alt="bellclinix Logo"
-              className="h-auto -ml-3 w-44"
+              className="h-20 w-auto px-4 ml-4"
             />
             <p className="text-sm  ml-4">Located in Jackson Hole, WY</p>
             <div className="flex space-x-4 ml-4">
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <motion.div variants={fadeInVariants} className="space-y-4">
-            <h3 className="text-lg font-bold text-gray-700">Quick Links</h3>
+            <h3 className="text-lg font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               {[
                 { name: "Who We Are", path: "/about" },
@@ -69,12 +69,11 @@ export default function Footer() {
           {/* Contact Details */}
           <div className=" flex flex-col items-start text-left">
             <motion.div variants={fadeInVariants} className="space-y-4">
-              <h3 className="text-lg font-bold text-gray-700">
-                Contact Bell Clinix
-              </h3>
-              <p className="flex items-center">Located in Jackson Hole, WY</p>
+              <h3 className="text-lg font-bold text-white">Office</h3>
+              <p className="flex items-center">2301 Emancipation Hwy,</p>
               <p className="flex items-center">
-                175 S King St Suite 100 Jackson, WY 83001
+                {" "}
+                Ste 101, Fredericksburg, VA 22401, USA
               </p>
             </motion.div>
 
