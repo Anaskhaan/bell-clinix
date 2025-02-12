@@ -25,42 +25,42 @@ import {
 
 export const services = [
   {
-    icon: <Banknote className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Banknote className="w-12 h-12 text-gray-700" />,
     title: "Medical Billing",
     description:
       "Streamline your revenue cycle with our efficient and accurate billing services.",
     color: "from-emerald-400 to-teal-300",
   },
   {
-    icon: <FileCode className="w-12 h-12 text-[#56bafc]" />,
+    icon: <FileCode className="w-12 h-12 text-gray-700" />,
     title: "Medical Coding",
     description:
       "Ensure compliance and accuracy in claims with our precise coding solutions.",
     color: "from-sky-400 to-blue-300",
   },
   {
-    icon: <ShieldCheck className="w-12 h-12 text-[#56bafc]" />,
+    icon: <ShieldCheck className="w-12 h-12 text-gray-700" />,
     title: "AR & Denial Management",
     description:
       "Optimize cash flow with our proactive approach to reducing denials.",
     color: "from-amber-400 to-yellow-300",
   },
   {
-    icon: <BarChart3 className="w-12 h-12 text-[#56bafc]" />,
+    icon: <BarChart3 className="w-12 h-12 text-gray-700" />,
     title: "Audit Services",
     description:
       "Maintain accuracy and compliance with our comprehensive audit solutions.",
     color: "from-rose-400 to-pink-300",
   },
   {
-    icon: <Key className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Key className="w-12 h-12 text-gray-700" />,
     title: "Credentialing",
     description:
       "Streamline your provider and payer credentialing processes seamlessly.",
     color: "from-violet-400 to-purple-300",
   },
   {
-    icon: <Laptop className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Laptop className="w-12 h-12 text-gray-700" />,
     title: "Healthcare IT",
     description:
       "Leverage cutting-edge IT solutions tailored for the healthcare industry.",

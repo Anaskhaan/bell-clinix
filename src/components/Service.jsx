@@ -29,11 +29,14 @@ const Services = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
-              className="relative w-full h-72 rounded-2xl p-6 cursor-pointer bg-white shadow-lg"
+              className="relative w-full h-72 rounded-2xl p-6 cursor-pointer bg-white shadow-lg hover:bg-blue-400 hover:text-white transition-all duration-300 ease-in-out"
             >
-              <div className="relative h-full flex flex-col justify-between z-10">
+              <div
+                className="relative h-full flex flex-col justify-between z-10 "
+                onClick={() => handleLearnMore(service.title)}
+              >
                 <div>
-                  <div className="mb-4">{service.icon}</div>
+                  <div className="mb-4 ">{service.icon}</div>
                   <h3 className="text-xl font-bold mb-2 text-[#303a73]">
                     {service.title}
                   </h3>
@@ -41,10 +44,7 @@ const Services = () => {
                     {service.description}
                   </p>
                 </div>
-                <button
-                  className="self-start px-4 py-2 bg-[#303a73] rounded-full text-white font-semibold flex items-center gap-2"
-                  onClick={() => handleLearnMore(service.title)}
-                >
+                <button className="self-start px-4 py-2 bg-[#303a73] rounded-full text-white font-semibold flex items-center gap-2">
                   Learn More
                   <ChevronRight className="w-4 h-4" />
                 </button>

@@ -25,13 +25,8 @@ export default function Services() {
           </h2>
           <p className="mt-4 text-lg leading-relaxed">
             At <span className="font-semibold">BellClinix</span>, we help
-            healthcare providers
-            <span className="text-blue-500 font-medium">
-              {" "}
-              streamline their revenue cycle
-            </span>{" "}
-            with efficient, accurate, and hassle-free medical billing and coding
-            solutions.
+            healthcare providers streamline their revenue cycle with efficient,
+            accurate, and hassle-free medical billing and coding solutions.
           </p>
           <p className="mt-4 text-lg leading-relaxed">
             Our expert team ensures{" "}
@@ -42,12 +37,8 @@ export default function Services() {
             <span className="font-semibold">
               compliance with industry standards
             </span>
-            , allowing you to
-            <span className="text-blue-500 font-medium">
-              {" "}
-              focus on patient care
-            </span>{" "}
-            while we handle the complexities of billing.
+            , allowing you to focus on patient care while we handle the
+            complexities of billing.
           </p>
           <p className="mt-4 text-lg leading-relaxed">
             Whether it&apos;s{" "}
@@ -55,13 +46,8 @@ export default function Services() {
               insurance verification, claims processing, denial management,
             </span>{" "}
             or <span className="font-semibold">revenue optimization</span>,
-            we&apos;ve got you covered.
-            <span className="text-blue-500 font-medium">
-              {" "}
-              Partner with us
-            </span>{" "}
-            for seamless financial operations and maximize your practice&apos;s
-            profitability!
+            we&apos;ve got you covered. Partner with us for seamless financial
+            operations and maximize your practice&apos;s profitability!
           </p>
         </div>
       </section>
