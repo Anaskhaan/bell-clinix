@@ -18,10 +18,10 @@ const Navbar = () => {
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setBgColor("bg-[#303a73]");
-      setLogoPosition("flex-1");
+      setLogoPosition("justify-start");
     } else {
       setBgColor("bg-transparent");
-      setLogoPosition("sm:flex-none");
+      setLogoPosition("lg:justify-center sm:justify-start");
     }
   };
 
@@ -50,18 +50,16 @@ const Navbar = () => {
       <div
         className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-2 z-50`}
       >
-        <div></div>
-        <div className={`text-2xl text-center ${logoPosition}`}>
+        <div
+          className={`flex ${logoPosition} w-full transition-all duration-300`}
+        >
           <Link onClick={moveUp} to="/">
-            <img src="/logo.svg" alt="Logo" className="h-20 w-auto" />
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              className="lg:h-20 h-12 mt-2 w-auto"
+            />
           </Link>
-          {/* Display Text Below the Logo When Navbar Is Open */}
-          {/* {isSidebarOpen && (
-            <div className="text-white text-lg mt-2">
-              <h1>Bell Clinix</h1>
-              <h2>Efficient</h2>
-            </div>
-          )} */}
         </div>
 
         <button
