@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Logo Section */}
           <motion.div variants={fadeInVariants} className="space-y-4">
             <img
-              src="BellClinix.gif"
+              src="footerlogo.gif"
               alt="bellclinix Logo"
               className="h-auto -ml-3 w-44"
             />
@@ -50,18 +50,16 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-gray-700">Quick Links</h3>
             <ul className="space-y-2">
               {[
-                "Who We Are",
-                "What We Do",
-                "Portfolio",
-                "Articles",
-                "Contact",
+                { name: "Who We Are", path: "/about" },
+                { name: "What We Do", path: "/services" },
+                { name: "Contact Us", path: "/contact" },
               ].map((link, index) => (
                 <li key={index}>
                   <Link
-                    to="#"
+                    to={link.path}
                     className="text-white hover:underline hover:text-gray-300"
                   >
-                    {link}
+                    {link.name}
                   </Link>
                 </li>
               ))}
