@@ -65,7 +65,7 @@ const Stats = () => {
                 whileHover={{ scale: 1.1 }}
                 className="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-xl mx-auto border border-gray-200 max-w-md sm:w-full w-full"
               >
-                <Icon size={40} className="text-[#56bafc] mb-4" />
+                <Icon size={40} className="text-gray-700 mb-4" />
                 <h2 className="text-[#303a73] text-5xl font-bold mb-2">
                   {value}%
                 </h2>

@@ -25,42 +25,42 @@ import {
 
 export const services = [
   {
-    icon: <Banknote className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Banknote className="w-12 h-12 text-gray-700" />,
     title: "Medical Billing",
     description:
       "Streamline your revenue cycle with our efficient and accurate billing services.",
     color: "from-emerald-400 to-teal-300",
   },
   {
-    icon: <FileCode className="w-12 h-12 text-[#56bafc]" />,
+    icon: <FileCode className="w-12 h-12 text-gray-700" />,
     title: "Medical Coding",
     description:
       "Ensure compliance and accuracy in claims with our precise coding solutions.",
     color: "from-sky-400 to-blue-300",
   },
   {
-    icon: <ShieldCheck className="w-12 h-12 text-[#56bafc]" />,
+    icon: <ShieldCheck className="w-12 h-12 text-gray-700" />,
     title: "AR & Denial Management",
     description:
       "Optimize cash flow with our proactive approach to reducing denials.",
     color: "from-amber-400 to-yellow-300",
   },
   {
-    icon: <BarChart3 className="w-12 h-12 text-[#56bafc]" />,
+    icon: <BarChart3 className="w-12 h-12 text-gray-700" />,
     title: "Audit Services",
     description:
       "Maintain accuracy and compliance with our comprehensive audit solutions.",
     color: "from-rose-400 to-pink-300",
   },
   {
-    icon: <Key className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Key className="w-12 h-12 text-gray-700" />,
     title: "Credentialing",
     description:
       "Streamline your provider and payer credentialing processes seamlessly.",
     color: "from-violet-400 to-purple-300",
   },
   {
-    icon: <Laptop className="w-12 h-12 text-[#56bafc]" />,
+    icon: <Laptop className="w-12 h-12 text-gray-700" />,
     title: "Healthcare IT",
     description:
       "Leverage cutting-edge IT solutions tailored for the healthcare industry.",
@@ -82,37 +82,37 @@ export const serviceDetails = [
 
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <CreditCard className="text-gray-400" />,
         title: "Accurate and Timely Reimbursement",
         description:
           "Medical billing ensures healthcare providers receive timely and accurate payments from insurance companies and patients by submitting properly coded claims.",
       },
       {
-        icon: <Settings />,
+        icon: <Settings className="text-gray-400" />,
         title: "Reduced Administrative Burden",
         description:
           "It streamlines the documentation and payment processes, reducing the time and effort healthcare staff need to spend on billing tasks, allowing them to focus on patient care.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance with Regulations",
         description:
           "Medical billing helps healthcare providers stay compliant with federal and state regulations, including the Health Insurance Portability and Accountability Act (HIPAA), which safeguards patient information.",
       },
       {
-        icon: <DollarSign />,
+        icon: <DollarSign className="text-gray-400" />,
         title: "Improved Cash Flow",
         description:
           "Proper billing ensures faster payment processing, reducing the likelihood of denied claims, and improving the financial health of healthcare practices.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <AlertCircle className="text-gray-400" />,
         title: "Error Prevention",
         description:
           "A well-executed medical billing process helps minimize errors such as incorrect codes or missing information, which could otherwise lead to claim rejections or delays in payment.",
       },
       {
-        icon: <Smile />,
+        icon: <Smile className="text-gray-400" />,
         title: "Enhanced Patient Satisfaction",
         description:
           "Clear and accurate billing ensures that patients receive understandable bills, reducing confusion or frustration and enhancing their overall experience with healthcare services.",
@@ -141,37 +141,37 @@ export const serviceDetails = [
     ],
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <CreditCard className="text-gray-400" />,
         title: "Maximized Reimbursements",
         description:
           "Accurate coding ensures you receive maximum reimbursements from payers.",
       },
       {
-        icon: <Clock />,
+        icon: <Clock className="text-gray-400" />,
         title: "Time Efficiency",
         description:
           "Free up your administrative staff to focus on patient care and services.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Regulatory Compliance",
         description:
           "Stay compliant with healthcare regulations and avoid penalties.",
       },
       {
-        icon: <CrossIcon />,
+        icon: <CrossIcon className="text-gray-400" />,
         title: "Error Reduction",
         description:
           "Minimize claim denials with precise and error-free coding.",
       },
       {
-        icon: <BarChart />,
+        icon: <BarChart className="text-gray-400" />,
         title: "Improved Analytics",
         description:
           "Gain valuable insights through accurate coding and data tracking.",
       },
       {
-        icon: <Lock />,
+        icon: <Lock className="text-gray-400" />,
         title: "Data Security",
         description:
           "Protect sensitive patient information with secure coding practices.",
@@ -191,37 +191,37 @@ export const serviceDetails = [
       "BellClinix’s specialty-specific professionals handle Account Receivable (AR) and Denial Management as integral components of streaming medical billing revenue cycle management (RCM). Our AR team is focused on maintaining a healthy cash flow for your practice. They have mastery at tracking payments from patients and insurance payers separately ensuring transparency. Our effective AR solutions are perfect for revenue leakage prevention and optimizing financial performance. Our Denial management team is dedicated to troubleshooting, tracking, and following denied and unpaid claims from insurance companies. We are swift at identifying rectifying and re-submitting incorrect billing and coding via corrected proven procedures. BellClinix’s AR and Denial management team maintains a close collaboration with your in-house staff to resolve outright denials and underpayments.",
     cards: [
       {
-        icon: <CreditCard />,
+        icon: <CreditCard className="text-gray-400" />,
         title: "Faster Cash Flow",
         description:
           "Accelerate claim reimbursements and improve cash flow efficiency.",
       },
       {
-        icon: <CrossIcon />,
+        icon: <CrossIcon className="text-gray-400" />,
         title: "Reduced Denial Rates",
         description:
           "Proactively address claim issues to minimize denials and rejections.",
       },
       {
-        icon: <FileText />,
+        icon: <FileText className="text-gray-400" />,
         title: "Comprehensive Reporting",
         description:
           "Gain actionable insights through detailed AR and denial reports.",
       },
       {
-        icon: <UserCheck />,
+        icon: <UserCheck className="text-gray-400" />,
         title: "Expert Resolution Team",
         description:
           "Highly skilled specialists to resolve complex claim disputes.",
       },
       {
-        icon: <Clock />,
+        icon: <Clock className="text-gray-400" />,
         title: "Timely Follow-Up",
         description:
           "Ensure consistent and timely follow-ups to reduce aging accounts.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
         description:
           "Maintain regulatory compliance while improving billing accuracy.",
@@ -240,36 +240,36 @@ export const serviceDetails = [
       "BellClinix’s Medical billing and coding Audit team is focused on ensuring compliance, accuracy, and revenue optimization. Our audit expert team offers chart reviews, Risk Adjustment (RA) chart reviews, Documentation improvement Services, Post-audit education and training, and consultation services. We are instrumental in utilizing hierarchical condition categories, prospective and retrospective chart reviews, and providing tailored solutions based on unique needs, scope of work, and organizational goals.",
     cards: [
       {
-        icon: <DollarSign />,
+        icon: <DollarSign className="text-gray-400" />,
         title: "Revenue Optimization",
         description:
           "Identify and recover missed revenue opportunities through accurate audits.",
       },
       {
-        icon: <AlertCircle />,
+        icon: <AlertCircle className="text-gray-400" />,
         title: "Error Detection",
         description:
           "Uncover and correct coding and billing errors to avoid claim rejections.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
         description:
           "Ensure adherence to regulations and guidelines to avoid legal penalties.",
       },
       {
-        icon: <Settings />,
+        icon: <Settings className="text-gray-400" />,
         title: "Improved Provider Efficiency",
         description: "Ensure faster payment processing and financial health.",
       },
       {
-        icon: <BarChart />,
+        icon: <BarChart className="text-gray-400" />,
         title: "Data-Driven Insights",
         description:
           "Gain actionable insights to improve billing accuracy and performance.",
       },
       {
-        icon: <Smile />,
+        icon: <Smile className="text-gray-400" />,
         title: "Enhanced Patient Satisfaction",
         description:
           "Accurate billing audits reduce patient complaints and increase trust.",
@@ -289,37 +289,37 @@ export const serviceDetails = [
       "BellClinix’s Physician Credentialing Service (PCS) automates the intricate process of medical credentialing to save you time, minimize errors, and provide you the opportunity to remain focused on clinical decision making and better patient care. We are adding a member to your practice whether you are a new physician or expanding to a new location, our PCS shall streamline the credentialing process for you. Our seasoned team backed by over a decade of collective experience, identifies intricacies, alleviates burdens, and ensures compliance, letting you concentrate on your patient care. Additionally, BellClinix provides tailored provider credentialing services, including automated verification, real-time updates, and personalized support, ensuring smoother operations and compliance.",
     cards: [
       {
-        icon: <FileText />,
+        icon: <FileText className="text-gray-400" />,
         title: "Streamlined Documentation",
         description:
           "Ensure accurate and complete credentialing documents for faster approvals.",
       },
       {
-        icon: <Clock />,
+        icon: <Clock className="text-gray-400" />,
         title: "Reduced Turnaround Time",
         description:
           "Accelerate the credentialing process to minimize delays in provider enrollment.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
         description:
           "Maintain adherence to regulatory and payer requirements for credentialing.",
       },
       {
-        icon: <Layers />,
+        icon: <Layers className="text-gray-400" />,
         title: "Credential Tracking",
         description:
           "Monitor and manage credentialing status for continuous compliance.",
       },
       {
-        icon: <Users />,
+        icon: <Users className="text-gray-400" />,
         title: "Dedicated Support Team",
         description:
           "Expert guidance to resolve credentialing challenges efficiently.",
       },
       {
-        icon: <Lock />,
+        icon: <Lock className="text-gray-400" />,
         title: "Data Security",
         description:
           "Ensure the secure handling of sensitive provider information.",
@@ -339,37 +339,37 @@ export const serviceDetails = [
       "BellClinix’s Healthcare IT professionals are focused at modernizing and optimizing healthcare delivery We offer healthcare IT services ranging from infrastructure, mobility, security and data management to managed services. Our IT team equipped with cutting edge technology, AI and more than a decade experience, is instrumental at developing and deploying IT ecosystem for your specific needs to meet data, performance, compliance and security. We ensure enhanced patient engagement through seamless integration of electronic health record (EHR), website and web applications, cloud services and telehealth supporting smartphones, tablets and mobile apps while reducing the IT burden.",
     cards: [
       {
-        icon: <Settings />,
+        icon: <Settings className="text-gray-400" />,
         title: "Streamlined Operations",
         description:
           "Optimize your healthcare workflow with integrated solutions, reducing overhead and improving efficiency.",
       },
       {
-        icon: <ShieldCheck />,
+        icon: <ShieldCheck className="text-gray-400" />,
         title: "Enhanced Security",
         description:
           "Protect sensitive data with top-tier security measures, ensuring patient information remains safe and secure.",
       },
       {
-        icon: <Smile />,
+        icon: <Smile className="text-gray-400" />,
         title: "Improved Patient Experience",
         description:
           "Provide patients with a seamless digital experience, including easier access to their healthcare records and appointment scheduling.",
       },
       {
-        icon: <BarChart />,
+        icon: <BarChart className="text-gray-400" />,
         title: "Data-Driven Insights",
         description:
           "Leverage analytics to make informed decisions that improve care quality and operational performance.",
       },
       {
-        icon: <Activity />,
+        icon: <Activity className="text-gray-400" />,
         title: "Instant Access to Emergency Care",
         description:
           "Provide quick access to emergency medical records, ensuring faster, more efficient responses in critical situations.",
       },
       {
-        icon: <Video />,
+        icon: <Video className="text-gray-400" />,
         title: "Telemedicine Integration",
         description:
           "Expand your healthcare reach with telemedicine solutions, offering virtual consultations and remote patient monitoring.",

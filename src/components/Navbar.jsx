@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-black");
+      setBgColor("bg-[#303a73]");
       setLogoPosition("flex-1");
     } else {
       setBgColor("bg-transparent");
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div></div>
         <div className={`text-2xl text-center ${logoPosition}`}>
           <Link onClick={moveUp} to="/">
-            <img src="/BellClinix.gif" alt="Logo" className="h-24 w-auto" />
+            <img src="/logo.svg" alt="Logo" className="h-20 w-auto" />
           </Link>
           {/* Display Text Below the Logo When Navbar Is Open */}
           {/* {isSidebarOpen && (
