@@ -56,12 +56,12 @@ const Navbar = () => {
             <img src="/BellClinix.gif" alt="Logo" className="h-24 w-auto" />
           </Link>
           {/* Display Text Below the Logo When Navbar Is Open */}
-          {isSidebarOpen && (
+          {/* {isSidebarOpen && (
             <div className="text-white text-lg mt-2">
               <h1>Bell Clinix</h1>
               <h2>Efficient</h2>
             </div>
-          )}
+          )} */}
         </div>
 
         <button
