@@ -29,6 +29,11 @@ export const services = [
     title: "Medical Billing",
     description:
       "Streamline your revenue cycle with our efficient and accurate billing services.",
+    list: [
+      "Claims submission and follow-up",
+      "Payment posting and reconciliation",
+      "Insurance verification and eligibility",
+    ],
     color: "from-emerald-400 to-teal-300",
   },
   {
@@ -36,6 +41,11 @@ export const services = [
     title: "Medical Coding",
     description:
       "Ensure compliance and accuracy in claims with our precise coding solutions.",
+    list: [
+      "ICD-10 and CPT coding expertise",
+      "Compliance with HIPAA regulations",
+      "Code auditing and documentation review",
+    ],
     color: "from-sky-400 to-blue-300",
   },
   {
@@ -43,6 +53,11 @@ export const services = [
     title: "AR & Denial Management",
     description:
       "Optimize cash flow with our proactive approach to reducing denials.",
+    list: [
+      "Denial analysis and resolution",
+      "Appeals and reconsiderations",
+      "Aging accounts management",
+    ],
     color: "from-amber-400 to-yellow-300",
   },
   {
@@ -50,6 +65,11 @@ export const services = [
     title: "Audit Services",
     description:
       "Maintain accuracy and compliance with our comprehensive audit solutions.",
+    list: [
+      "Internal coding audits",
+      "Regulatory compliance reviews",
+      "Risk management and fraud prevention",
+    ],
     color: "from-rose-400 to-pink-300",
   },
   {
@@ -57,6 +77,11 @@ export const services = [
     title: "Credentialing",
     description:
       "Streamline your provider and payer credentialing processes seamlessly.",
+    list: [
+      "Provider enrollment and contracting",
+      "Credentialing with insurance networks",
+      "Ongoing re-credentialing services",
+    ],
     color: "from-violet-400 to-purple-300",
   },
   {
@@ -64,6 +89,11 @@ export const services = [
     title: "Healthcare IT",
     description:
       "Leverage cutting-edge IT solutions tailored for the healthcare industry.",
+    list: [
+      "EHR/EMR implementation",
+      "Cybersecurity solutions",
+      "Data analytics and reporting",
+    ],
     color: "from-indigo-400 to-blue-300",
   },
 ];
