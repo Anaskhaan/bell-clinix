@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Logo Section */}
           <motion.div variants={fadeInVariants} className="space-y-4">
             <img
-              src="BellClinix-unscreen.gif"
+              src="BellClinix.gif"
               alt="bellclinix Logo"
               className="h-auto -ml-3 w-44"
             />

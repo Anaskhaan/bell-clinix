@@ -51,10 +51,17 @@ const Navbar = () => {
         className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-2 z-50`}
       >
         <div></div>
-        <div className={`text-2xl  text-center ${logoPosition}`}>
+        <div className={`text-2xl text-center ${logoPosition}`}>
           <Link onClick={moveUp} to="/">
-            <img src="/headerlogo.gif" alt="Logo" className="h-24 w-auto" />
+            <img src="/BellClinix.gif" alt="Logo" className="h-24 w-auto" />
           </Link>
+          {/* Display Text Below the Logo When Navbar Is Open */}
+          {isSidebarOpen && (
+            <div className="text-white text-lg mt-2">
+              <h1>Bell Clinix</h1>
+              <h2>Efficient</h2>
+            </div>
+          )}
         </div>
 
         <button
@@ -62,7 +69,7 @@ const Navbar = () => {
           className="text-white bg-transparent focus:outline-none relative z-50"
         >
           <div
-            className={`hamburger flex flex-col  justify-between w-8 h-5 transition-all duration-300 ease-in-out ${
+            className={`hamburger flex flex-col justify-between w-8 h-5 transition-all duration-300 ease-in-out ${
               isSidebarOpen ? "open" : ""
             }`}
           >
@@ -89,7 +96,7 @@ const Navbar = () => {
             <div
               className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
                 isSidebarOpen
-                  ? "rotate-[45deg] translate-y-[8.2px]  scale-x-100"
+                  ? "rotate-[45deg] translate-y-[8.2px] scale-x-100"
                   : "scale-x-0"
               } origin-right`}
             ></div>
@@ -98,7 +105,7 @@ const Navbar = () => {
             <div
               className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
                 isSidebarOpen
-                  ? "rotate-[-45deg] translate-y-[6px] translate-x-2  scale-x-100"
+                  ? "rotate-[-45deg] translate-y-[6px] translate-x-2 scale-x-100"
                   : "scale-x-0"
               } origin-left`}
             ></div>
@@ -114,12 +121,12 @@ const Navbar = () => {
         }`}
         style={{ transition: "all 0.5s ease-in-out" }}
       >
-        <div className="flex flex-col justify-center items-center  h-full space-y-5">
+        <div className="flex flex-col justify-center items-center h-full space-y-5">
           {tabs.map((tab, index) => (
             <Link
               key={index}
               to={tab.path}
-              className="lg:text-6xl text-3xl hover:text-[#56bafc] "
+              className="lg:text-6xl text-3xl hover:text-[#56bafc]"
               onClick={handleTabClick}
             >
               <motion.div
