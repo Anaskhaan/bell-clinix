@@ -5,14 +5,14 @@ export default function WeAre() {
         We are BellClinix
       </h1>
 
-      <p className="mt-4 md:mt-6 text-base md:text-lg w-full md:w-3/5 text-justify">
+      <p className="mt-4 md:mt-6 text-md xl:text-lg lg:text-lg w-full md:w-3/5 text-justify">
         BellClinix provides precise and efficient billing solutions tailored to
         the unique financial needs of healthcare practices. Our specialized
         evaluation process optimizes revenue cycles, ensuring compliance and
         financial stability.
       </p>
 
-      <ul className="mt-6 space-y-2 text-left w-full md:w-3/5">
+      <ul className="mt-6 space-y-2 xl:text-lg lg:text-lg text-md md:text-sm sm:text-sm text-left w-full md:w-3/5">
         <li className="flex items-start">
           <span className="text-[#303a73] font-semibold">•</span>
           <span className="ml-2">

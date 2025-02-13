@@ -52,7 +52,7 @@ const ServiceDetail = () => {
           {service.cards.map((card, index) => (
             <div
               key={index}
-              className="bg-[#303a73] p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col justify-between"
+              className="bg-[#303a73]  p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col justify-between"
             >
               <div>
                 <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
@@ -61,13 +61,13 @@ const ServiceDetail = () => {
                 <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">
                   {card.title}
                 </h3>
-                <p className="text-sm md:text-base text-gray-200 mb-4">
+                <p className="text-md md:text-base text-gray-200 mb-4">
                   {card.description}
                 </p>
               </div>
               {card.list && (
                 <div className="mt-auto">
-                  <p className="text-lg font-semibold text-white text-left mb-1">
+                  <p className="text-md font-semibold text-white text-left mb-1">
                     Key Features:
                   </p>
                   <ul className="text-sm md:text-base text-gray-300 text-left list-disc pl-5">
