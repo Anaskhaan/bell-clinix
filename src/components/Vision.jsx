@@ -98,7 +98,7 @@ const Vision = () => {
         </div>
 
         {/* Vision Content */}
-        <div className="text-[#303a73] p-6     bg-white rounded-3xl shadow-2xl text-center flex flex-col justify-center">
+        <div className="text-[#303a73] p-6 bg-white rounded-3xl shadow-2xl text-center flex flex-col justify-center">
           <motion.h1
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -118,7 +118,7 @@ const Vision = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1.2 }}
-            className="text-md sm:text-md md:text-lg text-gray-700 mb-4 sm:mb-6 text-left leading-relaxed"
+            className="text-md sm:text-md md:text-lg text-gray-700 mb-4 sm:mb-6 text-justify leading-relaxed"
           >
             BellClinix aims to revolutionize healthcare revenue management by
             providing innovative solutions, ensuring seamless billing processes,

@@ -156,7 +156,7 @@ const Navbar = () => {
                 }
               >
                 {tab.icon}
-                <h1 className="relative font-custom duration-300 group">
+                <h1 className="relative text-xl duration-300 group">
                   {tab.name}
 
                   <span className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"></span>
