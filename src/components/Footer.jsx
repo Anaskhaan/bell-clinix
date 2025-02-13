@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white">
       <motion.div
-        className="container   py-12 px-6"
+        className="container lg:px-2 xl:px-2 px-0 py-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -29,12 +29,12 @@ export default function Footer() {
             <img
               src="logo.svg"
               alt="bellclinix Logo"
-              className="lg:h-20 xl:h-32 h-12 mt-2 w-auto"
+              className="lg:h-20 xl:h-32 h-10 ml-7 w-auto"
             />
-            <p className="text-sm  ml-4">
+            <p className="text-sm">
               2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
             </p>
-            <div className="flex space-x-4 ml-4">
+            <div className="flex space-x-4">
               {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
                 <a
                   key={idx}
@@ -72,20 +72,20 @@ export default function Footer() {
           <div className=" flex flex-col items-start text-left">
             <motion.div variants={fadeInVariants} className="space-y-4">
               <h3 className="text-lg font-bold text-white">Office</h3>
-              <a
+              <p
                 href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center"
+                className="flex items-center text-sm"
               >
                 {" "}
                 2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
-              </a>
+              </p>
             </motion.div>
 
             {/* Mailing Address */}
-            <motion.div variants={fadeInVariants} className="space-y-1">
-              <h3 className="text-lg font-bold">Mailing Address</h3>
+            <motion.div variants={fadeInVariants} className="py-4 space-y-4">
+              <h3 className="text-lg font-bold p">Mailing Address</h3>
               <p>
                 PO Box 7774
                 <br />
@@ -95,7 +95,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 href="tel:+447563087497"
-                className="hover:text-[#56bafc] text-white  duration-300 ease-in-out"
+                className="hover:text-[#56bafc] text-white  duration-300 ease-in-out flex items-center"
               >
                 +447563087497
               </a>

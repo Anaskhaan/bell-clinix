@@ -94,7 +94,7 @@ const ContactForm = () => {
                   className="flex text-black hover:text-[#56bafc] duration-300 ease-in-out items-center gap-4"
                 >
                   <Mail />
-                  info@BellClinix.com
+                  info@bellclinix.com
                 </a>
               </ul>
             </div>
