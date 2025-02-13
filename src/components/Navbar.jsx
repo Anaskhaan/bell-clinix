@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#303a73]");
+      setBgColor("bg-[#000]");
       setLogoPosition("justify-start");
     } else {
       setBgColor("bg-transparent");
@@ -57,7 +57,7 @@ const Navbar = () => {
             <img
               src="/logo.svg"
               alt="Logo"
-              className="lg:h-20 h-12 mt-2 w-auto"
+              className="lg:h-20 h-12 p-1 mt-2 w-auto"
             />
           </Link>
         </div>

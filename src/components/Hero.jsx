@@ -10,15 +10,15 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen  ">
       {/* Background Image with Gradient Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0  ">
         <img
           src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80"
           alt="Healthcare professionals"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-70" />
+        <div className="absolute inset-0  bg-black bg-opacity-70" />
       </div>
 
       {/* Hero Content */}
@@ -27,14 +27,14 @@ function Hero() {
           <div className="max-w-3xl">
             {/* Animated Elements */}
             <div
-              className={`transform transition-all duration-1000 ${
+              className={`transform lg:mt-20 2xl:mt-28 xl:mt-24 mt-0 transition-all duration-1000 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
               }`}
             >
               {/* Floating Icon */}
-              <div className="mb-8 animate-bounce">
+              <div className=" mb-2  animate-bounce">
                 <ClipboardPlus className="h-12 w-12 text-pink-500" />
               </div>
 
