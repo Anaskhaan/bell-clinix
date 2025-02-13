@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const tabs = [
-  { name: "Home", path: "/", icon: <Home size={40} /> },
-  { name: "What We Do", path: "/services", icon: <Briefcase size={40} /> },
-  { name: "Who We Are", path: "/about", icon: <Info size={40} /> },
-  { name: "Contact Us", path: "/contact", icon: <Mail size={40} /> },
+  { name: "Home", path: "/", icon: <Home size={25} /> },
+  { name: "What We Do", path: "/services", icon: <Briefcase size={25} /> },
+  { name: "Who We Are", path: "/about", icon: <Info size={25} /> },
+  { name: "Contact Us", path: "/contact", icon: <Mail size={25} /> },
 ];
 
 const Navbar = () => {
@@ -141,7 +141,7 @@ const Navbar = () => {
               onClick={handleTabClick}
             >
               <motion.div
-                className="flex items-center group space-x-4"
+                className="flex items-center group space-x-1"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 initial={{ opacity: 0, y: 100 }}
