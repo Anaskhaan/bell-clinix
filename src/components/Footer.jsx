@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white">
       <motion.div
-        className="container   py-12"
+        className="container   py-12 px-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -29,7 +29,7 @@ export default function Footer() {
             <img
               src="logo.svg"
               alt="bellclinix Logo"
-              className="h-20 w-auto px-4 ml-4"
+              className="lg:h-20 xl:h-32 h-12 mt-2 w-auto"
             />
             <p className="text-sm  ml-4">Located in Jackson Hole, WY</p>
             <div className="flex space-x-4 ml-4">
