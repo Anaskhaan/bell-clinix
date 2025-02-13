@@ -27,9 +27,9 @@ export default function Footer() {
           {/* Logo Section */}
           <motion.div variants={fadeInVariants} className="space-y-4">
             <img
-              src="logo.svg"
+              src="/logo.svg"
               alt="bellclinix Logo"
-              className="lg:h-20 xl:h-32 h-10 ml-7 w-auto"
+              className="lg:h-20 xl:h-32 h-10 ml-5  w-80 "
             />
             <p className="text-sm">
               2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
