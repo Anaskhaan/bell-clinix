@@ -45,9 +45,9 @@ const Services = () => {
                   <h4 className="mt-3 text-lg font-semibold text-[#303a73] group-hover:text-white">
                     Key Features:
                   </h4>
-                  <ul className="mt-2 list-disc list-inside text-md text-gray-700 group-hover:text-gray-100">
+                  <ul className="mt-2 list-disc list-inside  text-gray-700 group-hover:text-gray-100">
                     {service.list.map((item, index) => (
-                      <li key={index} className="text-sm">
+                      <li key={index} className="text-md">
                         {item}
                       </li>
                     ))}
