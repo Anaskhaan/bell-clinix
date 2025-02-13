@@ -11,7 +11,6 @@ function Hero() {
 
   return (
     <div className="relative min-h-screen  ">
-      {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0  ">
         <img
           src="/hero_converted.webp"

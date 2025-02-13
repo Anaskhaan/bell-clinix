@@ -70,9 +70,11 @@ const ServiceDetail = () => {
                   <p className="text-md font-semibold text-white text-left mb-1">
                     Key Features:
                   </p>
-                  <ul className="text-sm md:text-base text-gray-300 text-left list-disc pl-5">
+                  <ul className="text-sm md:text-base text-white text-left list-disc pl-5">
                     {card.list.map((item, idx) => (
-                      <li key={idx}>{item}</li>
+                      <li key={idx} className="text-white">
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>

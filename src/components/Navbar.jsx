@@ -15,16 +15,19 @@ const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
   const [logoPosition, setLogoPosition] = useState("flex-1");
   const [color, setCOlor] = useState("text-white");
+  const [logoImage, setLogoImage] = useState("/logoheader.svg"); // default logo
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setBgColor("bg-[#fff]");
       setLogoPosition("justify-start");
       setCOlor("text-black");
+      setLogoImage("/logoheader.svg"); // Revert logo to default
     } else {
       setBgColor("bg-transparent");
       setLogoPosition("lg:justify-center sm:justify-start");
       setCOlor("text-white");
+      setLogoImage("/logo.svg"); // Change logo on scroll
     }
   };
 
@@ -58,9 +61,9 @@ const Navbar = () => {
         >
           <Link onClick={moveUp} to="/">
             <img
-              src="/logoheader.svg"
+              src={logoImage} // Dynamically set the logo source
               alt="Logo"
-              className="lg:h-20 h-12 p-1 mt-2 w-auto"
+              className="lg:h-20 xl:h-32 h-10 ml-5 w-80" // Adjust size for large logo
             />
           </Link>
         </div>
