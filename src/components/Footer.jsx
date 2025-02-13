@@ -31,7 +31,9 @@ export default function Footer() {
               alt="bellclinix Logo"
               className="lg:h-20 xl:h-32 h-12 mt-2 w-auto"
             />
-            <p className="text-sm  ml-4">Located in Jackson Hole, WY</p>
+            <p className="text-sm  ml-4">
+              2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
+            </p>
             <div className="flex space-x-4 ml-4">
               {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
                 <a
@@ -70,11 +72,15 @@ export default function Footer() {
           <div className=" flex flex-col items-start text-left">
             <motion.div variants={fadeInVariants} className="space-y-4">
               <h3 className="text-lg font-bold text-white">Office</h3>
-              <p className="flex items-center">2301 Emancipation Hwy,</p>
-              <p className="flex items-center">
+              <a
+                href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
                 {" "}
-                Ste 101, Fredericksburg, VA 22401, USA
-              </p>
+                2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
+              </a>
             </motion.div>
 
             {/* Mailing Address */}
@@ -85,9 +91,23 @@ export default function Footer() {
                 <br />
                 Jackson, WY 83002
               </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="tel:+447563087497"
+                className="hover:text-[#56bafc] text-white  duration-300 ease-in-out"
+              >
+                +447563087497
+              </a>
 
-              <p>+447563087497</p>
-              <p className="flex items-center">info@bellclinix.com</p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:info@bellclinix.com"
+                className="flex items-center hover:text-[#56bafc] text-white  duration-300 ease-in-out"
+              >
+                info@bellclinix.com
+              </a>
             </motion.div>
           </div>
         </div>

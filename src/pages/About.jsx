@@ -72,10 +72,9 @@ export default function About() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-black p-24">
-            <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
+            <h1 className="text-white lg:text-5xl text-xl text-center p-6">
               About Us
             </h1>
-            <p className="flex justify-center items-center text-white text-xl gap-2"></p>
           </div>
         </div>
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
@@ -83,7 +82,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Why Choose BellClinix?
             </h2>
-            <p className="text-lg text-gray-700 text-left">
+            <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
               BellClinix is a leading company committed to optimizing your
               medical practice&apos;s revenue cycle management. Our strengths
               are best practice implementation utilizing skilled workforce
@@ -138,10 +137,10 @@ export default function About() {
 
       <section className="py-20 bg-[#56bafc] text-white text-center">
         <div className="container mx-auto">
-          <h2 className="lg:text-5xl text-4xl  font-bold mb-4">
+          <h2 className="lg:text-5xl text-xl  font-bold mb-4">
             Ready to Optimize Your Revenue Cycle?
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-md mb-6">
             Let our expert team help you streamline your medical billing and
             coding process.
           </p>

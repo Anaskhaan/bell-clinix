@@ -10,10 +10,9 @@ export default function Services() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-black p-24">
-            <h1 className="text-white lg:text-5xl text-2xl text-center p-6">
+            <h1 className="text-white lg:text-5xl text-xl text-center p-6">
               Our Services
             </h1>
-            <p className="flex justify-center items-center text-white text-xl gap-2"></p>
           </div>
         </div>
       </section>
@@ -23,12 +22,12 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold ">
             BellClinix – Simplifying Medical Billing & Coding
           </h2>
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-4 lg:text-xl xl:text-xl text-md leading-relaxed">
             At <span className="font-semibold">BellClinix</span>, we help
             healthcare providers streamline their revenue cycle with efficient,
             accurate, and hassle-free medical billing and coding solutions.
           </p>
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-4 lg:text-xl xl:text-xl text-md leading-relaxed">
             Our expert team ensures{" "}
             <span className="font-semibold">
               error-free claims, faster reimbursements,
@@ -40,7 +39,7 @@ export default function Services() {
             , allowing you to focus on patient care while we handle the
             complexities of billing.
           </p>
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-4 lg:text-xl xl:text-xl text-md leading-relaxed">
             Whether it&apos;s{" "}
             <span className="font-semibold">
               insurance verification, claims processing, denial management,

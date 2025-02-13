@@ -73,18 +73,29 @@ const ContactForm = () => {
             {/* Contact Details */}
             <div className="p-6 relative">
               <ul className="space-y-4 text-[#333]">
-                <li className="flex items-center gap-4">
+                <a
+                  href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-4"
+                >
                   <MapPin />
                   2301 EMANCIPATION HWY STE 101, FREDERICKSBURG, VA 22401 US
-                </li>
-                <li className="flex items-center gap-4">
+                </a>
+                <a
+                  href="tel:+4475653087497"
+                  className="flex items-center text-black hover:text-[#56bafc] duration-300 ease-in-out gap-4"
+                >
                   <Phone />
                   +4475653087497
-                </li>
-                <li className="flex items-center gap-4">
+                </a>
+                <a
+                  href="mailto:info@bellclinix.com"
+                  className="flex text-black hover:text-[#56bafc] duration-300 ease-in-out items-center gap-4"
+                >
                   <Mail />
                   info@BellClinix.com
-                </li>
+                </a>
               </ul>
             </div>
           </div>
