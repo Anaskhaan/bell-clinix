@@ -14,14 +14,17 @@ const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [bgColor, setBgColor] = useState("transparent");
   const [logoPosition, setLogoPosition] = useState("flex-1");
+  const [color, setCOlor] = useState("text-white");
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#000]");
+      setBgColor("bg-[#fff]");
       setLogoPosition("justify-start");
+      setCOlor("text-black");
     } else {
       setBgColor("bg-transparent");
       setLogoPosition("lg:justify-center sm:justify-start");
+      setCOlor("text-white");
     }
   };
 
@@ -64,35 +67,43 @@ const Navbar = () => {
 
         <button
           onClick={toggleSidebar}
-          className="text-white bg-transparent focus:outline-none relative z-50"
+          className={`bg-transparent focus:outline-none relative z-50 `}
         >
           <div
-            className={`hamburger flex flex-col justify-between w-8 h-5 transition-all duration-300 ease-in-out ${
+            className={`hamburger flex flex-col  justify-between w-8 h-5 transition-all duration-300 ease-in-out ${
               isSidebarOpen ? "open" : ""
             }`}
           >
             {/* Top Line */}
             <div
-              className={`h-[2px] mb-1 bg-white transition-all duration-300 ease-in-out ${
+              className={`h-[2px] mb-1 ${
+                color.split("-")[1] === "black" ? "bg-black" : "bg-white"
+              } transition-all duration-300 ease-in-out ${
                 isSidebarOpen ? "scale-x-0" : "scale-x-100"
               } origin-right`}
             ></div>
 
             {/* Middle Line */}
             <div
-              className={`h-[2px] mb-1 bg-white transition-all duration-500 ease-in-out ${
+              className={`h-[2px] mb-1 ${
+                color.split("-")[1] === "black" ? "bg-black" : "bg-white"
+              } transition-all duration-500 ease-in-out ${
                 isSidebarOpen ? "scale-x-0" : "scale-x-100"
               } origin-right`}
             ></div>
             <div
-              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+              className={`h-[2px] ${
+                color.split("-")[1] === "black" ? "bg-black" : "bg-white"
+              } transition-all duration-500 ease-in-out ${
                 isSidebarOpen ? "scale-x-0" : "scale-x-90"
               } origin-right`}
             ></div>
 
             {/* Bottom Line 1 (forming the top part of the cross) */}
             <div
-              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+              className={`h-[2px] ${
+                color.split("-")[1] === "black" ? "bg-black" : "bg-white"
+              } transition-all duration-500 ease-in-out ${
                 isSidebarOpen
                   ? "rotate-[45deg] translate-y-[8.2px] scale-x-100"
                   : "scale-x-0"
@@ -101,7 +112,9 @@ const Navbar = () => {
 
             {/* Bottom Line 2 (forming the bottom part of the cross) */}
             <div
-              className={`h-[2px] bg-white transition-all duration-500 ease-in-out ${
+              className={`h-[2px] ${
+                color.split("-")[1] === "black" ? "bg-black" : "bg-white"
+              } transition-all duration-500 ease-in-out ${
                 isSidebarOpen
                   ? "rotate-[-45deg] translate-y-[6px] translate-x-2 scale-x-100"
                   : "scale-x-0"
