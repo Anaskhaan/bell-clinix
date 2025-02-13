@@ -1,61 +1,3 @@
-// import { useState } from "react";
-// import { Plus, Minus } from "lucide-react";
-
-// export default function FAQs() {
-//   const [openIndex, setOpenIndex] = useState(null);
-
-//   const faqs = [
-
-//   ];
-
-//   const toggleAccordion = (index) => {
-//     setOpenIndex(openIndex === index ? null : index);
-//   };
-
-//   return (
-//     <div className="mx-auto p-6 sm:p-12 lg:p-24 bg-[#303a73] text-white">
-//       <div className="mb-6">
-//         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
-//           Frequently Asked
-//           <span className="text-[#56bafc] ml-2">Questions</span>
-//         </h2>
-//       </div>
-//       <div className="space-y-4">
-//         {faqs.map((faq, index) => (
-//           <div
-//             className="accordion rounded-lg shadow-md bg-[#1f274f]"
-//             key={index}
-//           >
-//             <button
-//               type="button"
-//               className="w-full text-sm sm:text-base outline-none text-left font-semibold py-4 px-3 sm:py-6 sm:px-4 flex items-center text-white rounded-t-lg hover:text-[#56bafc] transition-all duration-300"
-//               onClick={() => toggleAccordion(index)}
-//               aria-expanded={openIndex === index}
-//             >
-//               <span className="mr-4">{faq.question}</span>
-//               {openIndex === index ? (
-//                 <Minus className="w-5 h-5 ml-auto shrink-0 text-[#56bafc] transition-all duration-300" />
-//               ) : (
-//                 <Plus className="w-5 h-5 ml-auto shrink-0 text-[#56bafc] transition-all duration-300" />
-//               )}
-//             </button>
-//             <div
-//               className={`transition-all duration-500 ease-in-out ${
-//                 openIndex === index
-//                   ? "max-h-[1000px] pb-4 sm:pb-6 overflow-visible"
-//                   : "max-h-0 invisible overflow-hidden"
-//               }`}
-//             >
-//               <p className="text-xs sm:text-sm text-gray-300 px-4 sm:px-6 pb-4 sm:pb-6">
-//                 {faq.answer}
-//               </p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -141,7 +83,7 @@ export default function FAQs() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="px-4 pb-6 text-white/80 leading-relaxed">
+                    <p className="px-4 pb-6 text-white/80 leading-relaxed text-md">
                       {item.answer}
                     </p>
                   </motion.div>
