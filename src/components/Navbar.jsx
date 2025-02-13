@@ -58,7 +58,7 @@ const Navbar = () => {
         >
           <Link onClick={moveUp} to="/">
             <img
-              src="/logo.svg"
+              src="/logoheader.svg"
               alt="Logo"
               className="lg:h-20 h-12 p-1 mt-2 w-auto"
             />
