@@ -4,30 +4,30 @@ import { ChevronDown } from "lucide-react";
 
 const faqData = [
   {
-    question: "What is medical billing, and why is it important?",
+    question: "What services does BellClinix Provide?",
     answer:
-      "Medical billing is the process of submitting and following up on claims with health insurance companies to receive payment for services rendered by healthcare providers. It ensures accurate reimbursement, reduces errors, and helps healthcare facilities maintain financial stability.",
+      "We offer comprehensive services in medical billing, medical coding, AR and denial management, audits, credentialing, and healthcare IT solutions to optimize revenue cycle management (RCM).",
   },
   {
-    question: "What is medical coding, and how does it work?",
+    question: "What type of healthcare providers do you serve?",
     answer:
-      "Medical coding involves translating healthcare diagnoses, procedures, and medical services into standardized codes. These codes are essential for insurance claims processing and ensure accurate billing and compliance with industry regulations.",
+      "We work with clinics/medical centers, hospitals, private practices, and healthcare organizations across the United States",
   },
   {
-    question: "How can outsourcing medical billing benefit my practice?",
+    question: " How does BellClinix improve cash flow for providers?",
     answer:
-      "Outsourcing medical billing allows healthcare providers to focus on patient care while reducing administrative burdens. It improves claim accuracy, ensures compliance, accelerates reimbursements, and minimizes denials, leading to increased revenue.",
-  },
-  {
-    question: "What are claim denials, and how can they be prevented?",
-    answer:
-      "Claim denials occur when an insurance company refuses to pay for a submitted claim due to errors, missing information, or policy restrictions. They can be prevented by ensuring accurate coding, verifying patient insurance, and submitting complete documentation.",
+      "By streamlining billing operations, reducing claim rejections, and accelerating payment cycles, we help healthcare providers maximize revenue",
   },
   {
     question:
-      "What is revenue cycle management (RCM), and why is it essential?",
+      "What makes Bell Clinics different from other medical billing companies?",
     answer:
-      "Revenue Cycle Management (RCM) is the financial process that healthcare facilities use to track patient care from appointment scheduling to final payments. Effective RCM reduces revenue leakage, enhances cash flow, and improves financial performance.",
+      "We combine advanced technology, professional mastery, and a client-focused approach to deliver seamless billing, and RCM solutions tailored to each provider's needs.",
+  },
+  {
+    question: " How can I get started with BellClinix?",
+    answer:
+      "Simply contact us through our website or phone and our team will make the step-up process smooth and simple for you.",
   },
   {
     question: "How do you ensure HIPAA compliance in medical billing?",

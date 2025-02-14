@@ -80,18 +80,21 @@ export default function About() {
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
           <div className="max-w-4xl text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose BellClinix?
+              Medical Billing & Revenue Cycle Experts
             </h2>
             <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
-              BellClinix is a leading company committed to optimizing your
-              medical practice&apos;s revenue cycle management. Our strengths
-              are best practice implementation utilizing skilled workforce
-              extension in Revenue Cycle Management. Certified medical coders
-              and billers deploy the best medical billing and coding practices
-              for clinicians wishing to outsource medical billing and coding.
-              Specialized expert teams at BellClinix are trained to ensure swift
-              recovery of Aged Receivables and quickly troubleshoot insurance
-              claim denials for your healthcare organization.
+              BellClinix&apos;s expertise lies in medical billing, coding, and
+              RCM services which provide complete financial solutions to
+              healthcare professionals throughout the United States. We are
+              determined to support medical centers, hospitals, private
+              practices, and healthcare organizations to optimize their billing
+              operations, reduce claim denials, and accelerate reimbursements
+              for improved cash flow. BellClinix deals with empowering
+              healthcare providers with innovative, reliable, and transparent
+              digital billing solutions. With a dedicated team and a
+              patient-centered approach, we concentrate on financial success,
+              facilitating healthcare professionals to provide their services
+              without the stress of revenue management.
             </p>
           </div>
         </div>
