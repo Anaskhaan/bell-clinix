@@ -8,9 +8,13 @@ const Contact = () => {
           <h1 className="text-white lg:text-5xl text-xl text-center p-6">
             Contact Us
           </h1>
-          <p className="flex justify-center items-center text-white text-xl gap-2"></p>
         </div>
       </div>
+      {/* <p className="flex justify-center items-center  text-xl gap-2">
+        For any medical inquiries, support, or feedback, contact us. We are here
+        to assist with professional billing, coding, and revenue cycle
+        management services.
+      </p> */}
       <ContactForm />
     </div>
   );

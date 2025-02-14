@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, ClipboardPlus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,6 +12,35 @@ function Hero() {
 
   return (
     <div className="relative min-h-screen  ">
+      <Helmet>
+        <title>
+          Bell Clinics | Trusted Medical Solutions for US Healthcare Providers
+        </title>
+        <meta
+          name="description"
+          content="Bell Clinics helps healthcare providers optimize revenue with expert medical billing, coding, AR and denial management, audits, credentialing, and IT solutions."
+        />
+        <meta
+          name="keywords"
+          content="medical billing company,
+                    digital billing services,
+                    medical billing,
+                    medical billing services,
+                    medical billing coding,
+                    medical billing and coding,
+                    medical coding,
+                    medical and billing,
+                    medical bill,
+                    revenue cycle management,
+                    rcm services,
+                    revenue cycle management services,
+                    rcm in medical billing,
+                    revenue cycle management in medical billing,
+                    healthcare providers,
+                    Healthcare professionals,
+"
+        />
+      </Helmet>
       <div className="absolute inset-0  ">
         <img
           src="/hero_converted.webp"

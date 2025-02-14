@@ -7,6 +7,7 @@ import "@fontsource/montserrat/700.css"; // Bold for headings
 import "@fontsource/inter"; // Default Inter font
 import "@fontsource/inter/400.css"; // Regular body font
 import LoadingScreen from "./components/Helpers/LoadingScreen";
+import { HelmetProvider } from "react-helmet-async";
 
 const App = lazy(() => import("./App")); // Lazy load App
 
@@ -14,7 +15,9 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Suspense fallback={<LoadingScreen />}>
-        <App />
+        <HelmetProvider>
+          <App />
+        </HelmetProvider>
       </Suspense>
     </BrowserRouter>
   </StrictMode>
