@@ -118,7 +118,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:info@bellclinix.com"
-                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
+                className="flex items-center space-x-3 text-gray-300 hover:text-blue-300 transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
                 <span>info@bellclinix.com</span>
