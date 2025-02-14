@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Eye, Target } from "lucide-react";
+import { Eye } from "lucide-react";
 
 const Vision = () => {
   return (
@@ -58,20 +58,6 @@ const Vision = () => {
             <li>Driving innovation in medical revenue management.</li>
             <li>Ensuring exceptional patient care remains the priority.</li>
           </ul>
-
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="mt-6 sm:mt-8"
-          >
-            <Target
-              className="text-[#303a73] mx-auto animate-pulse"
-              size={42}
-              sm:size={48}
-              md:size={52}
-            />
-          </motion.div>
         </div>
       </div>
     </motion.div>

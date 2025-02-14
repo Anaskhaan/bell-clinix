@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Facebook, Linkedin, Instagram } from "lucide-react";
+import {
+  Facebook,
+  Linkedin,
+  Instagram,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -13,33 +20,45 @@ const staggerContainer = {
   },
 };
 
+const socialLinks = [
+  { Icon: Facebook, href: "#", label: "Facebook" },
+  { Icon: Linkedin, href: "#", label: "LinkedIn" },
+  { Icon: Instagram, href: "#", label: "Instagram" },
+];
+
+const quickLinks = [
+  { name: "Who We Are", path: "/about" },
+  { name: "What We Do", path: "/services" },
+  { name: "Contact Us", path: "/contact" },
+];
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white">
+    <footer className="w-full bg-gradient-to-b from-gray-900 to-black text-white">
       <motion.div
-        className="container lg:px-2 xl:px-2 px-0 py-12"
+        className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:-ml-2 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={staggerContainer}
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-start">
-          {/* Logo Section */}
-          <motion.div variants={fadeInVariants} className="space-y-4">
-            <img
-              src="/logo.svg"
-              alt="bellclinix Logo"
-              className="lg:h-20 xl:h-32 h-10 ml-5  w-80 "
-            />
-            <p className="text-sm">
-              2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Brand Section */}
+          <motion.div variants={fadeInVariants} className="space-y-6 ">
+            <Link to="/" className="block">
+              <img src="/logo.svg" className="h-12 w-auto ml-2ml-2" />
+            </Link>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Providing exceptional healthcare services with a focus on patient
+              comfort and well-being.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
+              {socialLinks.map(({ Icon, href, label }) => (
                 <a
-                  key={idx}
-                  href="#"
-                  className="text-white hover:text-gray-300"
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-gray-800"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
@@ -48,81 +67,90 @@ export default function Footer() {
           </motion.div>
 
           {/* Quick Links */}
-          <motion.div variants={fadeInVariants} className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Quick Links</h3>
-            <ul className="space-y-2">
-              {[
-                { name: "Who We Are", path: "/about" },
-                { name: "What We Do", path: "/services" },
-                { name: "Contact Us", path: "/contact" },
-              ].map((link, index) => (
-                <li key={index}>
+          <motion.div variants={fadeInVariants} className="space-y-6">
+            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-white hover:underline hover:text-gray-300"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center space-x-2"
                   >
-                    {link.name}
+                    <span className="hover:translate-x-1 transition-transform duration-300">
+                      {link.name}
+                    </span>
                   </Link>
                 </li>
               ))}
             </ul>
           </motion.div>
 
-          {/* Contact Details */}
-          <div className=" flex flex-col items-start text-left">
-            <motion.div variants={fadeInVariants} className="space-y-4">
-              <h3 className="text-lg font-bold text-white">Office</h3>
-              <p
+          {/* Contact Information */}
+          <motion.div variants={fadeInVariants} className="space-y-6">
+            <h3 className="text-lg font-semibold text-white">
+              Office Location
+            </h3>
+            <div className="space-y-4">
+              <a
                 href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center text-sm"
+                className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
               >
-                {" "}
-                2301 Emancipation Hwy,Ste 101, Fredericksburg, VA 22401, USA
-              </p>
-            </motion.div>
+                <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+                <span>
+                  2301 Emancipation Hwy, Ste 101, Fredericksburg, VA 22401, USA
+                </span>
+              </a>
+            </div>
+          </motion.div>
 
-            {/* Mailing Address */}
-            <motion.div variants={fadeInVariants} className="py-4 space-y-4">
-              <h3 className="text-lg font-bold p">Mailing Address</h3>
-              <p>
-                PO Box 7774
-                <br />
-                Jackson, WY 83002
-              </p>
+          {/* Contact Details */}
+          <motion.div variants={fadeInVariants} className="space-y-6">
+            <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+            <div className="space-y-4">
               <a
-                target="_blank"
-                rel="noreferrer"
                 href="tel:+447563087497"
-                className="hover:text-[#56bafc] text-white  duration-300 ease-in-out flex items-center"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
               >
-                +447563087497
+                <Phone className="w-5 h-5" />
+                <span>+44 756 308 7497</span>
               </a>
-
               <a
-                target="_blank"
-                rel="noreferrer"
                 href="mailto:info@bellclinix.com"
-                className="flex items-center hover:text-[#56bafc] text-white  duration-300 ease-in-out"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
               >
-                info@bellclinix.com
+                <Mail className="w-5 h-5" />
+                <span>info@bellclinix.com</span>
               </a>
-            </motion.div>
-          </div>
+              <div className="pt-4">
+                <h4 className="text-sm font-semibold text-white mb-2">
+                  Mailing Address
+                </h4>
+                <p className="text-gray-300">
+                  2301 Emancipation Hwy, Ste 101,
+                  <br />
+                  Fredericksburg, VA 22401, USA
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
 
+      {/* Copyright Section */}
       <motion.div
-        className="mt-6 bg-black border-t border-gray-700 py-4"
+        className="border-t border-gray-800"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.6 } }}
         viewport={{ once: true }}
       >
-        <div className="flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm">
-            &copy; 2025 BellClinix. All rights reserved.
-          </p>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()} BellClinix. All rights reserved.
+            </p>
+          </div>
         </div>
       </motion.div>
     </footer>

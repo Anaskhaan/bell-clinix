@@ -34,47 +34,113 @@ const Stats = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <div className="py-16 px-3 bg-white bg-opacity-10">
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
-        Our Key Metrics
-      </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl items-center mx-auto sm:px-4">
-        {statData.map(
-          ({ icon: Icon, title, targetValue, description }, index) => {
-            const [value, setValue] = useState(0);
+    <div className="py-20 px-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <div className="max-w-[1920px] mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Key Metrics
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Delivering excellence through measurable performance and continuous
+            improvement
+          </p>
+        </motion.div>
 
-            useEffect(() => {
-              let startValue = 0;
-              const increment = targetValue / 100;
-              const timer = setInterval(() => {
-                startValue += increment;
-                if (startValue >= targetValue) {
-                  setValue(targetValue);
-                  clearInterval(timer);
-                } else {
-                  setValue(Math.round(startValue));
-                }
-              }, 30);
-              return () => clearInterval(timer);
-            }, [targetValue]);
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col lg:flex-row gap-4 justify-center items-stretch px-4"
+        >
+          {statData.map(
+            ({ icon: Icon, title, targetValue, description }, index) => {
+              const [value, setValue] = useState(0);
 
-            return (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                className="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-xl mx-auto border border-gray-200 max-w-md sm:w-full w-full"
-              >
-                <Icon size={40} className="text-gray-700 mb-4" />
-                <h2 className="text-[#303a73] text-5xl font-bold mb-2">
-                  {value}%
-                </h2>
-                <h3 className="text-xl font-semibold mb-3">{title}</h3>
-                <p className="text-md text-gray-600">{description}</p>
-              </motion.div>
-            );
-          }
-        )}
+              useEffect(() => {
+                let startValue = 0;
+                const increment = targetValue / 100;
+                const timer = setInterval(() => {
+                  startValue += increment;
+                  if (startValue >= targetValue) {
+                    setValue(targetValue);
+                    clearInterval(timer);
+                  } else {
+                    setValue(Math.round(startValue));
+                  }
+                }, 30);
+                return () => clearInterval(timer);
+              }, [targetValue]);
+
+              return (
+                <motion.div
+                  key={index}
+                  variants={cardVariants}
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow:
+                      "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                  }}
+                  className="relative bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 w-full lg:w-1/4 min-h-[300px] flex flex-col"
+                >
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-indigo-500" />
+                  <div className="p-6 flex flex-col h-full">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-2.5 bg-indigo-50 rounded-lg">
+                        <Icon size={28} className="text-black" />
+                      </div>
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                          delay: 0.5,
+                          type: "spring",
+                          stiffness: 200,
+                        }}
+                        className="text-3xl font-bold text-gray-700"
+                      >
+                        {value}%
+                      </motion.div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      {title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                      {description}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            }
+          )}
+        </motion.div>
       </div>
     </div>
   );
