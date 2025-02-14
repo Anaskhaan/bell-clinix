@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-2 z-50`}
+        className={`  ${bgColor} duration-300 ease-in-out fixed top-0 left-0 right-0 flex justify-between items-center px-6 z-50`}
       >
         <div
           className={`flex ${logoPosition} w-full transition-all duration-300`}
@@ -63,7 +63,7 @@ const Navbar = () => {
             <img
               src={logoImage} // Dynamically set the logo source
               alt="Logo"
-              className="lg:h-20 xl:h-32 h-10 ml-5 w-80" // Adjust size for large logo
+              className="lg:h-20 xl:h-32 h-10 -ml-2 w-80" // Adjust size for large logo
             />
           </Link>
         </div>
