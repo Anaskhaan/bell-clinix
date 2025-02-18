@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import CustomCursor from "./components/CustomCursor";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop";
@@ -12,7 +11,6 @@ import ServiceDetail from "./components/ServiceDetail";
 function App() {
   return (
     <>
-      <CustomCursor />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

@@ -79,7 +79,7 @@ export default function About() {
         </div>
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
           <div className="max-w-4xl text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl  md:text-5xl w-2/1 lg:w-2/3 xl:w-2/3 2xl:w-2/3 font-bold text-gray-900 mb-4">
               Medical Billing & Revenue Cycle Experts
             </h2>
             <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
