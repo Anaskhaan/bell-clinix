@@ -46,11 +46,11 @@ export default function Footer() {
           {/* Brand Section */}
           <motion.div variants={fadeInVariants} className="space-y-6 ">
             <Link to="/" className="block">
-              <img src="/logo2.png" className="h-12 w-auto ml-2ml-2" />
+              <img src="/logo.svg" className="h-12 w-auto ml-2 lg:ml-0" />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Providing exceptional healthcare services with a focus on patient
-              comfort and well-being.
+              Maximizing Revenue, Minimizing Hassle – Focus on patient comfort
+              and well-being
             </p>
             <div className="flex space-x-4">
               {socialLinks.map(({ Icon, href, label }) => (
