@@ -22,12 +22,12 @@ const Navbar = () => {
       setBgColor("bg-[#fff]");
       setLogoPosition("justify-start");
       setCOlor("text-black");
-      setLogoImage("/logoheader.svg"); // Revert logo to default
+      setLogoImage("/logo.png"); // Revert logo to default
     } else {
       setBgColor("bg-transparent");
       setLogoPosition("lg:justify-center sm:justify-start");
       setCOlor("text-white");
-      setLogoImage("/logo.svg"); // Change logo on scroll
+      setLogoImage("/logo2.png"); // Change logo on scroll
     }
   };
 
