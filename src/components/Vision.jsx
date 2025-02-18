@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Eye, Target, ArrowRight } from "lucide-react";
+import { Target, ArrowRight } from "lucide-react";
 
 const Vision = () => {
   const containerVariants = {
@@ -17,7 +17,7 @@ const Vision = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="flex items-center justify-center py-12 px-4 md:py-20"
+      className="flex items-center justify-center py-2 px-4 md:py-20"
     >
       <div className="flex lg:flex-row-reverse xl:flex-row-reverse 2xl:flex-row-reverse flex-col gap-12 w-full max-w-5xl">
         {/* Mission Section */}

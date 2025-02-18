@@ -63,6 +63,8 @@ const Navbar = () => {
             <img
               src={logoImage} // Dynamically set the logo source
               alt="Logo"
+              width={1000}
+              height={1000}
               className="h-12 w-auto" // Adjust size for large logo
             />
           </Link>

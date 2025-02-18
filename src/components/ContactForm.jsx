@@ -55,7 +55,7 @@ const ContactForm = () => {
 
   return (
     <div className="min-h-screen bg-gray-200   text-gray-900">
-      <div className="container mx-auto  py-12 lg:py-24">
+      <div className="container mx-auto sm:px-4  p-2 lg:py-6">
         <div className="grid gap-8 lg:grid-cols-2 mb-12">
           {/* Left Side: Map & Contact Details */}
           <div className="flex-1 flex flex-col gap-6">
