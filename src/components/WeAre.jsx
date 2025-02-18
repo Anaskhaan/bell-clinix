@@ -1,6 +1,6 @@
 export default function WeAre() {
   return (
-    <div className="py-5 lg:py-20 bg-white flex flex-col items-center text-center px-4 md:px-0">
+    <div className="py-5 lg:py-10 bg-white flex flex-col items-center text-center px-4 md:px-0">
       <h1 className="text-3xl md:text-5xl font-bold text-[#303a73]">
         We are BellClinix
       </h1>
