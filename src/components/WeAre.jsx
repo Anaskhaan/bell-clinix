@@ -1,6 +1,6 @@
 export default function WeAre() {
   return (
-    <div className="py-20 bg-white flex flex-col items-center text-center px-4 md:px-0">
+    <div className="py-5 lg:py-20 bg-white flex flex-col items-center text-center px-4 md:px-0">
       <h1 className="text-3xl md:text-5xl font-bold text-[#303a73]">
         We are BellClinix
       </h1>
@@ -11,33 +11,6 @@ export default function WeAre() {
         evaluation process optimizes revenue cycles, ensuring compliance and
         financial stability.
       </p>
-
-      <ul className="mt-6 space-y-2 xl:text-lg lg:text-lg text-md md:text-sm sm:text-sm text-left w-full md:w-3/5">
-        <li className="flex items-start">
-          <span className="text-[#303a73] font-semibold">•</span>
-          <span className="ml-2">
-            Tailored billing solutions for healthcare providers
-          </span>
-        </li>
-        <li className="flex items-start">
-          <span className="text-[#303a73] font-semibold">•</span>
-          <span className="ml-2">
-            Focus on accuracy and efficiency in revenue management
-          </span>
-        </li>
-        <li className="flex items-start">
-          <span className="text-[#303a73] font-semibold">•</span>
-          <span className="ml-2">
-            Specialized evaluation process for optimization
-          </span>
-        </li>
-        <li className="flex items-start">
-          <span className="text-[#303a73] font-semibold">•</span>
-          <span className="ml-2">
-            Ensures compliance and financial stability
-          </span>
-        </li>
-      </ul>
     </div>
   );
 }

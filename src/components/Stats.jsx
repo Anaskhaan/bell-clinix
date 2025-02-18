@@ -66,7 +66,7 @@ const Stats = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Key Metrics
+            Performance Benchmarks
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Delivering excellence through measurable performance and continuous
