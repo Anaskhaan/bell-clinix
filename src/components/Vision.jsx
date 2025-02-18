@@ -28,7 +28,9 @@ const Vision = () => {
           <motion.div variants={itemVariants} className="space-y-2">
             <div className="flex items-center space-x-3 mb-2">
               <Target className="text-indigo-600 w-8 h-8" />
-              <h2 className="text-4xl font-bold text-gray-900">Our Mission</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+                Our Mission
+              </h2>
             </div>
             <div className="h-1 w-20 bg-indigo-600 rounded-full" />
           </motion.div>

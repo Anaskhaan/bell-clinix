@@ -19,7 +19,7 @@ export default function Services() {
 
       <section className="bg-gray-100 text-gray-800 py-12 px-6 md:px-12 lg:px-20">
         <div className="max-w-4xl mx-auto text-left">
-          <h2 className="text-3xl md:text-4xl font-bold ">
+          <h2 className="text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl md:text-5xl font-bold ">
             BellClinix – Simplifying Medical Billing & Coding
           </h2>
           <p className="mt-4 lg:text-xl xl:text-xl text-md leading-relaxed">

@@ -16,7 +16,7 @@ const Services = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-extrabold text-white text-center mb-12"
+          className="text-3xl md:text-5xl font-extrabold text-white text-center mb-12"
         >
           Professional Services
         </motion.h2>
