@@ -14,11 +14,11 @@ function Hero() {
     <div className="relative min-h-screen  ">
       <Helmet>
         <title>
-          Bell Clinics | Trusted Medical Solutions for US Healthcare Providers
+          BellClinix | Trusted Medical Solutions for US Healthcare Providers
         </title>
         <meta
           name="description"
-          content="Bell Clinics helps healthcare providers optimize revenue with expert medical billing, coding, AR and denial management, audits, credentialing, and IT solutions."
+          content="BellClinix helps healthcare providers optimize revenue with expert medical billing, coding, AR and denial management, audits, credentialing, and IT solutions."
         />
         <meta
           name="keywords"
