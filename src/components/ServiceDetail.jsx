@@ -76,7 +76,7 @@ const ServiceDetail = () => {
               {card.list && (
                 <div className="mt-auto ">
                   {/* "Key Features" Positioned Absolutely */}
-                  <p className="text-md font-semibold text-white absolute top-52 left-1/2 transform -translate-x-1/2">
+                  <p className="text-md font-semibold text-white absolute lg:top-52 top-[10.5rem] left-1/2 transform -translate-x-1/2">
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}
