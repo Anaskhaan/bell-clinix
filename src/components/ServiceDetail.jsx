@@ -24,8 +24,8 @@ const ServiceDetail = () => {
     <div className="min-h-screen lg:py-28 py-36 px-6 md:px-44 bg-black text-white">
       <div className="max-w-4xl mx-auto text-left">
         {/* Header */}
-        <Link className=" group" to="/">
-          <button className=" relative flex items-center justify-center hover:text-[#56bafc] duration-300 ease-in-out my-4 text-white">
+        <Link className="group" to="/">
+          <button className="relative flex items-center justify-center hover:text-[#56bafc] duration-300 ease-in-out my-4 text-white">
             <ArrowLeft /> Back to Home Page
             <span className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"></span>
           </button>
@@ -33,9 +33,16 @@ const ServiceDetail = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           {service.title}
         </h1>
-        <p className="text-base md:text-lg text-gray-300 mb-8">
-          {service.details}
-        </p>
+        <span></span>
+
+        {/* Details List */}
+        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8  pl-5">
+          {service.details.map((detail, index) => (
+            <li className="text-white" key={index}>
+              {detail}{" "}
+            </li>
+          ))}
+        </ul>
 
         {/* Learn More Button */}
         <div className="text-center mb-8">
@@ -49,10 +56,10 @@ const ServiceDetail = () => {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          {service.cards.map((card, index) => (
+          {service.cards?.map((card, index) => (
             <div
               key={index}
-              className="bg-[#303a73]  p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col justify-between"
+              className="bg-[#303a73] p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col relative"
             >
               <div>
                 <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
@@ -65,12 +72,15 @@ const ServiceDetail = () => {
                   {card.description}
                 </p>
               </div>
+
               {card.list && (
-                <div className="mt-auto">
-                  <p className="text-md font-semibold text-white text-left mb-1">
+                <div className="mt-auto ">
+                  {/* "Key Features" Positioned Absolutely */}
+                  <p className="text-md font-semibold text-white absolute lg:top-52 top-[10.5rem] left-1/2 transform -translate-x-1/2">
                     Key Features:
                   </p>
-                  <ul className="text-sm md:text-base text-white text-left list-disc pl-5">
+                  {/* List positioned below "Key Features" */}
+                  <ul className="text-sm md:text-base text-white list-disc pl-5 text-left mt-6">
                     {card.list.map((item, idx) => (
                       <li key={idx} className="text-white">
                         {item}

@@ -13,14 +13,7 @@ import {
   Smile,
   Clock,
   CrossIcon,
-  BarChart,
-  Lock,
   FileText,
-  UserCheck,
-  Layers,
-  Users,
-  Activity,
-  Video,
 } from "lucide-react";
 
 export const services = [
@@ -107,9 +100,13 @@ export const serviceDetails = [
         Services
       </h1>
     ),
-    details:
-      "BellClinix provides a one-stop solution to all your medical billing and coding glitches. We have specialty specific billing and coding experts. BellClinix’s medical billing audit specialist team is known for mastery of ICD-10 billing and effective auditing. We are committed to ensure healthcare providers get paid on time by using efficient claim submission, precise coding, vigilant A/R follow-up, Engage with our 24-hour medical billing and coding consultancy and elevate your practice by getting the medical billing assistance you require. We assist both large and small firms in overcoming missing, delayed, or underpaid claims",
-
+    details: [
+      "Ensure timely and accurate payments from insurance companies.",
+      "Properly coded claims prevent delays.",
+      "Faster claim submission improves cash flow.",
+      "Reduced payment delays lead to financial stability.",
+      "Expert auditing ensures compliance and accuracy.",
+    ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
@@ -154,15 +151,11 @@ export const serviceDetails = [
     ),
 
     details: [
-      "Accurate medical coding services to ensure compliance and proper claim management.",
-      "BellClinix’s Medical Coding Consulting Services provide expert solutions to healthcare organizations for improving their medical coding practices.",
-      "These services are designed to ensure accuracy, compliance, and efficiency in coding processes, which are essential for successful billing and revenue management.",
-      "Key Features of the Service:",
-      "• Accurate Coding: Ensures proper use of medical codes (ICD-10, CPT, HCPCS) for accurate documentation of diagnoses and procedures.",
-      "• Compliance: Helps meet healthcare regulations and insurance rules to avoid audits and claim denials.",
-      "• Custom Solutions: Provides tailored advice to improve coding workflows for clinics, hospitals, and specialty practices.",
-      "• Training: Offers staff training to enhance coding skills and stay updated on industry standards.",
-      "• Revenue Improvement: Identifies and fixes coding errors to prevent revenue losses and boost claim approvals.",
+      "Accurate coding maximizes reimbursements.",
+      "Proper use of ICD-10, CPT, HCPCS prevents claim denials.",
+      "Compliance with healthcare regulations ensures smooth processing.",
+      "Staff training enhances coding skills and efficiency.",
+      "Error-free submissions improve claim approval rates.",
     ],
     cards: [
       {
@@ -207,8 +200,13 @@ export const serviceDetails = [
       </h1>
     ),
 
-    details:
-      "BellClinix’s specialty-specific professionals handle Account Receivable (AR) and Denial Management as integral components of streaming medical billing revenue cycle management (RCM). Our AR team is focused on maintaining a healthy cash flow for your practice. They have mastery at tracking payments from patients and insurance payers separately ensuring transparency. Our effective AR solutions are perfect for revenue leakage prevention and optimizing financial performance. Our Denial management team is dedicated to troubleshooting, tracking, and following denied and unpaid claims from insurance companies. We are swift at identifying rectifying and re-submitting incorrect billing and coding via corrected proven procedures. BellClinix’s AR and Denial management team maintains a close collaboration with your in-house staff to resolve outright denials and underpayments.",
+    details: [
+      "Effective AR solutions maintain a healthy cash flow.",
+      "Tracking payments ensures financial transparency.",
+      "Proactive denial management reduces claim rejections.",
+      "Faster resolution of underpayments improves revenue.",
+      "Close collaboration with staff optimizes billing processes.",
+    ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
@@ -251,8 +249,13 @@ export const serviceDetails = [
         Services
       </h1>
     ),
-    details:
-      "BellClinix’s Medical billing and coding Audit team is focused on ensuring compliance, accuracy, and revenue optimization. Our audit expert team offers chart reviews, Risk Adjustment (RA) chart reviews, Documentation improvement Services, Post-audit education and training, and consultation services. We are instrumental in utilizing hierarchical condition categories, prospective and retrospective chart reviews, and providing tailored solutions based on unique needs, scope of work, and organizational goals.",
+    details: [
+      "Identify and recover lost revenue opportunities.",
+      "Prevent claim denials with accurate billing reviews.",
+      "Detect and rectify underpaid claims efficiently.",
+      "Ensure HIPAA and ICD-10 compliance.",
+      "Regular policy updates minimize compliance risks.",
+    ],
     cards: [
       {
         icon: <DollarSign className="text-gray-400" />,
@@ -295,8 +298,13 @@ export const serviceDetails = [
       </h1>
     ),
 
-    details:
-      "BellClinix’s Physician Credentialing Service (PCS) automates the intricate process of medical credentialing to save you time, minimize errors, and provide you the opportunity to remain focused on clinical decision making and better patient care. We are adding a member to your practice whether you are a new physician or expanding to a new location, our PCS shall streamline the credentialing process for you. Our seasoned team backed by over a decade of collective experience, identifies intricacies, alleviates burdens, and ensures compliance, letting you concentrate on your patient care. Additionally, BellClinix provides tailored provider credentialing services, including automated verification, real-time updates, and personalized support, ensuring smoother operations and compliance.",
+    details: [
+      "Automate provider credentialing for faster approvals.",
+      "Reduce documentation errors and verification delays.",
+      "Stay compliant with regulatory requirements.",
+      "Streamline payer enrollment for quick processing.",
+      "Minimize turnaround time for credentialing applications.",
+    ],
     cards: [
       {
         icon: <FileText className="text-gray-400" />,
@@ -339,8 +347,13 @@ export const serviceDetails = [
       </h1>
     ),
 
-    details:
-      "BellClinix’s Healthcare IT professionals are focused at modernizing and optimizing healthcare delivery We offer healthcare IT services ranging from infrastructure, mobility, security and data management to managed services. Our IT team equipped with cutting edge technology, AI and more than a decade experience, is instrumental at developing and deploying IT ecosystem for your specific needs to meet data, performance, compliance and security. We ensure enhanced patient engagement through seamless integration of electronic health record (EHR), website and web applications, cloud services and telehealth supporting smartphones, tablets and mobile apps while reducing the IT burden.",
+    details: [
+      "Optimize workflows with integrated IT solutions.",
+      "Enhance patient engagement through digital platforms.",
+      "Ensure data security with advanced encryption.",
+      "Improve operational efficiency with automated systems.",
+      "Provide seamless electronic health record (EHR) integration.",
+    ],
     cards: [
       {
         icon: <Settings className="text-gray-400" />,

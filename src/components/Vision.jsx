@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, ArrowRight } from "lucide-react";
+import { Target } from "lucide-react";
 
 const Vision = () => {
   const containerVariants = {
@@ -57,54 +57,11 @@ const Vision = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <ArrowRight className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                 <p className="text-gray-700">{item}</p>
               </motion.div>
             ))}
           </motion.div>
         </motion.div>
-
-        {/* Vision Content */}
-        {/* <motion.div
-          variants={itemVariants}
-          className="order-1 lg:order-2 flex flex-col justify-center space-y-8 p-8 bg-white rounded-[2rem] shadow-xl"
-        >
-          <motion.div variants={itemVariants} className="space-y-2">
-            <div className="flex items-center space-x-3 mb-2">
-              <Eye className="text-blue-600 w-8 h-8" />
-              <h2 className="text-4xl font-bold text-gray-900">Our Vision</h2>
-            </div>
-            <div className="h-1 w-20 bg-blue-600 rounded-full" />
-          </motion.div>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-lg text-gray-700 leading-relaxed"
-          >
-            BellClinix aims to revolutionize healthcare revenue management by
-            providing innovative solutions, ensuring seamless billing processes,
-            and enhancing financial growth for healthcare providers.
-          </motion.p>
-
-          <motion.div variants={itemVariants} className="space-y-4">
-            {[
-              "Empowering healthcare providers with seamless billing solutions",
-              "Enhancing financial growth through accuracy and compliance",
-              "Driving innovation in medical revenue management",
-              "Ensuring exceptional patient care remains the priority",
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                className="flex items-start space-x-3 bg-blue-50 p-4 rounded-xl"
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <ArrowRight className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                <p className="text-gray-700">{item}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div> */}
       </div>
     </motion.div>
   );
