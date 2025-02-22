@@ -85,7 +85,11 @@ const ServiceDetail = () => {
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}
-                  <ul className={`text-sm md:text-base text-white list-disc pl-5 text-left ${index >1 ? "mt-[100px]"  : "mt-20"  }  `}>
+                  <ul
+                    className={`text-sm md:text-base text-white list-disc pl-5 text-left ${
+                      index > 1 ? "mt-[100px]" : "mt-24"
+                    } `}
+                  >
                     {card.list.map((item, idx) => (
                       <li key={idx} className="text-white">
                         {item}
