@@ -33,7 +33,7 @@ const ServiceDetail = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           {service.title}
         </h1>
-        <span className=" text-white py-4 italic font-thin text-justify max-w-2xl">
+        <span className=" text-white text-justify max-w-2xl">
           {service.span()}
         </span>
 
@@ -85,7 +85,7 @@ const ServiceDetail = () => {
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}
-                  <ul className="text-sm md:text-base text-white list-disc pl-5 text-left mt-6">
+                  <ul className="text-sm md:text-base text-white list-disc pl-5 text-left mt-12 lg:mt-6">
                     {card.list.map((item, idx) => (
                       <li key={idx} className="text-white">
                         {item}
