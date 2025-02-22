@@ -94,29 +94,30 @@ export const services = [
 export const serviceDetails = [
   {
     title: "Medical Billing",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
-      </h1>
+    span: () => (
+      <span className="">
+        &quot;Our end-to-end billing service turns the complexities of medical
+        billing into seamless solutions, so you can focus on clinical decision
+        making.&quot;
+      </span>
     ),
     details: [
-      "Ensure timely and accurate payments from insurance companies.",
-      "Properly coded claims prevent delays.",
-      "Faster claim submission improves cash flow.",
-      "Reduced payment delays lead to financial stability.",
-      "Expert auditing ensures compliance and accuracy.",
+      "Time efficient electronic Claim Submission ",
+      "Specialty specific teams of experts",
+      "Accurate and real-time Eligibility Verification ",
+      "Evading underbilling through comprehensive Fee Analysis ",
+      "ExTracking your practice’s financial health utilizing advanced Reporting Tools ",
     ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
         title: "Accurate and Timely Reimbursement",
         description:
-          "Ensure timely and accurate payments from insurance companies.",
+          "We ensure timely and accurate payments from insurance companies",
         list: [
           "Properly coded claims",
           "Faster claim submission",
-          "Reduced payment delays",
+          "Prompt follow-up",
         ],
       },
       {
@@ -124,7 +125,8 @@ export const serviceDetails = [
         title: "Reduced Administrative Burden",
         description: "Streamline documentation and payment processes.",
         list: [
-          "Less paperwork for staff",
+          "Bespoke re-porting & revenue tracking",
+          "Advanced analytics and less paperwork ",
           "Automated claim processing",
           "More time for patient care",
         ],
@@ -134,7 +136,8 @@ export const serviceDetails = [
         title: "Compliance with Regulations",
         description: "Stay compliant with federal and state healthcare laws.",
         list: [
-          "HIPAA-compliant billing",
+          "Super bill creation",
+          "HIPAA / HITECH compliance",
           "Updated coding standards",
           "Minimized legal risks",
         ],
@@ -143,11 +146,11 @@ export const serviceDetails = [
   },
   {
     title: "Medical Coding",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
+    span: () => (
+      <span className="">
         Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
         Services
-      </h1>
+      </span>
     ),
 
     details: [
@@ -193,11 +196,11 @@ export const serviceDetails = [
   },
   {
     title: "AR & Denial Management",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
+    span: () => (
+      <span className="">
         Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
         Services
-      </h1>
+      </span>
     ),
 
     details: [
@@ -243,11 +246,11 @@ export const serviceDetails = [
   },
   {
     title: "Audit Services",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
+    span: () => (
+      <span className="">
         Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
         Services
-      </h1>
+      </span>
     ),
     details: [
       "Identify and recover lost revenue opportunities.",
@@ -291,11 +294,11 @@ export const serviceDetails = [
   },
   {
     title: "Credentialing",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
+    span: () => (
+      <span className="">
         Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
         Services
-      </h1>
+      </span>
     ),
 
     details: [
@@ -340,11 +343,11 @@ export const serviceDetails = [
   },
   {
     title: "Healthcare IT",
-    h1: () => (
-      <h1 className="text-center text-black lg:text-5xl text-3xl font-bold mb-10">
+    span: () => (
+      <span className="">
         Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
         Services
-      </h1>
+      </span>
     ),
 
     details: [

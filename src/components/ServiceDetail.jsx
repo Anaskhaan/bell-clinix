@@ -33,12 +33,17 @@ const ServiceDetail = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           {service.title}
         </h1>
-        <span></span>
+        <span className=" text-white py-4 italic font-thin text-justify max-w-2xl">
+          {service.span()}
+        </span>
 
         {/* Details List */}
-        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8  pl-5">
+        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8 mt-6  pl-5">
           {service.details.map((detail, index) => (
-            <li className="text-white" key={index}>
+            <li
+              className="text-white p-2 bg-gray-700 rounded-lg hover:scale-105 transform transition-all duration-500 "
+              key={index}
+            >
               {detail}{" "}
             </li>
           ))}
@@ -76,7 +81,7 @@ const ServiceDetail = () => {
               {card.list && (
                 <div className="mt-auto ">
                   {/* "Key Features" Positioned Absolutely */}
-                  <p className="text-md font-bold text-white absolute lg:top-52 top-[10.5rem] left-1/2 transform -translate-x-1/2 ">
+                  <p className="text-md font-bold text-white absolute lg:top-52 top-[10.5rem] left-20 transform -translate-x-1/2 ">
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}

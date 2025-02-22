@@ -85,13 +85,13 @@ export default function About() {
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
               </span>
-              <p className="text-white font-bold mt-2">Epictetus</p>
+              <p className="text-[#56bafc] font-bold mt-2">Epictetus</p>
             </div>
           </div>
         </div>
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
-          <div className="max-w-4xl text-center">
-            <h2 className="text-2xl  md:text-5xl w-2/1 lg:w-2/3 xl:w-2/3 2xl:w-2/3 font-bold text-gray-900 mb-4">
+          <div className="max-w-4xl text-left">
+            <h2 className="text-2xl md:text-5xl w-2/1 lg:w-2/3 xl:w-2/3 2xl:w-2/3 font-bold text-gray-900 mb-4">
               Medical Billing & Revenue Cycle Experts
             </h2>
             <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
