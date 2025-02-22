@@ -24,9 +24,9 @@ const ServiceDetail = () => {
     <div className="min-h-screen lg:py-28 py-36 px-6 md:px-44 bg-black text-white">
       <div className="max-w-4xl mx-auto text-left">
         {/* Header */}
-        <Link className="group" to="/">
+        <Link className="group" to="/services">
           <button className="relative flex items-center justify-center hover:text-[#56bafc] duration-300 ease-in-out my-4 text-white">
-            <ArrowLeft /> Back to Home Page
+            <ArrowLeft /> Back to Services
             <span className="absolute bottom-0 left-0 h-0.5 bg-[#56bafc] w-0 group-hover:w-full duration-300"></span>
           </button>
         </Link>

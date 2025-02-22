@@ -85,7 +85,9 @@ export default function About() {
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
               </span>
-              <p className="text-[#56bafc] font-bold mt-2">Epictetus</p>
+              <p className="text-[#56bafc] font-bold transform lg:translate-x-72">
+                Epictetus
+              </p>
             </div>
           </div>
         </div>
