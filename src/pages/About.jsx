@@ -81,7 +81,7 @@ export default function About() {
 
             {/* Quote Section */}
             <div className="text-center">
-              <span className="text-white p-6 font-extrabold italic block">
+              <span className="text-[#56bafc] p-6 font-extrabold italic block">
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
               </span>
