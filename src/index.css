@@ -2,66 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* index.css */
-
-/* Custom Cursor Styles */
-/* .cursor-none {
-  cursor: none;
-} */
-
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: width 0.2s, height 0.2s, transform 0.01s;
-  transform-origin: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-}
-
-.cursor-ring {
-  width: 40px;
-  height: 40px;
-  border: 2px solid rgba(59, 130, 246, 0.5);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transition: all 0.15s ease-out;
-  transform-origin: center;
-}
-
-/* Hover Effects */
-.cursor-hover {
-  width: 24px;
-  height: 24px;
-  background: rgba(59, 130, 246, 0.1);
-}
-
-.ring-hover {
-  width: 50px;
-  height: 50px;
-  border-color: rgba(59, 130, 246, 0.8);
-}
-
-/* Click Effects */
-.cursor-clicked {
-  transform: scale(0.9);
-  background: rgba(59, 130, 246, 0.2);
-}
-
-.ring-clicked {
-  transform: scale(0.9);
-  border-width: 3px;
-}
-
 /* Fallback for touch devices */
 @media (hover: none) {
   .custom-cursor,
@@ -72,11 +12,6 @@
 
 :root {
   line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -95,4 +30,8 @@ h6,
 .custom {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.customText {
+  font-weight: bold;
+  font-style: italic;
 }

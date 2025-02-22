@@ -72,9 +72,21 @@ export default function About() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-black p-24">
-            <h1 className="text-white lg:text-5xl text-xl text-center p-6">
-              About Us
-            </h1>
+            {/* Title Section */}
+            <div>
+              <h1 className="text-white lg:text-5xl text-xl text-center p-6">
+                About Us
+              </h1>
+            </div>
+
+            {/* Quote Section */}
+            <div className="text-center">
+              <span className="text-white p-6 font-extrabold italic block">
+                &quot;We have two ears and one mouth so that we can listen twice
+                as much as we speak.&quot;
+              </span>
+              <p className="text-white font-bold mt-2">Epictetus</p>
+            </div>
           </div>
         </div>
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
