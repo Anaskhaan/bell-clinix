@@ -16,7 +16,7 @@ export default function Services() {
               </h1>
             </div>
             <div className="">
-              <p className="text-white text-center  customText">
+              <p className="text-[#56bafc] text-center  customText">
                 &quot;Your trusted partner in hassle-free medical billing —
                 bringing clarity, compliance, and comfort to your
                 practice.&quot;
