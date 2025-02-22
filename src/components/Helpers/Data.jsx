@@ -21,7 +21,7 @@ export const services = [
     icon: <Banknote className="w-12 h-12 text-gray-700" />,
     title: "Medical Billing",
     description:
-      "Streamline your revenue cycle with our efficient and accurate billing services.",
+      " Streamline your revenue cycle with our efficient and accurate billing services.",
     list: [
       "Claims submission and follow-up",
       "Payment posting and reconciliation",
@@ -96,9 +96,8 @@ export const serviceDetails = [
     title: "Medical Billing",
     span: () => (
       <span className="">
-        &quot;Our end-to-end billing service turns the complexities of medical
-        billing into seamless solutions, so you can focus on clinical decision
-        making.&quot;
+        Our end-to-end billing service turns the complexities of medical billing
+        into seamless solutions, so you can focus on clinical decision making.
       </span>
     ),
     details: [
