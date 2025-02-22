@@ -79,13 +79,13 @@ const ServiceDetail = () => {
               </div>
 
               {card.list && (
-                <div className="mt-auto ">
+                <div className="  ">
                   {/* "Key Features" Positioned Absolutely */}
-                  <p className="text-md font-bold text-white absolute lg:top-52 top-[10.5rem] left-20 transform -translate-x-1/2 ">
+                  <p className="text-md font-bold text-white absolute lg:top-52 top-[10.5rem] left-20 my-4 transform -translate-x-1/2 ">
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}
-                  <ul className="text-sm md:text-base text-white list-disc pl-5 text-left mt-12 lg:mt-6">
+                  <ul className={`text-sm md:text-base text-white list-disc pl-5 text-left ${index >1 ? "mt-[100px]"  : "mt-20"  }  `}>
                     {card.list.map((item, idx) => (
                       <li key={idx} className="text-white">
                         {item}
