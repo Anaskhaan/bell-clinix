@@ -158,7 +158,7 @@ export const serviceDetails = [
       "Aligned with ICD-10, CPT, and HCPCS guidelines.",
       "Real-time code validation to reduce claim denials.",
       "Prevent revenue loss with proactive audits and quality check.",
-      "Enhance accuracy with advanced analytics and reporting .",
+      "Enhance accuracy with advanced analytics and reporting.",
     ],
     cards: [
       {
@@ -167,7 +167,7 @@ export const serviceDetails = [
         description:
           "We ensure coding for maximized reimbursements, fewer claim denials, and time efficient processing.",
         list: [
-          "Error-free coding for faster claims",
+          "Error-free coding",
           "Up-to-date with ICD-10, CPT, HCPCS",
           "Real-time validation & audits",
         ],
@@ -175,8 +175,7 @@ export const serviceDetails = [
       {
         icon: <Clock className="text-gray-400" />,
         title: "Time Efficiency",
-        description:
-          "Enhance efficiency with time-saving coding and documentation processes.",
+        description: "AI driven coding protocol and documentation processes.",
         list: [
           "Automated coding checks",
           "Minimized coding errors",
@@ -187,11 +186,11 @@ export const serviceDetails = [
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Regulatory Compliance",
         description:
-          "Stay aligned with regulatory compliance and evolving industry standards.",
+          "Perfectly aligned with regulatory compliance and industry standards.",
         list: [
           "HIPAA & HITECH compliance",
-          "Accurate documentation standards",
-          "Reduced legal and financial risks",
+          "Error-free documentation standards",
+          "Legal and financial accuracy",
         ],
       },
     ],
@@ -200,25 +199,24 @@ export const serviceDetails = [
     title: "AR & Denial Management",
     span: () => (
       <span className="">
-        BellClinix AR and Denial management solutions optimize cash flow, reduce
-        claim rejections, and ensure faster reimbursements for financial
-        stability
+        Our AR and Denial management solutions optimize cash flow, reduce claim
+        rejections, and ensure faster reimbursements
       </span>
     ),
 
     details: [
-      "Strategic AR management accelerates claim resolution and cash flow.",
-      "Real-time denial tracking minimizes revenue loss and payment delays.",
-      "Root cause analysis reduces recurring claim rejections and denials.",
-      "Efficient appeals process ensures maximum reimbursement recovery.",
-      "Data-driven insights enhance AR performance and financial stability.",
+      "Strategic AR management achieving accelerated claim resolution and cash flow.",
+      "Real-time denial tracking minimizing revenue loss and payment delays.",
+      "Root cause analysis reducing recurring claim rejections and denials.",
+      "Efficient appeals process ensuring maximum reimbursement recovery.",
+      "Data-driven insights enhancing AR performance and financial stability.",
     ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
         title: "Faster Cash Flow",
         description:
-          "Optimize revenue cycles for quicker reimbursements and steady financial growth.",
+          "Optimizing revenue cycles for quicker reimbursements and steady financial growth.",
         list: [
           "Quick claims processing",
           "Automated payment tracking",
@@ -229,18 +227,18 @@ export const serviceDetails = [
         icon: <CrossIcon className="text-gray-400" />,
         title: "Reduced Denial Rates",
         description:
-          "Minimize claim rejections with precision-driven coding and proactive management.",
+          "Minimizing claim rejections with precision-driven coding and proactive troubleshooting.",
         list: [
           "Real-time claim validation",
-          "Root cause analysis for denials",
-          "Efficient resubmission strategies",
+          "Denial root cause analysis",
+          "Efficient re-submission",
         ],
       },
       {
         icon: <FileText className="text-gray-400" />,
         title: "Comprehensive Reporting",
         description:
-          "Gain actionable insights to enhance financial performance and compliance.",
+          "Gaining actionable insights to enhance financial performance and compliance.",
         list: [
           "Real-time revenue tracking",
           "Denial trend analysis",
@@ -253,37 +251,37 @@ export const serviceDetails = [
     title: "Audit Services",
     span: () => (
       <span className="">
-        BellClinix simplifies audit complexities with precise evaluations,
-        ensuring compliance, reducing risks, and maximizing revenue integrity.
+        We simplify audit complexities with precise evaluations, ensuring
+        compliance, reducing risks, and maximizing revenue integrity.
       </span>
     ),
     details: [
-      "Thorough audits detect coding errors and compliance risks early.",
-      "Data insights improve billing accuracy.",
-      "Regular assessments reduce financial risks and penalties.",
-      "Streamlined audit processes enhance revenue integrity.",
-      "Compliance tracking keeps regulations in check.",
+      "Error-free scanning and detection algorithm for coding errors.",
+      "AI driven data insights yielding improved billing accuracy.",
+      "Regular assessments plan to minimize financial risks and penalties.",
+      "Achieving enhanced revenue integrity through streamlined audit processes.",
+      "Compliance tracking for regulations.",
     ],
     cards: [
       {
         icon: <DollarSign className="text-gray-400" />,
         title: "Revenue Management",
         description:
-          "Optimize audits to prevent revenue loss and boost financial performance.",
+          "Optimized audits protocol to prevent revenue loss and boost financial performance.",
         list: [
           "Identifies missed revenue opportunities",
-          "Reduces billing discrepancies",
-          "Enhances financial stability",
+          "Reduced billing discrepancies",
+          "Enhanced financial stability",
         ],
       },
       {
         icon: <AlertCircle className="text-gray-400" />,
         title: "Error Detection",
         description:
-          "Pinpoint inaccuracies to minimize claim denials and payment delays.",
+          "Pinpointing inaccuracies to minimize claim denials and payment delays.",
         list: [
-          "Detects coding and billing errors",
-          "Improves claim acceptance rates",
+          "AI driven detection of coding and billing errors",
+          "Improved claim acceptance",
           "Reduces rework and resubmissions",
         ],
       },
@@ -291,10 +289,10 @@ export const serviceDetails = [
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
         description:
-          "Ensure adherence to industry regulations and avoid penalties.",
+          "Ensuring adherence to industry regulations and avoids penalties.",
         list: [
-          "Tracks regulatory updates",
-          "Maintains HIPAA compliance",
+          "Tracking regulatory updates",
+          "HIPAA compliance",
           "Reduces audit risks",
         ],
       },
@@ -322,7 +320,7 @@ export const serviceDetails = [
         icon: <FileText className="text-gray-400" />,
         title: "Streamlined Documentation",
         description:
-          "Ensure accurate and organized credentialing records for smooth verification.",
+          "We ensure accurate and organized credentialing records for smooth verification.",
         list: [
           "Centralized record management",
           "Accurate provider data entry",
@@ -333,18 +331,18 @@ export const serviceDetails = [
         icon: <Clock className="text-gray-400" />,
         title: "Reduced Turnaround Time",
         description:
-          "Accelerate approval processes with efficient provider enrollment and verification.",
+          "Accelerated approval processes with efficient provider enrollment and verification.",
         list: [
           "Faster payer approvals",
           "Automated application tracking",
-          "•	Minimized processing delays",
+          "Minimized processing delays",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
         description:
-          "Maintain adherence to industry regulations and payer requirements to avoid penalties.",
+          "Strict adherence to industry regulations and payer requirements to avoid penalties.",
         list: [
           "Adherence to regulatory standards",
           "Regular audits and updates",
@@ -377,16 +375,16 @@ export const serviceDetails = [
         description:
           "Optimize workflows with advanced healthcare IT solutions.",
         list: [
-          "Automated data management",
-          "Seamless EHR integration",
-          "Faster administrative processes",
+          "HIPAA / HITECH -compliant systems",
+          "Secure cloud storage",
+          "Advanced encryption protocols",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Enhanced Security",
         description:
-          "Protect sensitive patient data with cutting-edge security measures.",
+          "Enhanced care quality with efficient and patient-centric IT solutions.",
         list: [
           "HIPAA-compliant systems",
           "Secure cloud storage",
@@ -400,7 +398,7 @@ export const serviceDetails = [
           "Enhance care quality with efficient and patient-centric IT solutions.",
         list: [
           "Faster access to medical records",
-          "Reduced wait times with digital scheduling",
+          "Digital scheduling yielding reduced wait times",
           "Telehealth support for remote care",
         ],
       },
