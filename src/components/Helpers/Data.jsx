@@ -101,11 +101,11 @@ export const serviceDetails = [
       </span>
     ),
     details: [
-      "Time efficient electronic Claim Submission ",
+      "Time efficient electronic claim Submission ",
       "Specialty specific teams of experts",
-      "Accurate and real-time Eligibility Verification ",
-      "Evading underbilling through comprehensive Fee Analysis ",
-      "ExTracking your practice’s financial health utilizing advanced Reporting Tools ",
+      "Accurate and real-time eligibility verification ",
+      "Evading underbilling through comprehensive fee Analysis ",
+      "Tracking your practice’s financial health utilizing advanced Reporting Tools ",
     ],
     cards: [
       {

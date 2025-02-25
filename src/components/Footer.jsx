@@ -60,7 +60,7 @@ export default function Footer() {
             <Link to="/" className="block">
               <img src="/logo.svg" className="h-12 w-auto ml-2 lg:ml-0" />
             </Link>
-            <p className=" text-lg font-semibold text-gray-300">
+            <p className=" text-md  text-gray-300">
               Maximizing Revenue, Minimizing Hassle – Focus on patient comfort
               and well-being
             </p>
