@@ -81,13 +81,15 @@ export default function About() {
 
             {/* Quote Section */}
             <div className="text-center ">
-              <p className="text-gray-300 p-6 font-extrabold italic block">
+              <p className="text-gray-300 px-2 font-extrabold italic block lg:py-3">
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
               </p>
-              <p className="text-gray-300 font-bold transform italic lg:translate-x-72">
-                Epictetus
-              </p>
+              <div className="flex justify-end lg:w-[74%] items-center mr-4">
+                <p className="text-gray-300 font-extrabold transform  ">
+                  Epictetus
+                </p>
+              </div>
             </div>
           </div>
         </div>

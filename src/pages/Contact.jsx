@@ -10,11 +10,7 @@ const Contact = () => {
           </h1>
         </div>
       </div>
-      {/* <p className="flex justify-center items-center  text-xl gap-2">
-        For any medical inquiries, support, or feedback, contact us. We are here
-        to assist with professional billing, coding, and revenue cycle
-        management services.
-      </p> */}
+
       <ContactForm />
     </div>
   );
