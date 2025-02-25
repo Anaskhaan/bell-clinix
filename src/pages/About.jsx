@@ -71,7 +71,7 @@ export default function About() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-black p-24">
+          <div className="w-full h-auto bg-black py-24 px-2">
             {/* Title Section */}
             <div>
               <h1 className="text-white lg:text-5xl text-xl text-center p-6">
@@ -81,11 +81,11 @@ export default function About() {
 
             {/* Quote Section */}
             <div className="text-center">
-              <span className="text-[#56bafc] p-6 font-extrabold italic block">
+              <span className="text-gray-400 p-6 font-extrabold italic block">
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
               </span>
-              <p className="text-[#56bafc] font-bold transform lg:translate-x-72">
+              <p className="text-gray-400 font-bold transform lg:translate-x-72">
                 Epictetus
               </p>
             </div>

@@ -38,7 +38,7 @@ const ServiceDetail = () => {
         </span>
 
         {/* Details List */}
-        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8 mt-6  pl-5">
+        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8 mt-6  ">
           {service.details.map((detail, index) => (
             <li
               className="text-white p-2 bg-gray-700 rounded-lg hover:scale-105 transform transition-all duration-500 "
@@ -81,7 +81,7 @@ const ServiceDetail = () => {
               {card.list && (
                 <div className="  ">
                   {/* "Key Features" Positioned Absolutely */}
-                  <p className="text-md font-bold text-white absolute lg:top-52 top-[10.5rem] left-20 my-4 transform -translate-x-1/2 ">
+                  <p className="text-md font-bold text-white absolute lg:top-52 top-[12rem] left-20 my-4 transform -translate-x-1/2 ">
                     Key Features:
                   </p>
                   {/* List positioned below "Key Features" */}

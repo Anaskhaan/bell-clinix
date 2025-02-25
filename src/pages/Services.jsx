@@ -9,14 +9,14 @@ export default function Services() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="block w-full h-auto bg-black p-24">
+          <div className="block w-full h-auto bg-black py-24 px-2">
             <div>
               <h1 className="text-white lg:text-5xl text-xl text-center p-6">
                 Our Services
               </h1>
             </div>
             <div className="">
-              <p className="text-[#56bafc] text-center  customText">
+              <p className="text-gray-400 text-center  customText">
                 &quot;Your trusted partner in hassle-free medical billing —
                 bringing clarity, compliance, and comfort to your
                 practice.&quot;
