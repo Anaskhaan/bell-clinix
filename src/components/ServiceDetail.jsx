@@ -64,8 +64,8 @@ const ServiceDetail = () => {
           {service.cards?.map((card, index) => (
             <div
               key={index}
-              className={`bg-[#303a73]/90 rounded-2xl shadow-xl overflow-hidden mb-8
-                       transform transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20
+              className={`bg-[#303a73] rounded-2xl shadow-xl overflow-hidden mb-8
+                       transform transition-all duration-500 hover:shadow-2xl  hover:scale-105 hover:shadow-blue-500/20
                        ${
                          index % 2 === 0
                            ? "lg:translate-x-8"
