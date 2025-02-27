@@ -16,7 +16,7 @@ function cn(...inputs) {
 export function InfiniteSwiper({
   items,
   swipeSpeed = 5000,
-  transitionDuration = 500,
+  transitionDuration = 800,
   pauseOnHover = false,
   className,
 }) {
@@ -77,13 +77,10 @@ export function InfiniteSwiper({
 
 export default function SwiperDemo() {
   const items = [
-    <div
-      key="1"
-      className="relative min-h-screen flex items-center  lg:px-8 py-0 sm:py-4"
-    >
+    <div key="1" className="relative min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="max-w-3xl">
-          <div className="lg:mt-20 2xl:mt-28 xl:mt-24 mt-0 transition-all duration-1000">
+          <div className="  mt-0 transition-all duration-1000">
             <div className="mb-2 animate-bounce">
               <ClipboardPlus className="h-12 w-12 text-pink-500" />
             </div>
@@ -114,17 +111,14 @@ export default function SwiperDemo() {
         </div>
       </div>
     </div>,
-    <div
-      key="2"
-      className="relative min-h-screen flex items-center px-0 lg:px-8 py-16"
-    >
+    <div key="2" className="relative min-h-screen flex items-center ">
       <div className="max-w-7xl mx-auto w-full">
         <div className="max-w-3xl">
-          <div className="lg:mt-20 2xl:mt-28 xl:mt-24 mt-0 transition-all duration-1000">
+          <div className=" mt-0 transition-all duration-1000">
             <div className="mb-2   animate-bounce">
               <ClipboardPlus className="h-12 w-12 text-pink-500" />
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white ">
               Driving Excellence
               <span className="block text-blue-300">
                 We Help Practices Grow
