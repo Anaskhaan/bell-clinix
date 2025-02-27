@@ -51,12 +51,12 @@ const ServiceDetail = () => {
 
         {/* Learn More Button */}
         <div className="text-center mb-8">
-          <a href="/contact">
+          <Link to="/contact">
             <button className="bg-[#56bafc] text-black font-semibold py-3 px-8 rounded-xl text-lg flex items-center justify-center space-x-3 transform transition-all duration-300 hover:scale-105 hover:bg-[#303a73]">
               <span>Learn More</span>
               <ArrowRightCircle />
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Cards Grid */}

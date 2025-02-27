@@ -240,8 +240,8 @@ export const serviceDetails = [
         description:
           "Gaining actionable insights to enhance financial performance and compliance.",
         list: [
-          "Real-time revenue tracking",
-          "Denial trend analysis",
+          "Revenue tracking",
+          "Trend analysis",
           "Performance benchmarking",
         ],
       },
@@ -375,9 +375,9 @@ export const serviceDetails = [
         description:
           "Optimize workflows with advanced healthcare IT solutions.",
         list: [
-          "HIPAA / HITECH -compliant systems",
-          "Secure cloud storage",
-          "Advanced encryption protocols",
+          "Automated data management",
+          "Seamless EHR integration",
+          "Faster administrative processes",
         ],
       },
       {
@@ -386,7 +386,7 @@ export const serviceDetails = [
         description:
           "Enhanced care quality with efficient and patient-centric IT solutions.",
         list: [
-          "HIPAA-compliant systems",
+          "HIPAA / HITECH -compliant systems",
           "Secure cloud storage",
           "Advanced encryption protocols",
         ],
