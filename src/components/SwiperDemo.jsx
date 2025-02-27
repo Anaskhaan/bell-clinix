@@ -15,7 +15,7 @@ function cn(...inputs) {
 
 export function InfiniteSwiper({
   items,
-  swipeSpeed = 3000,
+  swipeSpeed = 5000,
   transitionDuration = 500,
   pauseOnHover = false,
   className,
@@ -79,7 +79,7 @@ export default function SwiperDemo() {
   const items = [
     <div
       key="1"
-      className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8"
+      className="relative min-h-screen flex items-center  lg:px-8 py-0 sm:py-4"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="max-w-3xl">
@@ -116,7 +116,7 @@ export default function SwiperDemo() {
     </div>,
     <div
       key="2"
-      className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8"
+      className="relative min-h-screen flex items-center px-0 lg:px-8 py-16"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="max-w-3xl">
@@ -156,7 +156,7 @@ export default function SwiperDemo() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 p-4">
-      <InfiniteSwiper items={items} swipeSpeed={3000} />
+      <InfiniteSwiper items={items} swipeSpeed={5000} />
     </div>
   );
 }
