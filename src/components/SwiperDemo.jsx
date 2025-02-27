@@ -102,7 +102,7 @@ export default function SwiperDemo() {
                 </button>
               </Link>
               <Link to="/services">
-                <button className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
+                <button className="inline-flex z-20 items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
                   Learn More
                 </button>
               </Link>
@@ -137,7 +137,7 @@ export default function SwiperDemo() {
                 </button>
               </Link>
               <Link to="/services">
-                <button className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
+                <button className="z-20 inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
                   Learn More
                 </button>
               </Link>
