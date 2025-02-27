@@ -21,9 +21,21 @@ const staggerContainer = {
 };
 
 const socialLinks = [
-  { Icon: Facebook, href: "#", label: "Facebook" },
-  { Icon: Linkedin, href: "#", label: "LinkedIn" },
-  { Icon: Instagram, href: "#", label: "Instagram" },
+  {
+    Icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=61572966675832",
+    label: "Facebook",
+  },
+  {
+    Icon: Linkedin,
+    href: "https://www.linkedin.com/company/bell-clinix/",
+    label: "LinkedIn",
+  },
+  {
+    Icon: Instagram,
+    href: "https://www.instagram.com/bellclinix/",
+    label: "Instagram",
+  },
 ];
 
 const quickLinks = [
@@ -48,13 +60,15 @@ export default function Footer() {
             <Link to="/" className="block">
               <img src="/logo.svg" className="h-12 w-auto ml-2 lg:ml-0" />
             </Link>
-            <p className=" text-lg font-semibold text-gray-300">
+            <p className=" text-md  text-gray-300">
               Maximizing Revenue, Minimizing Hassle – Focus on patient comfort
               and well-being
             </p>
             <div className="flex space-x-4">
               {socialLinks.map(({ Icon, href, label }) => (
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   key={label}
                   href={href}
                   aria-label={label}

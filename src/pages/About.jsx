@@ -4,46 +4,39 @@ import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
-    name: "Dr. Khattak",
-    position: "Lead Clinical Advisor",
+    name: "Dr. Khan",
+    position: "Founder CEO",
     image: "/dryousaf.webp",
     description:
-      "Dr. Khattak brings extensive expertise in clinical advisory, ensuring best practices and quality healthcare solutions.",
+      "Dr Khan is the visionary leader and driving force behind our innovative medical billing company.",
   },
   {
-    name: "Dr. Khan",
-    position: "International Clinical Advisor",
+    name: "Dr. Naveed",
+    position: "Lead Clinical Advisor",
     image: "/dr20naveed.webp",
     description:
-      "Dr. Khan provides international clinical insights, enhancing patient care with innovative strategies.",
+      "Dr. Naveed brings extensive expertise in clinical advisory, ensuring best practices and quality healthcare solutions.",
   },
   {
     name: "M Fahad",
-    position: "Chief Organizer",
+    position: "Managing Director",
     image: "fahad.webp",
     description:
-      "Fahad is responsible for overseeing organizational operations and ensuring seamless workflow.",
+      "Fahad ensures the company’s vision is executed effectively, leading teams towards success.",
   },
   {
     name: "Tariq Mehmood",
-    position: "HR & Finance",
+    position: "Director HR & Finance",
     image: "/tariq.webp",
     description:
       "Tariq manages human resources and financial strategies, fostering a productive work environment.",
   },
   {
     name: "Raoof Khan",
-    position: "Marketing Director",
+    position: "CEO",
     image: "https://via.placeholder.com/150",
     description:
-      "Raoof leads the marketing team, driving growth through strategic branding and outreach.",
-  },
-  {
-    name: "M Sohaib",
-    position: "Managing Director",
-    image: "/sohaib.webp",
-    description:
-      "Sohaib ensures the company’s vision is executed effectively, leading teams towards success.",
+      "Raoof is the dynamic and strategic leader steering BellClinix towards excellence and innovation in healthcare administration.",
   },
 ];
 
@@ -71,23 +64,25 @@ export default function About() {
     <div>
       <section>
         <div className="flex justify-center items-center">
-          <div className="w-full h-auto bg-black py-24 px-2">
+          <div className="w-full h-auto bg-black py-24">
             {/* Title Section */}
             <div>
-              <h1 className="text-white lg:text-5xl text-xl text-center p-6">
+              <h1 className="text-white lg:text-5xl text-3xl text-center p-6">
                 About Us
               </h1>
             </div>
 
             {/* Quote Section */}
-            <div className="text-center">
-              <span className="text-gray-400 p-6 font-extrabold italic block">
+            <div className="text-center ">
+              <p className="text-gray-300 px-2 font-extrabold italic block lg:py-3">
                 &quot;We have two ears and one mouth so that we can listen twice
                 as much as we speak.&quot;
-              </span>
-              <p className="text-gray-400 font-bold transform lg:translate-x-72">
-                Epictetus
               </p>
+              <div className="flex justify-end lg:w-[74%] items-center mr-4">
+                <p className="text-gray-300 font-extrabold transform  ">
+                  Epictetus
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -97,18 +92,13 @@ export default function About() {
               Medical Billing & Revenue Cycle Experts
             </h2>
             <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
-              BellClinix&apos;s expertise lies in medical billing, coding, and
-              RCM services which provide complete financial solutions to
-              healthcare professionals throughout the United States. We are
-              determined to support medical centers, hospitals, private
-              practices, and healthcare organizations to optimize their billing
-              operations, reduce claim denials, and accelerate reimbursements
-              for improved cash flow. BellClinix deals with empowering
-              healthcare providers with innovative, reliable, and transparent
-              digital billing solutions. With a dedicated team and a
-              patient-centered approach, we concentrate on financial success,
-              facilitating healthcare professionals to provide their services
-              without the stress of revenue management.
+              We are committed to transforming the complexities of medical
+              billing into seamless solutions, allowing healthcare providers to
+              focus on what truly matters: Our dedicated team is a unique blend
+              of AI experts, clinical leaders and experienced doctors with a
+              keen eye for detail and a passion for excellence. This diverse
+              expertise enables us to handle your billing processes with utmost
+              accuracy and efficiency delivering exceptional patient care.
             </p>
           </div>
         </div>

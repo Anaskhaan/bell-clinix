@@ -101,11 +101,11 @@ export const serviceDetails = [
       </span>
     ),
     details: [
-      "Time efficient electronic Claim Submission ",
+      "Time efficient electronic claim Submission ",
       "Specialty specific teams of experts",
-      "Accurate and real-time Eligibility Verification ",
-      "Evading underbilling through comprehensive Fee Analysis ",
-      "ExTracking your practice’s financial health utilizing advanced Reporting Tools ",
+      "Accurate and real-time eligibility verification ",
+      "Evading underbilling through comprehensive fee Analysis ",
+      "Tracking your practice’s financial health utilizing advanced Reporting Tools ",
     ],
     cards: [
       {
@@ -147,48 +147,50 @@ export const serviceDetails = [
     title: "Medical Coding",
     span: () => (
       <span className="">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
+        Our expert medical coders play a vital role in ensuring accuracy,
+        compliance, and efficiency, minimizing claim denials and optimizing
+        reimbursements.
       </span>
     ),
 
     details: [
-      "Accurate coding maximizes reimbursements.",
-      "Proper use of ICD-10, CPT, HCPCS prevents claim denials.",
-      "Compliance with healthcare regulations ensures smooth processing.",
-      "Staff training enhances coding skills and efficiency.",
-      "Error-free submissions improve claim approval rates.",
+      "Error-free medical coding for faster claims approvals.",
+      "Aligned with ICD-10, CPT, and HCPCS guidelines.",
+      "Real-time code validation to reduce claim denials.",
+      "Prevent revenue loss with proactive audits and quality check.",
+      "Enhance accuracy with advanced analytics and reporting.",
     ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
         title: "Maximized Reimbursements",
         description:
-          "Accurate coding ensures maximum reimbursements from payers.",
+          "We ensure coding for maximized reimbursements, fewer claim denials, and time efficient processing.",
         list: [
-          "ICD-10, CPT, HCPCS expertise",
-          "Error-free submissions",
-          "Higher claim approval rates",
+          "Error-free coding",
+          "Up-to-date with ICD-10, CPT, HCPCS",
+          "Real-time validation & audits",
         ],
       },
       {
         icon: <Clock className="text-gray-400" />,
         title: "Time Efficiency",
-        description: "Reduce time spent on claim processing and corrections.",
+        description: "AI driven coding protocol and documentation processes.",
         list: [
-          "Faster coding turnaround",
-          "Automated validation",
-          "Optimized workflows",
+          "Automated coding checks",
+          "Minimized coding errors",
+          "Faster claim submission",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Regulatory Compliance",
-        description: "Ensure adherence to medical coding regulations.",
+        description:
+          "Perfectly aligned with regulatory compliance and industry standards.",
         list: [
-          "Stay up-to-date with code changes",
-          "Reduce compliance risks",
-          "Improve audit readiness",
+          "HIPAA & HITECH compliance",
+          "Error-free documentation standards",
+          "Legal and financial accuracy",
         ],
       },
     ],
@@ -197,48 +199,50 @@ export const serviceDetails = [
     title: "AR & Denial Management",
     span: () => (
       <span className="">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
+        Our AR and Denial management solutions optimize cash flow, reduce claim
+        rejections, and ensure faster reimbursements
       </span>
     ),
 
     details: [
-      "Effective AR solutions maintain a healthy cash flow.",
-      "Tracking payments ensures financial transparency.",
-      "Proactive denial management reduces claim rejections.",
-      "Faster resolution of underpayments improves revenue.",
-      "Close collaboration with staff optimizes billing processes.",
+      "Strategic AR management achieving accelerated claim resolution and cash flow.",
+      "Real-time denial tracking minimizing revenue loss and payment delays.",
+      "Root cause analysis reducing recurring claim rejections and denials.",
+      "Efficient appeals process ensuring maximum reimbursement recovery.",
+      "Data-driven insights enhancing AR performance and financial stability.",
     ],
     cards: [
       {
         icon: <CreditCard className="text-gray-400" />,
         title: "Faster Cash Flow",
         description:
-          "Improve revenue cycles with efficient claim reimbursements.",
+          "Optimizing revenue cycles for quicker reimbursements and steady financial growth.",
         list: [
-          "Quick follow-up on unpaid claims",
-          "Automated tracking systems",
-          "Improved financial stability",
+          "Quick claims processing",
+          "Automated payment tracking",
+          "Optimized AR follow-ups",
         ],
       },
       {
         icon: <CrossIcon className="text-gray-400" />,
         title: "Reduced Denial Rates",
-        description: "Address claim issues proactively to minimize rejections.",
+        description:
+          "Minimizing claim rejections with precision-driven coding and proactive troubleshooting.",
         list: [
-          "Advanced denial analysis",
-          "Real-time claim tracking",
-          "Expert appeal handling",
+          "Real-time claim validation",
+          "Denial root cause analysis",
+          "Efficient re-submission",
         ],
       },
       {
         icon: <FileText className="text-gray-400" />,
         title: "Comprehensive Reporting",
-        description: "Detailed AR and denial insights for better decisions.",
+        description:
+          "Gaining actionable insights to enhance financial performance and compliance.",
         list: [
-          "Custom financial reports",
-          "Trend analysis on denials",
-          "Claim status monitoring",
+          "Real-time revenue tracking",
+          "Denial trend analysis",
+          "Performance benchmarking",
         ],
       },
     ],
@@ -247,46 +251,49 @@ export const serviceDetails = [
     title: "Audit Services",
     span: () => (
       <span className="">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
+        We simplify audit complexities with precise evaluations, ensuring
+        compliance, reducing risks, and maximizing revenue integrity.
       </span>
     ),
     details: [
-      "Identify and recover lost revenue opportunities.",
-      "Prevent claim denials with accurate billing reviews.",
-      "Detect and rectify underpaid claims efficiently.",
-      "Ensure HIPAA and ICD-10 compliance.",
-      "Regular policy updates minimize compliance risks.",
+      "Error-free scanning and detection algorithm for coding errors.",
+      "AI driven data insights yielding improved billing accuracy.",
+      "Regular assessments plan to minimize financial risks and penalties.",
+      "Achieving enhanced revenue integrity through streamlined audit processes.",
+      "Compliance tracking for regulations.",
     ],
     cards: [
       {
         icon: <DollarSign className="text-gray-400" />,
-        title: "Revenue Optimization",
-        description: "Identify and recover lost revenue opportunities.",
+        title: "Revenue Management",
+        description:
+          "Optimized audits protocol to prevent revenue loss and boost financial performance.",
         list: [
-          "Comprehensive billing reviews",
-          "Detection of underpaid claims",
-          "Improved financial reporting",
+          "Identifies missed revenue opportunities",
+          "Reduced billing discrepancies",
+          "Enhanced financial stability",
         ],
       },
       {
         icon: <AlertCircle className="text-gray-400" />,
         title: "Error Detection",
-        description: "Minimize errors in billing and coding.",
+        description:
+          "Pinpointing inaccuracies to minimize claim denials and payment delays.",
         list: [
-          "Prevent claim denials",
-          "Ensure accurate documentation",
-          "Reduce compliance risks",
+          "AI driven detection of coding and billing errors",
+          "Improved claim acceptance",
+          "Reduces rework and resubmissions",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
-        description: "Ensure adherence to medical regulations and standards.",
+        description:
+          "Ensuring adherence to industry regulations and avoids penalties.",
         list: [
-          "HIPAA and ICD-10 compliance",
-          "Regular policy updates",
-          "Risk assessment audits",
+          "Tracking regulatory updates",
+          "HIPAA compliance",
+          "Reduces audit risks",
         ],
       },
     ],
@@ -295,47 +302,51 @@ export const serviceDetails = [
     title: "Credentialing",
     span: () => (
       <span className="">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
+        BellClinix simplifies credentialing, ensuring provider
+        approvals,compliance, and seamless reimbursements without administrative
+        delays.
       </span>
     ),
 
     details: [
-      "Automate provider credentialing for faster approvals.",
-      "Reduce documentation errors and verification delays.",
-      "Stay compliant with regulatory requirements.",
-      "Streamline payer enrollment for quick processing.",
-      "Minimize turnaround time for credentialing applications.",
+      "Fast and accurate provider credentialing for seamless approvals.",
+      "Compliance-focused verification to meet regulatory standards.",
+      "Minimized claim denials with up-to-date credentialing.",
+      "Efficient enrollment to avoid reimbursement delays.",
+      "Simplified documentation for reduced administrative workload.",
     ],
     cards: [
       {
         icon: <FileText className="text-gray-400" />,
         title: "Streamlined Documentation",
-        description: "Ensure faster approvals with accurate credentialing.",
+        description:
+          "We ensure accurate and organized credentialing records for smooth verification.",
         list: [
-          "Automated document tracking",
-          "Real-time application updates",
-          "Minimized credentialing errors",
+          "Centralized record management",
+          "Accurate provider data entry",
+          "Easy access to credentialing history",
         ],
       },
       {
         icon: <Clock className="text-gray-400" />,
         title: "Reduced Turnaround Time",
-        description: "Accelerate the provider enrollment process.",
+        description:
+          "Accelerated approval processes with efficient provider enrollment and verification.",
         list: [
-          "Quick payer approvals",
-          "Optimized verification processes",
-          "Faster contract execution",
+          "Faster payer approvals",
+          "Automated application tracking",
+          "Minimized processing delays",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Compliance Assurance",
-        description: "Meet regulatory and payer credentialing requirements.",
+        description:
+          "Strict adherence to industry regulations and payer requirements to avoid penalties.",
         list: [
-          "Ongoing compliance monitoring",
-          "Credential expiry alerts",
-          "Industry-standard verification",
+          "Adherence to regulatory standards",
+          "Regular audits and updates",
+          "Risk mitigation for credentialing errors",
         ],
       },
     ],
@@ -344,49 +355,51 @@ export const serviceDetails = [
     title: "Healthcare IT",
     span: () => (
       <span className="">
-        Get Paid on Time with BellClinix&apos;s Medical Billing Consulting
-        Services
+        BellClinix delivers advanced healthcare IT solutions, improving data
+        management, system security, and workflow automation for seamless
+        operations.
       </span>
     ),
 
     details: [
-      "Optimize workflows with integrated IT solutions.",
-      "Enhance patient engagement through digital platforms.",
-      "Ensure data security with advanced encryption.",
-      "Improve operational efficiency with automated systems.",
-      "Provide seamless electronic health record (EHR) integration.",
+      "Secure IT solutions streamline healthcare operations.",
+      "EHR integration enhances data accessibility.",
+      "Automated workflows reduce manual errors.",
+      "Real-time analytics improve decision-making.",
+      "HIPAA compliance ensures data protection.",
     ],
     cards: [
       {
         icon: <Settings className="text-gray-400" />,
         title: "Streamlined Operations",
         description:
-          "Optimize healthcare workflows with integrated IT solutions.",
+          "Optimize workflows with advanced healthcare IT solutions.",
         list: [
-          "Custom EHR integrations",
-          "Automated task management",
-          "Improved staff efficiency",
+          "HIPAA / HITECH -compliant systems",
+          "Secure cloud storage",
+          "Advanced encryption protocols",
         ],
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
         title: "Enhanced Security",
-        description: "Ensure the safety of sensitive patient data.",
+        description:
+          "Enhanced care quality with efficient and patient-centric IT solutions.",
         list: [
-          "Advanced encryption standards",
-          "Multi-factor authentication",
-          "Regular security audits",
+          "HIPAA-compliant systems",
+          "Secure cloud storage",
+          "Advanced encryption protocols",
         ],
       },
       {
         icon: <Smile className="text-gray-400" />,
         title: "Improved Patient Experience",
         description:
-          "Enhance digital interactions between patients and providers.",
+          "Enhance care quality with efficient and patient-centric IT solutions.",
         list: [
-          "Seamless online appointment booking",
-          "Patient portals for medical records",
-          "24/7 support access",
+          "Faster access to medical records",
+          "Digital scheduling yielding reduced wait times",
+          "Telehealth support for remote care",
         ],
       },
     ],

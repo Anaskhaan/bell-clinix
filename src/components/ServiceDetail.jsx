@@ -38,13 +38,13 @@ const ServiceDetail = () => {
         </span>
 
         {/* Details List */}
-        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8 mt-6  ">
+        <ul className="text-base md:text-lg space-y-4 list-none text-white mb-8 mt-6">
           {service.details.map((detail, index) => (
             <li
-              className="text-white p-2 bg-gray-700 rounded-lg hover:scale-105 transform transition-all duration-500 "
+              className="text-white p-2 bg-gray-700 rounded-lg hover:scale-105 transform transition-all duration-500"
               key={index}
             >
-              {detail}{" "}
+              {detail}
             </li>
           ))}
         </ul>
@@ -60,40 +60,56 @@ const ServiceDetail = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {service.cards?.map((card, index) => (
             <div
               key={index}
-              className="bg-[#303a73] p-6 shadow-lg rounded-lg text-center transform transition-all duration-300 hover:scale-105 flex flex-col relative"
+              className={`bg-[#303a73] rounded-2xl shadow-xl overflow-hidden mb-8
+                       transform transition-all duration-500 hover:shadow-2xl  hover:scale-105 hover:shadow-blue-500/20
+                       ${
+                         index % 2 === 0
+                           ? "lg:translate-x-8"
+                           : "lg:-translate-x-8"
+                       }`}
             >
-              <div>
-                <div className="flex justify-center text-4xl text-[#56bafc] mb-4">
-                  {card.icon}
-                </div>
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">
-                  {card.title}
-                </h3>
-                <p className="text-md md:text-base text-gray-200 mb-4">
-                  {card.description}
-                </p>
-              </div>
-
-              {card.list && (
-                <div className="  ">
-                  {/* "Key Features" Positioned Absolutely */}
-                  <p className="text-md font-bold text-white absolute lg:top-52 top-[12rem] left-20 my-4 transform -translate-x-1/2 ">
-                    Key Features:
+              <div
+                className={`flex flex-col lg:flex-row ${
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
+              >
+                <div
+                  className="w-full lg:w-1/2 p-8 sm:p-10 flex flex-col items-center lg:items-start justify-center
+                             bg-gradient-to-br from-[#3a4680] to-[#303a73]"
+                >
+                  <div className="text-[#56bafc] mb-6 bg-white/10 p-4 rounded-xl">
+                    {card.icon}
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center lg:text-left">
+                    {card.title}
+                  </h3>
+                  <p className="text-gray-300 text-center lg:text-left">
+                    {card.description}
                   </p>
-                  {/* List positioned below "Key Features" */}
-                  <ul className={`text-sm md:text-base text-white list-disc pl-5 text-left ${index >1 ? "mt-[100px]"  : "mt-20"  }  `}>
-                    {card.list.map((item, idx) => (
-                      <li key={idx} className="text-white">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              )}
+
+                <div className="w-full lg:w-1/2 p-8 sm:p-10 bg-[#2a3369]">
+                  <div className="h-full flex flex-col">
+                    <div>
+                      <h4 className="text-xl text-[#56bafc] font-semibold mb-4">
+                        Key Features:
+                      </h4>
+                      <ul className="space-y-3">
+                        {card.list.map((item, i) => (
+                          <li key={i} className="flex items-center text-white">
+                            <span className="w-2 h-2 bg-[#56bafc] rounded-full mr-3" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
