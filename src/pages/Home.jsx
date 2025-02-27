@@ -7,6 +7,7 @@ import WeAre from "../components/WeAre";
 import ContactForm from "../components/ContactForm";
 import Services from "../components/Service";
 import FAQs from "../components/FAQs";
+import AdvancedSwiperDemo from "../components/AdvancedSwiper";
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      <AdvancedSwiperDemo />
       <WeAre />
       <Vision />
       <Services />
