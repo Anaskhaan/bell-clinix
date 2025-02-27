@@ -20,11 +20,7 @@ const ChatIcon = () => {
       }`}
     >
       {visible && (
-        <a
-          href="https://wa.me/447563087497"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="tel:+15123684647" target="_blank" rel="noopener noreferrer">
           <img
             src="/whatsapp.webp"
             alt="whatsappicon"

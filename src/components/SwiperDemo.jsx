@@ -101,11 +101,6 @@ export default function SwiperDemo() {
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
               </Link>
-              <Link to="/services">
-                <button className="inline-flex z-20 items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
-                  Learn More
-                </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -134,11 +129,6 @@ export default function SwiperDemo() {
                 <button className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:scale-105">
                   Book an Appointment
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </button>
-              </Link>
-              <Link to="/services">
-                <button className="z-20 inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-100 border-2 border-blue-100/30 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-100/50">
-                  Learn More
                 </button>
               </Link>
             </div>
