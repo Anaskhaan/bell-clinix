@@ -16,7 +16,7 @@ function cn(...inputs) {
 export function InfiniteSwiper({
   items,
   swipeSpeed = 3000,
-  transitionDuration = 300,
+  transitionDuration = 500,
   pauseOnHover = false,
   className,
 }) {
