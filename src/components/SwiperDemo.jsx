@@ -1,10 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import {
-  ChevronLeft,
-  ChevronRight,
-  ClipboardPlus,
-  ArrowRight,
-} from "lucide-react";
+import { ClipboardPlus, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
