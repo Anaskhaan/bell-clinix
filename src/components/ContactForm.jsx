@@ -131,7 +131,7 @@ const ContactForm = () => {
                   2301 EMANCIPATION HWY STE 101, FREDERICKSBURG, VA 22401 US
                 </a>
                 <a
-                  href="tel:+4475653087497"
+                  href="tel:+15123684647"
                   className="flex items-center text-black hover:text-[#56bafc] duration-300 ease-in-out gap-4"
                 >
                   <Phone />

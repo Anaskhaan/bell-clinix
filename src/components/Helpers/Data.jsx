@@ -382,9 +382,9 @@ export const serviceDetails = [
       },
       {
         icon: <ShieldCheck className="text-gray-400" />,
-        title: "Enhanced Security",
+        title: "Optimized Data Security",
         description:
-          "Enhanced care quality with efficient and patient-centric IT solutions.",
+          "Utilizing cloud based cutting-edge security protocols ensuring fool proof data protection",
         list: [
           "HIPAA / HITECH -compliant systems",
           "Secure cloud storage",
@@ -395,7 +395,7 @@ export const serviceDetails = [
         icon: <Smile className="text-gray-400" />,
         title: "Improved Patient Experience",
         description:
-          "Enhance care quality with efficient and patient-centric IT solutions.",
+          "Enhanced care quality with efficient and patient-centric IT solutions.",
         list: [
           "Faster access to medical records",
           "Digital scheduling yielding reduced wait times",
