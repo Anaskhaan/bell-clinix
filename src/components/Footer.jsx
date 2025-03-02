@@ -101,12 +101,10 @@ export default function Footer() {
 
           {/* Contact Information */}
           <motion.div variants={fadeInVariants} className="space-y-6">
-            <h3 className="text-lg font-semibold text-white">
-              Office Location
-            </h3>
+            <h3 className="text-lg font-semibold text-white">Office</h3>
             <div className="space-y-4">
               <a
-                href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
+                href="https://maps.app.goo.gl/yEn6xN12tAHrBffz6"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
@@ -137,16 +135,6 @@ export default function Footer() {
                 <Mail className="w-5 h-5" />
                 <span>info@bellclinix.com</span>
               </a>
-              <div className="pt-4">
-                <h4 className="text-sm font-semibold text-white mb-2">
-                  Mailing Address
-                </h4>
-                <p className="text-gray-300">
-                  2301 Emancipation Hwy, Ste 101,
-                  <br />
-                  Fredericksburg, VA 22401, USA
-                </p>
-              </div>
             </div>
           </motion.div>
         </div>

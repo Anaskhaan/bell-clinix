@@ -122,7 +122,7 @@ const ContactForm = () => {
             <div className="p-6 relative">
               <ul className="space-y-4 text-[#333]">
                 <a
-                  href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
+                  href="https://maps.app.goo.gl/er64FPLbCyTgvhww6"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-4"

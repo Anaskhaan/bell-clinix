@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "Raoof Khan",
     position: "CEO",
-    image: "https://via.placeholder.com/150",
+    image: "raoof.webp",
     description:
       "Raoof is the dynamic and strategic leader steering BellClinix towards excellence and innovation in healthcare administration.",
   },

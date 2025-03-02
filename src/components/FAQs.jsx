@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     question:
-      "What makes Bell Clinics different from other medical billing companies?",
+      "What makes BellClinix different from other medical billing companies?",
     answer:
       "We combine advanced technology, professional mastery, and a client-focused approach to deliver seamless billing, and RCM solutions tailored to each provider's needs.",
   },
