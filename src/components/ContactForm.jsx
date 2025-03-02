@@ -122,7 +122,7 @@ const ContactForm = () => {
             <div className="p-6 relative">
               <ul className="space-y-4 text-[#333]">
                 <a
-                  href="https://maps.app.goo.gl/VRt1e6Ctj5HvHa1TA"
+                  href="https://maps.app.goo.gl/er64FPLbCyTgvhww6"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-4"
@@ -131,7 +131,7 @@ const ContactForm = () => {
                   2301 EMANCIPATION HWY STE 101, FREDERICKSBURG, VA 22401 US
                 </a>
                 <a
-                  href="tel:+4475653087497"
+                  href="tel:+15123684647"
                   className="flex items-center text-black hover:text-[#56bafc] duration-300 ease-in-out gap-4"
                 >
                   <Phone />
