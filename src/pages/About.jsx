@@ -41,11 +41,12 @@ const teamMembers = [
 ];
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [startIndex, setStartIndex] = useState(0);
+  const [visibleMembers, setVisibleMembers] = useState([
+    teamMembers[0],
+    teamMembers[1 % teamMembers.length],
+    teamMembers[2 % teamMembers.length],
+  ]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,11 +55,13 @@ export default function About() {
     return () => clearInterval(interval);
   }, []);
 
-  const visibleMembers = [
-    teamMembers[startIndex],
-    teamMembers[(startIndex + 1) % teamMembers.length],
-    teamMembers[(startIndex + 2) % teamMembers.length],
-  ];
+  useEffect(() => {
+    setVisibleMembers([
+      teamMembers[startIndex],
+      teamMembers[(startIndex + 1) % teamMembers.length],
+      teamMembers[(startIndex + 2) % teamMembers.length],
+    ]);
+  }, [startIndex]);
 
   return (
     <div>
