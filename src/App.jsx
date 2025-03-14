@@ -9,11 +9,6 @@ import About from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  // useEffect(() => {
-  //   if (window.matchMedia("(hover: hover)").matches) {
-  //     document.body.classList.add("cursor-none");
-  //   }
-  // }, []);
   return (
     <>
       <CustomCursor />
