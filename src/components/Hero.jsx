@@ -13,7 +13,8 @@ function Hero() {
     <div className="relative min-h-screen  ">
       <Helmet>
         <title>
-          BellClinix | Trusted Medical Solutions for US Healthcare Providers
+          BellClinix | Trusted Medical Billing Solutions for US Healthcare
+          Providers
         </title>
         <meta
           name="description"
