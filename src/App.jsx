@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
 import ChatIcon from "./components/ChatIcon";
 import ServiceDetail from "./components/ServiceDetail";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/services/:serviceTitle" element={<ServiceDetail />} />
         </Route>
       </Routes>
