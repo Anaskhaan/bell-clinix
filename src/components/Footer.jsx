@@ -42,7 +42,7 @@ const quickLinks = [
   { name: "Who We Are", path: "/about" },
   { name: "What We Do", path: "/services" },
   { name: "Contact Us", path: "/contact" },
-  { name: "PrivacyPolicy", path: "/PrivacyPolicy" },
+  { name: "Privacy Policy", path: "/PrivacyPolicy" },
 ];
 
 export default function Footer() {
