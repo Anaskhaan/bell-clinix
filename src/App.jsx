@@ -19,7 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/services/:serviceTitle" element={<ServiceDetail />} />
         </Route>
       </Routes>
