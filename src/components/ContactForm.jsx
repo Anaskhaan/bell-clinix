@@ -135,7 +135,7 @@ const ContactForm = () => {
                   className="flex items-center text-black hover:text-[#56bafc] duration-300 ease-in-out gap-4"
                 >
                   <Phone />
-                  +15 123 684 647
+                  512 368 4647
                 </a>
                 <a
                   href="mailto:info@bellclinix.com"

@@ -1,9 +1,17 @@
+import { useEffect } from "react";
+
 const PrivacyPolicy = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+
   const sections = [
     {
       title: "1. Introduction",
       content:
-        "Welcome to BellThinks. Your privacy is important to us. This Privacy Policy explains how we collect, use, and safeguard your personal information when you interact with our services.",
+        "Welcome to BellClinix. Your privacy is important to us. This Privacy Policy explains how we collect, use, and safeguard your personal information when you interact with our services.",
     },
     {
       title: "2. Information We Collect",
@@ -35,15 +43,21 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      title: "5. Contact Information",
+      title: "5. Mobile Information and Third Parties",
+      content:
+        "No Mobile Information will be shared with third Parties/ Affiliates for Marketing / Promotional Purposes. All the above Categories exclude text messaging originator opt-in data and consent, this information will not be shared with any third Parties.",
+    },
+    {
+      title: "6. Contact Information",
       content:
         "If you have any questions or concerns about this Privacy Policy, please reach out to us:",
       address: [
-        "Address: 1234 Example St, City, Country",
-        "Phone: +1 234-567-890",
-        "Email: contact@bellthinks.com",
+        "Address: 2301 Emancipation Hwy, Fredericksburg, VA 22401, USA",
+        "Phone: 512 368 4647",
+        "Email: contact@bellclinix.com",
       ],
     },
+    
   ];
 
   return (

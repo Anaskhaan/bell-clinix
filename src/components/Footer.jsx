@@ -127,7 +127,7 @@ export default function Footer() {
                 className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300"
               >
                 <Phone className="w-5 h-5" />
-                <span>+15 123 684 647</span>
+                <span>512 368 4647</span>
               </a>
               <a
                 href="mailto:info@bellclinix.com"
