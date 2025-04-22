@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import SwiperDemo from "./SwiperDemo";
 
 function Hero() {
@@ -11,9 +11,10 @@ function Hero() {
 
   return (
     <div className="relative min-h-screen  ">
-      <Helmet>
+      {/* <Helmet>
         <title>
-          BellClinix | Trusted Medical Solutions for US Healthcare Providers
+          BellClinix | Trusted Medical Billing Solutions for US Healthcare
+          Providers
         </title>
         <meta
           name="description"
@@ -39,7 +40,7 @@ function Hero() {
                     Healthcare professionals,
 "
         />
-      </Helmet>
+      </Helmet> */}
       <div className="absolute inset-0  ">
         <img
           src="/hero_converted.webp"
