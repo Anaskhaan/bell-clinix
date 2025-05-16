@@ -1,11 +1,9 @@
 import { useEffect } from "react";
 
 const PrivacyPolicy = () => {
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
 
   const sections = [
     {
@@ -57,7 +55,6 @@ const PrivacyPolicy = () => {
         "Email: contact@bellclinix.com",
       ],
     },
-    
   ];
 
   return (

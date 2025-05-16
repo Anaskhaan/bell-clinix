@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
-  {
-    name: "Dr. Khan",
-    position: "Founder CEO",
-    image: "/dryousaf.webp",
-    description:
-      "Dr Khan is the visionary leader and driving force behind our innovative medical billing company.",
-  },
+  // {
+  //   name: "Dr. Khan",
+  //   position: "Founder CEO",
+  //   image: "/dryousaf.webp",
+  //   description:
+  //     "Dr Khan is the visionary leader and driving force behind our innovative medical billing company.",
+  // },
   {
     name: "Dr. Naveed",
     position: "Lead Clinical Advisor",
