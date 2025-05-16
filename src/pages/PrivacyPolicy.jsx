@@ -1,5 +1,3 @@
-import React from "react";
-
 const PrivacyPolicy = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen py-12 px-6 md:px-20">
@@ -13,7 +11,7 @@ const PrivacyPolicy = () => {
             1. Introduction
           </h2>
           <p className="text-gray-400 leading-relaxed">
-            Welcome to BellThinks. Your privacy is important to us. This Privacy
+            Welcome to BellClinix. Your privacy is important to us. This Privacy
             Policy explains how we collect, use, and safeguard your personal
             information when you interact with our services.
           </p>
@@ -85,18 +83,19 @@ const PrivacyPolicy = () => {
           </p>
           <address className="mt-4 text-gray-400 leading-relaxed">
             <p>
-              <strong>Address:</strong> 1234 Example St, City, Country
+              <strong>Address:</strong> 2301 Emancipation Hwy, Fredericksburg,
+              VA 22401, USA
             </p>
             <p>
-              <strong>Phone:</strong> +1 234-567-890
+              <strong>Phone:</strong> +15 123 684 647
             </p>
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:contact@bellthinks.com"
+                href="mailto:contact@bellclinix.com"
                 className="text-blue-400 hover:underline"
               >
-                contact@bellthinks.com
+                contact@bellclinix.com
               </a>
             </p>
           </address>
