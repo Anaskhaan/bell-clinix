@@ -28,7 +28,7 @@ const Services = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
-              className="relative w-full h-auto rounded-2xl p-6 cursor-pointer bg-white shadow-lg hover:bg-blue-400 hover:text-white transition-all duration-300 ease-in-out"
+              className="relative w-full h-auto rounded-2xl p-6 cursor-pointer bg-white shadow-lg hover:bg-blue-200 hover:text-white transition-all duration-300 ease-in-out"
             >
               <div
                 className="relative h-full flex flex-col justify-between z-10"

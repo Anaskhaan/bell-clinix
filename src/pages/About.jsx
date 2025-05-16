@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
-  {
-    name: "Dr. Khan",
-    position: "Founder CEO",
-    image: "/dryousaf.webp",
-    description:
-      "Dr Khan is the visionary leader and driving force behind our innovative medical billing company.",
-  },
+  // {
+  //   name: "Dr. Khan",
+  //   position: "Founder CEO",
+  //   image: "/dryousaf.webp",
+  //   description:
+  //     "Dr Khan is the visionary leader and driving force behind our innovative medical billing company.",
+  // },
   {
     name: "Dr. Naveed",
     position: "Lead Clinical Advisor",
@@ -41,16 +41,13 @@ const teamMembers = [
 ];
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [startIndex, setStartIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setStartIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
-    }, 3000);
+    }, 3000); // Slide every 3 seconds
+
     return () => clearInterval(interval);
   }, []);
 
@@ -65,40 +62,21 @@ export default function About() {
       <section>
         <div className="flex justify-center items-center">
           <div className="w-full h-auto bg-black py-24">
-            {/* Title Section */}
-            <div>
-              <h1 className="text-white lg:text-5xl text-3xl text-center p-6">
-                About Us
-              </h1>
-            </div>
-
-            {/* Quote Section */}
-            <div className="text-center ">
-              <p className="text-gray-300 px-2 font-extrabold italic block lg:py-3">
-                &quot;We have two ears and one mouth so that we can listen twice
-                as much as we speak.&quot;
-              </p>
-              <div className="flex justify-end lg:w-[74%] items-center mr-4">
-                <p className="text-gray-300 font-extrabold transform  ">
-                  Epictetus
-                </p>
-              </div>
-            </div>
+            <h1 className="text-white lg:text-5xl text-3xl text-center p-6">
+              About Us
+            </h1>
           </div>
         </div>
+
         <div className="bg-[#ecf5ff] flex justify-center items-center py-16 px-6">
           <div className="max-w-4xl text-left">
-            <h2 className="text-2xl md:text-5xl w-2/1 lg:w-2/3 xl:w-2/3 2xl:w-2/3 font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Medical Billing & Revenue Cycle Experts
             </h2>
-            <p className="lg:text-lg xl:text-lg text-md text-gray-700 text-left">
+            <p className="lg:text-lg xl:text-lg text-md text-gray-700">
               We are committed to transforming the complexities of medical
               billing into seamless solutions, allowing healthcare providers to
-              focus on what truly matters: Our dedicated team is a unique blend
-              of AI experts, clinical leaders and experienced doctors with a
-              keen eye for detail and a passion for excellence. This diverse
-              expertise enables us to handle your billing processes with utmost
-              accuracy and efficiency delivering exceptional patient care.
+              focus on what truly matters: patient care.
             </p>
           </div>
         </div>
@@ -110,14 +88,15 @@ export default function About() {
           <p className="mb-12 text-gray-400">
             A group of skilled professionals dedicated to excellence.
           </p>
-          {/* Added grid for responsive display */}
-          <div className="flex justify-center space-x-4 overflow-hidden">
+
+          {/* Team Members Slider */}
+          <div className="relative flex justify-center space-x-4 overflow-hidden w-full">
             <motion.div
               className="flex space-x-4 transition-transform ease-in-out"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.8 }}
             >
               {visibleMembers.map((member, index) => (
                 <motion.div
@@ -144,7 +123,7 @@ export default function About() {
 
       <section className="py-20 bg-[#56bafc] text-white text-center">
         <div className="container mx-auto">
-          <h2 className="lg:text-5xl text-xl  font-bold mb-4">
+          <h2 className="lg:text-5xl text-xl font-bold mb-4">
             Ready to Optimize Your Revenue Cycle?
           </h2>
           <p className="text-md mb-6">
